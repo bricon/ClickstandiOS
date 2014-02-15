@@ -101,36 +101,48 @@
     //commented out because no posts have been made
     //NSDictionary * post = self.feedData[indexPath.row];
     
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedMainImage)];
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedMainImage:)];
     singleTap.numberOfTapsRequired = 1;
     cell.image.userInteractionEnabled = YES;
     [cell.image addGestureRecognizer:singleTap];
     //add post ID tag so we can get post info in the next view
     
-    UITapGestureRecognizer *profileTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedProfileImage)];
+    UITapGestureRecognizer *profileTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedProfileImage:)];
     profileTap.numberOfTapsRequired = 1;
     cell.userImage.userInteractionEnabled = YES;
     [cell.userImage addGestureRecognizer:profileTap];
     //add user ID tag so we can get profile info in the next view
     
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    //set the position of the button
+    button.frame = CGRectMake(cell.frame.origin.x + 100, cell.frame.origin.y + 470, 100, 20);
+    [button setTitle:@"Donate" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(donate:) forControlEvents:UIControlEventTouchUpInside];
+    button.backgroundColor= [UIColor clearColor];
+    [cell.contentView addSubview:button];
+    
     return cell;
 
 }
 
--(void)tapDetectedMainImage{
+-(void)tapDetectedMainImage:(id) sender{
     NSLog(@"single Tap on imageview");
     //load full post page
     MASFullPostViewController * fullPostViewController = [[MASFullPostViewController alloc] init];
     [self.navigationController pushViewController:fullPostViewController animated:YES];
-
-    
 }
 
--(void)tapDetectedProfileImage{
+-(void)tapDetectedProfileImage:(id) sender{
     NSLog(@"single tap on profile image");
     //load profile
     MASProfileViewController * profileViewController = [[MASProfileViewController alloc] init];
     [self.navigationController pushViewController:profileViewController animated:YES];
+}
+
+-(void)donate:(id) sender{
+    NSLog(@"donate");
+    //payment stuff
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
