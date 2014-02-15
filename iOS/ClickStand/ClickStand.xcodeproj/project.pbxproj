@@ -29,6 +29,8 @@
 		DDED558C18AF0E9800E6E843 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED558B18AF0E9800E6E843 /* QuartzCore.framework */; };
 		DDED558E18AF0EA300E6E843 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED558D18AF0EA300E6E843 /* StoreKit.framework */; };
 		DDED559018AF0EB300E6E843 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED558F18AF0EB300E6E843 /* SystemConfiguration.framework */; };
+		DDED559518AF14F600E6E843 /* MASLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED559418AF14F600E6E843 /* MASLoginViewController.m */; };
+		DDED559918AF166000E6E843 /* MASHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED559818AF166000E6E843 /* MASHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,10 @@
 		DDED558B18AF0E9800E6E843 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DDED558D18AF0EA300E6E843 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DDED558F18AF0EB300E6E843 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DDED559318AF14F600E6E843 /* MASLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASLoginViewController.h; path = Classes/ViewControllers/MASLoginViewController/MASLoginViewController.h; sourceTree = "<group>"; };
+		DDED559418AF14F600E6E843 /* MASLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASLoginViewController.m; path = Classes/ViewControllers/MASLoginViewController/MASLoginViewController.m; sourceTree = "<group>"; };
+		DDED559718AF166000E6E843 /* MASHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASHomeViewController.h; path = Classes/ViewControllers/MASHomeViewController/MASHomeViewController.h; sourceTree = "<group>"; };
+		DDED559818AF166000E6E843 /* MASHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASHomeViewController.m; path = Classes/ViewControllers/MASHomeViewController/MASHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +220,8 @@
 		DDED557B18AEF30800E6E843 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				DDED559618AF163300E6E843 /* MASHomeViewController */,
+				DDED559218AF14BB00E6E843 /* MASLoginViewController */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -223,6 +231,24 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		DDED559218AF14BB00E6E843 /* MASLoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DDED559318AF14F600E6E843 /* MASLoginViewController.h */,
+				DDED559418AF14F600E6E843 /* MASLoginViewController.m */,
+			);
+			name = MASLoginViewController;
+			sourceTree = "<group>";
+		};
+		DDED559618AF163300E6E843 /* MASHomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DDED559718AF166000E6E843 /* MASHomeViewController.h */,
+				DDED559818AF166000E6E843 /* MASHomeViewController.m */,
+			);
+			name = MASHomeViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,8 +346,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDED559518AF14F600E6E843 /* MASLoginViewController.m in Sources */,
 				DDED555A18AEF2A300E6E843 /* MASAppDelegate.m in Sources */,
 				DDED555618AEF2A300E6E843 /* main.m in Sources */,
+				DDED559918AF166000E6E843 /* MASHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

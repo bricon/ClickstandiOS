@@ -7,7 +7,7 @@
 //
 
 #import "MASAppDelegate.h"
-#import <Parse/Parse.h>
+#import "MASLoginViewController.h"
 
 @implementation MASAppDelegate
 
@@ -27,6 +27,11 @@
     
     // Track statistics and analytics through Parse 
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    // Initialize root view controller
+    // TODO Determine if user is logged-in
+    
+    
     return YES;
 }
 
