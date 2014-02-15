@@ -16,6 +16,9 @@
 		84A734DD18AFDD63000FC694 /* MASLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A734DA18AFDD63000FC694 /* MASLoginViewController.xib */; };
 		84A734DE18AFDD63000FC694 /* MASLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A734DB18AFDD63000FC694 /* MASLoginViewController.m */; };
 		9316D28F18AF0200001F1646 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9316D28E18AF0200001F1646 /* FacebookSDK.framework */; };
+		93400F4818AFE62B008530A2 /* MASSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93400F4718AFE62B008530A2 /* MASSideMenuViewController.m */; };
+		93400F4D18AFE666008530A2 /* MASMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93400F4B18AFE666008530A2 /* MASMenuViewController.m */; };
+		93400F4E18AFE666008530A2 /* MASMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93400F4C18AFE666008530A2 /* MASMenuViewController.xib */; };
 		DD164D9E18AF4F03006D7BEF /* masLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164D9D18AF4F03006D7BEF /* masLogo@2x.png */; };
 		DDED554A18AEF2A300E6E843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554918AEF2A300E6E843 /* Foundation.framework */; };
 		DDED554C18AEF2A300E6E843 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554B18AEF2A300E6E843 /* CoreGraphics.framework */; };
@@ -76,6 +79,11 @@
 		84A734DC18AFDD63000FC694 /* MASLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLoginViewController.h; sourceTree = "<group>"; };
 		9316D28C18AEFDBC001F1646 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = SOURCE_ROOT; };
 		9316D28E18AF0200001F1646 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		93400F4618AFE62B008530A2 /* MASSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASSideMenuViewController.h; sourceTree = "<group>"; };
+		93400F4718AFE62B008530A2 /* MASSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASSideMenuViewController.m; sourceTree = "<group>"; };
+		93400F4A18AFE666008530A2 /* MASMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASMenuViewController.h; sourceTree = "<group>"; };
+		93400F4B18AFE666008530A2 /* MASMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASMenuViewController.m; sourceTree = "<group>"; };
+		93400F4C18AFE666008530A2 /* MASMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASMenuViewController.xib; sourceTree = "<group>"; };
 		DD164D9D18AF4F03006D7BEF /* masLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "masLogo@2x.png"; path = "Assets/Images/masLogo@2x.png"; sourceTree = "<group>"; };
 		DDED554618AEF2A300E6E843 /* ClickStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDED554918AEF2A300E6E843 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -172,6 +180,25 @@
 				84A734D718AFDD4A000FC694 /* MASSignUpViewController.xib */,
 			);
 			name = MASSignUpViewController;
+			sourceTree = "<group>";
+		};
+		93400F4518AFE60A008530A2 /* MASSideMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93400F4618AFE62B008530A2 /* MASSideMenuViewController.h */,
+				93400F4718AFE62B008530A2 /* MASSideMenuViewController.m */,
+			);
+			name = MASSideMenuViewController;
+			sourceTree = "<group>";
+		};
+		93400F4918AFE659008530A2 /* MASMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93400F4A18AFE666008530A2 /* MASMenuViewController.h */,
+				93400F4B18AFE666008530A2 /* MASMenuViewController.m */,
+				93400F4C18AFE666008530A2 /* MASMenuViewController.xib */,
+			);
+			name = MASMenuViewController;
 			sourceTree = "<group>";
 		};
 		DDED553D18AEF2A200E6E843 = {
@@ -288,6 +315,8 @@
 		DDED557B18AEF30800E6E843 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				93400F4918AFE659008530A2 /* MASMenuViewController */,
+				93400F4518AFE60A008530A2 /* MASSideMenuViewController */,
 				DDED55AC18AF376900E6E843 /* MASFeedViewController */,
 				DDED55A618AF374E00E6E843 /* MASFullPostViewController */,
 				DDED559618AF163300E6E843 /* MASHomeViewController */,
@@ -465,6 +494,7 @@
 				84A734DD18AFDD63000FC694 /* MASLoginViewController.xib in Resources */,
 				DDED55AB18AF376000E6E843 /* MASFullPostViewController.xib in Resources */,
 				844CE28118AF5D9E004E8893 /* puppy.jpg in Resources */,
+				93400F4E18AFE666008530A2 /* MASMenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +522,8 @@
 				844CE28518AFCAC4004E8893 /* MASProfileViewController.m in Sources */,
 				84A734D818AFDD4A000FC694 /* MASSignUpViewController.m in Sources */,
 				DDED559918AF166000E6E843 /* MASHomeViewController.m in Sources */,
+				93400F4818AFE62B008530A2 /* MASSideMenuViewController.m in Sources */,
+				93400F4D18AFE666008530A2 /* MASMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
