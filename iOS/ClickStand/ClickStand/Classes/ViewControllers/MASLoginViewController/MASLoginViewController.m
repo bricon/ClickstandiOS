@@ -53,8 +53,28 @@
                 } else {
                     NSLog(@"Uh oh. An error occurred: %@", error);
                 }
-            } else if (user.isNew) { // TODO: You can consolidate these into one if statement. Left for debugging. 
+            } else if (user.isNew) {
                 NSLog(@"User with facebook signed up and logged in!");
+                
+                // Populate the new user's fields TODO: Make this populate the information
+                FBRequest *request = [FBRequest requestForMe];
+                [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+                    if (!error) {
+                        NSDictionary *userData = (NSDictionary *)result;
+                        
+                        NSString *facebookID = userData[@"id"];
+                        NSString *name = userData[@"name"];
+                        NSString *location = userData[@"location"][@"name"];
+                        NSURL *pictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", facebookID]];
+                        
+                        [user setObject:name forKey:@"name"];
+                        [user setObject:location forKey:@"location"];
+                        [user setObject:pictureURL forKey:@"picture_url"];
+                        
+                        [user save];
+                    }
+                }];
+                
                 self.feedViewController = [[MASFeedViewController alloc] initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]];
                 [self presentViewController:self.feedViewController animated:YES completion:nil];
             } else {
@@ -73,6 +93,8 @@
                 return;
             } else if (user.isNew) {
                 NSLog(@"User signed up and logged in with Twitter!");
+                
+                // TODO: Populate Account w/ Information
                 self.feedViewController = [[MASFeedViewController alloc] initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]];
                 [self presentViewController:self.feedViewController animated:YES completion:nil];
             } else {
@@ -83,10 +105,17 @@
         }];
     } else if(sender == self.loginButton) {
         NSLog(@"login button pressed");
+        
+        // TODO: Attempt to log in the user.
+        
     } else if(sender == self.forgotPasswordButton) {
         NSLog(@"forgot password button pressed");
+        
+        // TODO: Add forgot user sequence
     } else if(sender == self.signupButton) {
         NSLog(@"sign up button pressed");
+        
+        // TODO: Add sign up page and link this
     }
 }
 
