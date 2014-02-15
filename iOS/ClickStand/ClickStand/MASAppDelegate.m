@@ -21,7 +21,11 @@
     [Parse setApplicationId:@"hxjc7PsqUeQww2KZSMfMp3ZhFajFZHCT0JIPeR1t"
                   clientKey:@"hNNr6ZZNrADDD5Cgxt5ThKc9GdB6GqUZQnk4Z1hB"];
     
-    // Track statistics and analytics through Parse
+    // To be filled with facebook and twitter credentials
+    [PFFacebookUtils initializeFacebook];
+    [PFTwitterUtils initializeWithConsumerKey:@"your_twitter_consumer_key" consumerSecret:@"your_twitter_consumer_secret"];
+    
+    // Track statistics and analytics through Parse 
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     return YES;
 }
