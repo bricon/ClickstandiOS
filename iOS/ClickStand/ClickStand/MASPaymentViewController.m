@@ -33,6 +33,38 @@
     [self.view addSubview:self.stripeView];
 }
 
+- (void)stripeView:(STPView *)view withCard:(PKCard *)card isValid:(BOOL)valid
+{
+    // Toggle navigation, for example
+    // self.saveButton.enabled = valid;
+    
+//    When all the card data is added and valid the stripeView:withCard:isValid: delegate method will be called. In the callback, for example, we could enable a 'save button' that allows users to submit their valid cards:
+}
+
+
+- (IBAction)save:(id)sender
+{
+    // Call 'createToken' when the save button is tapped
+    [self.stripeView createToken:^(STPToken *token, NSError *error) {
+        if (error) {
+            // Handle error
+            // [self handleError:error];
+        } else {
+            // Send off token to your server
+            // [self handleToken:token];
+        }
+    }];}
+
+- (void)handleError:(NSError *)error
+{
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error")
+                                                      message:[error localizedDescription]
+                                                     delegate:nil
+                                            cancelButtonTitle:NSLocalizedString(@"OK", @"OK")
+                                            otherButtonTitles:nil];
+    [message show];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
