@@ -67,6 +67,20 @@
     } else if(sender == self.twitterLoginButton) {
         // TODO Login with Twitter
         NSLog(@"twitter button pressed");
+        [PFTwitterUtils logInWithBlock:^(PFUser *user, NSError *error) {
+            if (!user) {
+                NSLog(@"Uh oh. The user cancelled the Twitter login.");
+                return;
+            } else if (user.isNew) {
+                NSLog(@"User signed up and logged in with Twitter!");
+                self.feedViewController = [[MASFeedViewController alloc] initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]];
+                [self presentViewController:self.feedViewController animated:YES completion:nil];
+            } else {
+                NSLog(@"User logged in with Twitter!");
+                self.feedViewController = [[MASFeedViewController alloc] initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]];
+                [self presentViewController:self.feedViewController animated:YES completion:nil];
+            }     
+        }];
     } else if(sender == self.loginButton) {
         NSLog(@"login button pressed");
     } else if(sender == self.forgotPasswordButton) {
