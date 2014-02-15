@@ -119,31 +119,31 @@
     if (cell == nil) {
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"MASFeedCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
+        
+        //add parse data into cell
+        //commented out because no posts have been made
+        //NSDictionary * post = self.feedData[indexPath.row];
+        
+        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedMainImage:)];
+        singleTap.numberOfTapsRequired = 1;
+        cell.image.userInteractionEnabled = YES;
+        [cell.image addGestureRecognizer:singleTap];
+        //add post ID tag so we can get post info in the next view
+        
+        UITapGestureRecognizer *profileTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedProfileImage:)];
+        profileTap.numberOfTapsRequired = 1;
+        cell.userImage.userInteractionEnabled = YES;
+        [cell.userImage addGestureRecognizer:profileTap];
+        //add user ID tag so we can get profile info in the next view
+        
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        //set the position of the button
+        button.frame = CGRectMake(cell.frame.origin.x + 100, cell.frame.origin.y + 470, 100, 20);
+        [button setTitle:@"Donate" forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(donate:) forControlEvents:UIControlEventTouchUpInside];
+        button.backgroundColor= [UIColor clearColor];
+        [cell.contentView addSubview:button];
     }
-    
-    //add parse data into cell
-    //commented out because no posts have been made
-    //NSDictionary * post = self.feedData[indexPath.row];
-    
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedMainImage:)];
-    singleTap.numberOfTapsRequired = 1;
-    cell.image.userInteractionEnabled = YES;
-    [cell.image addGestureRecognizer:singleTap];
-    //add post ID tag so we can get post info in the next view
-    
-    UITapGestureRecognizer *profileTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedProfileImage:)];
-    profileTap.numberOfTapsRequired = 1;
-    cell.userImage.userInteractionEnabled = YES;
-    [cell.userImage addGestureRecognizer:profileTap];
-    //add user ID tag so we can get profile info in the next view
-    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    //set the position of the button
-    button.frame = CGRectMake(cell.frame.origin.x + 100, cell.frame.origin.y + 470, 100, 20);
-    [button setTitle:@"Donate" forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(donate:) forControlEvents:UIControlEventTouchUpInside];
-    button.backgroundColor= [UIColor clearColor];
-    [cell.contentView addSubview:button];
     
     return cell;
 
