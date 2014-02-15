@@ -11,7 +11,6 @@
 #import "MASHomeViewController.h"
 #import "MASFeedViewController.h"
 #import "MASMenuViewController.h"
-#import "MASSideMenuViewController.h"
 
 @implementation MASAppDelegate
 
@@ -36,8 +35,8 @@
                                                                                        bundle:[NSBundle mainBundle]];
     UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:[[MASFeedViewController alloc]initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]]];
 
-    self.sideMenuViewController = [[MASSideMenuViewController alloc]initWithContentController:navigationController
-                                                                              menuController:menuViewController];
+    self.sideMenuViewController = [[RESideMenu alloc]initWithContentViewController:navigationController menuViewController:menuViewController];
+    self.sideMenuViewController.backgroundImage = [UIImage imageNamed:@"menuBackground"];
     if ([PFUser currentUser]) {     // If the user is currently logged in skip the login page
         self.window.rootViewController = self.sideMenuViewController;
     } else {

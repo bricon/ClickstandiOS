@@ -20,7 +20,6 @@
 		84A734DD18AFDD63000FC694 /* MASLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A734DA18AFDD63000FC694 /* MASLoginViewController.xib */; };
 		84A734DE18AFDD63000FC694 /* MASLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A734DB18AFDD63000FC694 /* MASLoginViewController.m */; };
 		9316D28F18AF0200001F1646 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9316D28E18AF0200001F1646 /* FacebookSDK.framework */; };
-		93400F4818AFE62B008530A2 /* MASSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93400F4718AFE62B008530A2 /* MASSideMenuViewController.m */; };
 		93400F4D18AFE666008530A2 /* MASMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93400F4B18AFE666008530A2 /* MASMenuViewController.m */; };
 		93400F4E18AFE666008530A2 /* MASMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93400F4C18AFE666008530A2 /* MASMenuViewController.xib */; };
 		93400F5418AFF946008530A2 /* MASAddPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93400F5218AFF946008530A2 /* MASAddPostViewController.m */; };
@@ -62,6 +61,12 @@
 		DD164E1F18AFF6B8006D7BEF /* textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164DD618AFF6B8006D7BEF /* textfield.png */; };
 		DD164E2018AFF6B8006D7BEF /* textfield@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164DD718AFF6B8006D7BEF /* textfield@2x.png */; };
 		DD164E3D18B00D7D006D7BEF /* menuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164E3C18B00D7D006D7BEF /* menuButton@2x.png */; };
+		DD164E4518B01F72006D7BEF /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = DD164E4018B01F72006D7BEF /* RECommonFunctions.m */; };
+		DD164E4618B01F72006D7BEF /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DD164E4218B01F72006D7BEF /* RESideMenu.m */; };
+		DD164E4718B01F72006D7BEF /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DD164E4418B01F72006D7BEF /* UIViewController+RESideMenu.m */; };
+		DD164E4B18B025AC006D7BEF /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164E4A18B025AC006D7BEF /* home@2x.png */; };
+		DD164E6E18B025D2006D7BEF /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164E6D18B025D2006D7BEF /* settings@2x.png */; };
+		DD164E7018B028B3006D7BEF /* menuBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164E6F18B028B3006D7BEF /* menuBackground@2x.png */; };
 		DDED554A18AEF2A300E6E843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554918AEF2A300E6E843 /* Foundation.framework */; };
 		DDED554C18AEF2A300E6E843 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554B18AEF2A300E6E843 /* CoreGraphics.framework */; };
 		DDED554E18AEF2A300E6E843 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554D18AEF2A300E6E843 /* UIKit.framework */; };
@@ -127,8 +132,6 @@
 		84A734DC18AFDD63000FC694 /* MASLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLoginViewController.h; sourceTree = "<group>"; };
 		9316D28C18AEFDBC001F1646 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = SOURCE_ROOT; };
 		9316D28E18AF0200001F1646 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
-		93400F4618AFE62B008530A2 /* MASSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASSideMenuViewController.h; sourceTree = "<group>"; };
-		93400F4718AFE62B008530A2 /* MASSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASSideMenuViewController.m; sourceTree = "<group>"; };
 		93400F4A18AFE666008530A2 /* MASMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASMenuViewController.h; sourceTree = "<group>"; };
 		93400F4B18AFE666008530A2 /* MASMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASMenuViewController.m; sourceTree = "<group>"; };
 		93400F4C18AFE666008530A2 /* MASMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASMenuViewController.xib; sourceTree = "<group>"; };
@@ -187,6 +190,15 @@
 		DD164DD618AFF6B8006D7BEF /* textfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textfield.png; sourceTree = "<group>"; };
 		DD164DD718AFF6B8006D7BEF /* textfield@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textfield@2x.png"; sourceTree = "<group>"; };
 		DD164E3C18B00D7D006D7BEF /* menuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuButton@2x.png"; sourceTree = "<group>"; };
+		DD164E3F18B01F72006D7BEF /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		DD164E4018B01F72006D7BEF /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		DD164E4118B01F72006D7BEF /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
+		DD164E4218B01F72006D7BEF /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
+		DD164E4318B01F72006D7BEF /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		DD164E4418B01F72006D7BEF /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		DD164E4A18B025AC006D7BEF /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
+		DD164E6D18B025D2006D7BEF /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		DD164E6F18B028B3006D7BEF /* menuBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuBackground@2x.png"; sourceTree = "<group>"; };
 		DDED554618AEF2A300E6E843 /* ClickStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDED554918AEF2A300E6E843 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DDED554B18AEF2A300E6E843 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -282,15 +294,6 @@
 				84A734D718AFDD4A000FC694 /* MASSignUpViewController.xib */,
 			);
 			name = MASSignUpViewController;
-			sourceTree = "<group>";
-		};
-		93400F4518AFE60A008530A2 /* MASSideMenuViewController */ = {
-			isa = PBXGroup;
-			children = (
-				93400F4618AFE62B008530A2 /* MASSideMenuViewController.h */,
-				93400F4718AFE62B008530A2 /* MASSideMenuViewController.m */,
-			);
-			name = MASSideMenuViewController;
 			sourceTree = "<group>";
 		};
 		93400F4918AFE659008530A2 /* MASMenuViewController */ = {
@@ -422,9 +425,23 @@
 			path = Cards;
 			sourceTree = "<group>";
 		};
+		DD164E3E18B01F72006D7BEF /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DD164E3F18B01F72006D7BEF /* RECommonFunctions.h */,
+				DD164E4018B01F72006D7BEF /* RECommonFunctions.m */,
+				DD164E4118B01F72006D7BEF /* RESideMenu.h */,
+				DD164E4218B01F72006D7BEF /* RESideMenu.m */,
+				DD164E4318B01F72006D7BEF /* UIViewController+RESideMenu.h */,
+				DD164E4418B01F72006D7BEF /* UIViewController+RESideMenu.m */,
+			);
+			path = RESideMenu;
+			sourceTree = "<group>";
+		};
 		DDED553D18AEF2A200E6E843 = {
 			isa = PBXGroup;
 			children = (
+				DD164E3E18B01F72006D7BEF /* RESideMenu */,
 				DD164D9F18AFF6B8006D7BEF /* Stripe */,
 				DDED554F18AEF2A300E6E843 /* ClickStand */,
 				DDED556818AEF2A300E6E843 /* ClickStandTests */,
@@ -540,7 +557,6 @@
 				93400F5018AFF92D008530A2 /* MASAddPostViewController */,
 				93400F4F18AFF920008530A2 /* MASPaymentViewController */,
 				93400F4918AFE659008530A2 /* MASMenuViewController */,
-				93400F4518AFE60A008530A2 /* MASSideMenuViewController */,
 				DDED55AC18AF376900E6E843 /* MASFeedViewController */,
 				DDED55A618AF374E00E6E843 /* MASFullPostViewController */,
 				DDED559618AF163300E6E843 /* MASHomeViewController */,
@@ -587,6 +603,9 @@
 		DDED559D18AF244300E6E843 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DD164E6F18B028B3006D7BEF /* menuBackground@2x.png */,
+				DD164E6D18B025D2006D7BEF /* settings@2x.png */,
+				DD164E4A18B025AC006D7BEF /* home@2x.png */,
 				DD164E3C18B00D7D006D7BEF /* menuButton@2x.png */,
 				DD164D9D18AF4F03006D7BEF /* masLogo@2x.png */,
 				93400F5618AFFB1B008530A2 /* plusbutton@2x.png */,
@@ -708,6 +727,7 @@
 				DDED55A518AF2BCF00E6E843 /* facebook@2x.png in Resources */,
 				DD164E1118AFF6B8006D7BEF /* cvc@2x.png in Resources */,
 				DD164E1C18AFF6B8006D7BEF /* visa.png in Resources */,
+				DD164E6E18B025D2006D7BEF /* settings@2x.png in Resources */,
 				DD164E1418AFF6B8006D7BEF /* discover.png in Resources */,
 				DD164E0D18AFF6B8006D7BEF /* amex@2x.png in Resources */,
 				DD164D9E18AF4F03006D7BEF /* masLogo@2x.png in Resources */,
@@ -727,6 +747,7 @@
 				DD164E1B18AFF6B8006D7BEF /* placeholder@2x.png in Resources */,
 				DDED55B918AF3FDF00E6E843 /* twitter-highlighted@2x.png in Resources */,
 				DDED55B118AF377500E6E843 /* MASFeedViewController.xib in Resources */,
+				DD164E4B18B025AC006D7BEF /* home@2x.png in Resources */,
 				844CE28618AFCAC4004E8893 /* MASProfileViewController.xib in Resources */,
 				DDED55B718AF37B000E6E843 /* MASFeedCell.xib in Resources */,
 				DD164E1A18AFF6B8006D7BEF /* placeholder.png in Resources */,
@@ -747,6 +768,7 @@
 				DD164E1F18AFF6B8006D7BEF /* textfield.png in Resources */,
 				84A393CD18AFEF8800DDB4E8 /* MASPaymentViewController.xib in Resources */,
 				84A393EF18B003E600DDB4E8 /* MASDonateViewController.xib in Resources */,
+				DD164E7018B028B3006D7BEF /* menuBackground@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -765,6 +787,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD164E4618B01F72006D7BEF /* RESideMenu.m in Sources */,
 				DD164DFF18AFF6B8006D7BEF /* STPView.m in Sources */,
 				DD164E0818AFF6B8006D7BEF /* PKCardNumber.m in Sources */,
 				DDED55B018AF377500E6E843 /* MASFeedViewController.m in Sources */,
@@ -781,17 +804,18 @@
 				84A734D818AFDD4A000FC694 /* MASSignUpViewController.m in Sources */,
 				DD164E0018AFF6B8006D7BEF /* Stripe.m in Sources */,
 				DD164E0B18AFF6B8006D7BEF /* PKView.m in Sources */,
+				DD164E4718B01F72006D7BEF /* UIViewController+RESideMenu.m in Sources */,
 				DD164DFE18AFF6B8006D7BEF /* STPToken.m in Sources */,
 				93400F5418AFF946008530A2 /* MASAddPostViewController.m in Sources */,
 				DD164E0518AFF6B8006D7BEF /* PKCard.m in Sources */,
 				DD164E0618AFF6B8006D7BEF /* PKCardCVC.m in Sources */,
 				DDED559918AF166000E6E843 /* MASHomeViewController.m in Sources */,
-				93400F4818AFE62B008530A2 /* MASSideMenuViewController.m in Sources */,
 				DD164E0918AFF6B8006D7BEF /* PKTextField.m in Sources */,
 				93400F4D18AFE666008530A2 /* MASMenuViewController.m in Sources */,
 				DD164DFD18AFF6B8006D7BEF /* STPCard.m in Sources */,
 				DD164E0718AFF6B8006D7BEF /* PKCardExpiry.m in Sources */,
 				DD164E0A18AFF6B8006D7BEF /* PKUSAddressZip.m in Sources */,
+				DD164E4518B01F72006D7BEF /* RECommonFunctions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

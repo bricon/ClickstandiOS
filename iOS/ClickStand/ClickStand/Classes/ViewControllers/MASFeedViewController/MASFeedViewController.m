@@ -13,7 +13,7 @@
 #import "MASAddPostViewController.h"
 #import "MASPaymentViewController.h"
 #import "MASDonateViewController.h"
-#import "MASSideMenuViewController.h"
+#import "RESideMenu.h"
 #import "MASAppDelegate.h"
 
 @interface MASFeedViewController ()
@@ -49,11 +49,11 @@
 
 - (void)menuButtonPressed:(id)sender
 {
-    MASSideMenuViewController *sideMenuViewController = ((MASAppDelegate *)[[UIApplication sharedApplication]delegate]).sideMenuViewController;
-    if(sideMenuViewController.menuVisible) {
-        [sideMenuViewController hideMenuController];
+    RESideMenu *sideMenuViewController = ((MASAppDelegate *)[[UIApplication sharedApplication]delegate]).sideMenuViewController;
+    if(sideMenuViewController.visible) {
+        [sideMenuViewController hideMenuViewController];
     } else {
-        [sideMenuViewController presentMenuController];
+        [sideMenuViewController presentMenuViewController];
     }
 }
 
