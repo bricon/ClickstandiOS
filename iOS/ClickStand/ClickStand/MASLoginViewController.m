@@ -9,6 +9,8 @@
 #import "MASLoginViewController.h"
 #import "MASFeedViewController.h"
 #import "MASSignUpViewController.h"
+#import "MASAppDelegate.h"
+#import "MASSideMenuViewController.h"
 
 @implementation MASLoginViewController
 
@@ -54,34 +56,32 @@
                 } else {
                     NSLog(@"Uh oh. An error occurred: %@", error);
                 }
-            } else if (user.isNew) {
-                NSLog(@"User with facebook signed up and logged in!");
-                
-                // Populate the new user's fields TODO: Make this populate the information
-                FBRequest *request = [FBRequest requestForMe];
-                [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
-                    if (!error) {
-                        NSDictionary *userData = (NSDictionary *)result;
-                        
-                        NSString *facebookID = userData[@"id"];
-                        NSString *name = userData[@"name"];
-                        NSString *location = userData[@"location"][@"name"];
-                        NSURL *pictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", facebookID]];
-                        
-                        [user setObject:name forKey:@"name"];
-                        [user setObject:location forKey:@"location"];
-                        [user setObject:pictureURL forKey:@"picture_url"];
-                        
-                        [user save];
-                    }
-                }];
-                
-                self.feedViewController = [[MASFeedViewController alloc] initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]];
-                [self presentViewController:self.feedViewController animated:YES completion:nil];
             } else {
-                NSLog(@"User with facebook logged in!");
-                self.feedViewController = [[MASFeedViewController alloc] initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]];
-                [self presentViewController:self.feedViewController animated:YES completion:nil];
+                if (user.isNew) {
+                    NSLog(@"User with facebook signed up and logged in!");
+                
+                    // Populate the new user's fields TODO: Make this populate the information
+                    FBRequest *request = [FBRequest requestForMe];
+                    [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+                        if (!error) {
+                            NSDictionary *userData = (NSDictionary *)result;
+                        
+                            NSString *facebookID = userData[@"id"];
+                            NSString *name = userData[@"name"];
+                            NSString *location = userData[@"location"][@"name"];
+                            NSURL *pictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", facebookID]];
+                        
+                            [user setObject:name forKey:@"name"];
+                            [user setObject:location forKey:@"location"];
+                            [user setObject:pictureURL forKey:@"picture_url"];
+                        
+                            [user save];
+                        }
+                    }];
+                } else {
+                    NSLog(@"User with facebook logged in!");
+                }
+                [self presentSideMenuViewController];
             }
         }];
 
@@ -92,17 +92,13 @@
             if (!user) {
                 NSLog(@"Uh oh. The user cancelled the Twitter login.");
                 return;
-            } else if (user.isNew) {
-                NSLog(@"User signed up and logged in with Twitter!");
-                
-                // TODO: Populate Account w/ Information
-                self.feedViewController = [[MASFeedViewController alloc] initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]];
-                [self presentViewController:self.feedViewController animated:YES completion:nil];
             } else {
-                NSLog(@"User logged in with Twitter!");
-                self.feedViewController = [[MASFeedViewController alloc] initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]];
-                [self presentViewController:self.feedViewController animated:YES completion:nil];
-            }     
+                if (user.isNew) {
+                    NSLog(@"User signed up and logged in with Twitter!");
+                }
+                
+                
+            }
         }];
     } else if(sender == self.loginButton) {
         NSLog(@"login button pressed");
@@ -112,8 +108,7 @@
         [PFUser logInWithUsernameInBackground:username password:password
             block:^(PFUser *user, NSError *error) {
                 if (user) {
-                    self.feedViewController = [[MASFeedViewController alloc] initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]];
-                    [self presentViewController:self.feedViewController animated:YES completion:nil];
+                    [self presentSideMenuViewController];
                 } else {
                     // TODO: Print a better error message when the login fails
                 }
@@ -142,12 +137,6 @@
     }];
 }
 
-- (IBAction)didEndEditingTextField:(UITextField *)sender
-{
-//    [self resetViewFrame];
-//    [self.view endEditing:YES];
-}
-
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
@@ -166,10 +155,15 @@
 {
     [self.signUpViewController dismissViewControllerAnimated:YES completion:^ {
         if ([PFUser currentUser]) {
-            self.feedViewController = [[MASFeedViewController alloc] initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]];
-            [self presentViewController:self.feedViewController animated:YES completion:nil];
+            [self presentSideMenuViewController];
         }
     }];
+}
+
+- (void)presentSideMenuViewController
+{
+    MASSideMenuViewController *sideMenuViewController = ((MASAppDelegate *)[[UIApplication sharedApplication]delegate]).sideMenuViewController;
+    [self presentViewController:sideMenuViewController animated:YES completion:nil];
 }
 
 @end

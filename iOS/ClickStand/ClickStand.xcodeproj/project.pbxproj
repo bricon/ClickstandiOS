@@ -551,8 +551,8 @@
 			isa = PBXGroup;
 			children = (
 				84A734DA18AFDD63000FC694 /* MASLoginViewController.xib */,
-				84A734DB18AFDD63000FC694 /* MASLoginViewController.m */,
 				84A734DC18AFDD63000FC694 /* MASLoginViewController.h */,
+				84A734DB18AFDD63000FC694 /* MASLoginViewController.m */,
 			);
 			name = MASLoginViewController;
 			sourceTree = "<group>";

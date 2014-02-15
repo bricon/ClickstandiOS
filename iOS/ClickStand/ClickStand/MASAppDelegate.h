@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class MASSideMenuViewController;
+
 @interface MASAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) MASSideMenuViewController *sideMenuViewController;
 @end
