@@ -11,6 +11,6 @@
 @interface MASFeedViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property PFQuery * feedData;
+@property NSArray * feedData;
 
 @end

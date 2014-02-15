@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		844CE27D18AF5733004E8893 /* boomerang1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 844CE27C18AF5733004E8893 /* boomerang1.jpg */; };
 		844CE28118AF5D9E004E8893 /* puppy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 844CE28018AF5D9E004E8893 /* puppy.jpg */; };
+		844CE28518AFCAC4004E8893 /* MASProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CE28318AFCAC4004E8893 /* MASProfileViewController.m */; };
+		844CE28618AFCAC4004E8893 /* MASProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844CE28418AFCAC4004E8893 /* MASProfileViewController.xib */; };
 		9316D28F18AF0200001F1646 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9316D28E18AF0200001F1646 /* FacebookSDK.framework */; };
 		DD164D9E18AF4F03006D7BEF /* masLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164D9D18AF4F03006D7BEF /* masLogo@2x.png */; };
 		DDED554A18AEF2A300E6E843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554918AEF2A300E6E843 /* Foundation.framework */; };
@@ -61,6 +63,9 @@
 /* Begin PBXFileReference section */
 		844CE27C18AF5733004E8893 /* boomerang1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boomerang1.jpg; sourceTree = "<group>"; };
 		844CE28018AF5D9E004E8893 /* puppy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppy.jpg; sourceTree = "<group>"; };
+		844CE28218AFCAC4004E8893 /* MASProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASProfileViewController.h; sourceTree = "<group>"; };
+		844CE28318AFCAC4004E8893 /* MASProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASProfileViewController.m; sourceTree = "<group>"; };
+		844CE28418AFCAC4004E8893 /* MASProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASProfileViewController.xib; sourceTree = "<group>"; };
 		9316D28C18AEFDBC001F1646 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = SOURCE_ROOT; };
 		9316D28E18AF0200001F1646 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		DD164D9D18AF4F03006D7BEF /* masLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "masLogo@2x.png"; path = "Assets/Images/masLogo@2x.png"; sourceTree = "<group>"; };
@@ -144,6 +149,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		844CE28718AFCAC8004E8893 /* MASProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				844CE28218AFCAC4004E8893 /* MASProfileViewController.h */,
+				844CE28318AFCAC4004E8893 /* MASProfileViewController.m */,
+				844CE28418AFCAC4004E8893 /* MASProfileViewController.xib */,
+			);
+			name = MASProfileViewController;
+			sourceTree = "<group>";
+		};
 		DDED553D18AEF2A200E6E843 = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +276,7 @@
 				DDED55A618AF374E00E6E843 /* MASFullPostViewController */,
 				DDED559618AF163300E6E843 /* MASHomeViewController */,
 				DDED559218AF14BB00E6E843 /* MASLoginViewController */,
+				844CE28718AFCAC8004E8893 /* MASProfileViewController */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -426,6 +442,7 @@
 				DDED559B18AF1F2600E6E843 /* MASLoginViewController.xib in Resources */,
 				DDED55B918AF3FDF00E6E843 /* twitter-highlighted@2x.png in Resources */,
 				DDED55B118AF377500E6E843 /* MASFeedViewController.xib in Resources */,
+				844CE28618AFCAC4004E8893 /* MASProfileViewController.xib in Resources */,
 				DDED55B718AF37B000E6E843 /* MASFeedCell.xib in Resources */,
 				844CE27D18AF5733004E8893 /* boomerang1.jpg in Resources */,
 				DDED555418AEF2A300E6E843 /* InfoPlist.strings in Resources */,
@@ -455,6 +472,7 @@
 				DDED55AA18AF376000E6E843 /* MASFullPostViewController.m in Sources */,
 				DDED55B618AF37B000E6E843 /* MASFeedCell.m in Sources */,
 				DDED555618AEF2A300E6E843 /* main.m in Sources */,
+				844CE28518AFCAC4004E8893 /* MASProfileViewController.m in Sources */,
 				DDED559918AF166000E6E843 /* MASHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

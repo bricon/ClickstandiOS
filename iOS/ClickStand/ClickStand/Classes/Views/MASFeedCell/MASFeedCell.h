@@ -15,5 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *stands;
 @property (weak, nonatomic) IBOutlet UILabel *dollars;
 @property (weak, nonatomic) IBOutlet UITextView *description;
+- (IBAction)donate:(id)sender;
+- (IBAction)comment:(id)sender;
 
 @end

@@ -15,6 +15,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     
     // Parse ID and Key. Change after handing over to Clickstand
@@ -36,6 +37,7 @@
         self.window.rootViewController = [[MASLoginViewController alloc]initWithNibName:@"MASLoginViewController"
                                                                                  bundle:[NSBundle mainBundle]];
     }
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

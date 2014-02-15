@@ -11,6 +11,9 @@
 @interface MASFullPostViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIImageView *image;
+@property (weak, nonatomic) IBOutlet UITextView *description;
+@property (weak, nonatomic) IBOutlet UIImageView *userImage;
+@property (strong, nonatomic) NSString * userID;
 
 //TODO: comyar, you can make stuff look pretty by dragging or dropping or programatically, whatever your feels are.
 

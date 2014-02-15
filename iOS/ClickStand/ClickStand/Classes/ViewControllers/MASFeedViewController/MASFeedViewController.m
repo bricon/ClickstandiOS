@@ -8,6 +8,8 @@
 
 #import "MASFeedViewController.h"
 #import "MASFeedCell.h"
+#import "MASFullPostViewController.h"
+#import "MASProfileViewController.h"
 
 @interface MASFeedViewController ()
 
@@ -40,12 +42,10 @@
         return;
     }
     
-    // Query to get all posts by current user
-    PFQuery *postsFromCurrentUser = [PFQuery queryWithClassName:@"Post"];
-    [postsFromCurrentUser whereKey:@"createdBy" equalTo:[PFUser currentUser]];
-    [postsFromCurrentUser orderByDescending:@"createdAt"];
-    self.feedData = postsFromCurrentUser;
-    NSLog(@"feedData : %@", self.feedData);
+    
+    //get all posts
+    [self getFeedDataFromParse];
+    
     
     
 }
@@ -56,12 +56,33 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)getFeedDataFromParse{
+    //get all posts
+    PFQuery *query = [PFQuery queryWithClassName:@"Post"];
+    [query setLimit:1000];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded.
+            NSLog(@"Successfully retrieved %lu posts.", (unsigned long)objects.count);
+            self.feedData = objects;
+            
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+}
+
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    //TODO: change to pull actual feed
-    return 5;
+    if (self.feedData.count ==0){
+        NSLog(@"yo nothing is populated");
+        return 5;
+    }
+    return self.feedData.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -76,15 +97,46 @@
         cell = [nib objectAtIndex:0];
     }
     
+    //add parse data into cell
+    //commented out because no posts have been made
+    //NSDictionary * post = self.feedData[indexPath.row];
+    
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedMainImage)];
+    singleTap.numberOfTapsRequired = 1;
+    cell.image.userInteractionEnabled = YES;
+    [cell.image addGestureRecognizer:singleTap];
+    //add post ID tag so we can get post info in the next view
+    
+    UITapGestureRecognizer *profileTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedProfileImage)];
+    profileTap.numberOfTapsRequired = 1;
+    cell.userImage.userInteractionEnabled = YES;
+    [cell.userImage addGestureRecognizer:profileTap];
+    //add user ID tag so we can get profile info in the next view
     
     return cell;
 
 }
 
+-(void)tapDetectedMainImage{
+    NSLog(@"single Tap on imageview");
+    //load full post page
+    MASFullPostViewController * fullPostViewController = [[MASFullPostViewController alloc] init];
+    [self.navigationController pushViewController:fullPostViewController animated:YES];
+
+    
+}
+
+-(void)tapDetectedProfileImage{
+    NSLog(@"single tap on profile image");
+    //load profile
+    MASProfileViewController * profileViewController = [[MASProfileViewController alloc] init];
+    [self.navigationController pushViewController:profileViewController animated:YES];
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //TODO: modify height to message length
-    return 460;
+    return 500;
 }
 
 
