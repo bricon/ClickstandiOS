@@ -14,7 +14,7 @@
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     if(self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        self.view.backgroundColor = [UIColor blackColor];
+        
     }
     return self;
 }
@@ -26,6 +26,14 @@
                               forState:UIControlStateHighlighted];
     [self.twitterLoginButton setImage:[UIImage imageNamed:@"twitter-highlighted"]
                              forState:UIControlStateHighlighted];
+    self.usernameTextField.delegate = self;
+    self.passwordTextField.delegate = self;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self resetViewFrame];
+    [self.view endEditing:YES];
 }
 
 - (IBAction)didTouchUpInsideButton:(UIButton *)sender
@@ -56,6 +64,40 @@
 
     } else if(sender == self.twitterLoginButton) {
         // TODO Login with Twitter
+        NSLog(@"twitter button pressed");
+    } else if(sender == self.loginButton) {
+        NSLog(@"login button pressed");
+    } else if(sender == self.forgotPasswordButton) {
+        NSLog(@"forgot password button pressed");
+    } else if(sender == self.signupButton) {
+        NSLog(@"sign up button pressed");
     }
+}
+
+- (IBAction)didBeginEditingTextField:(UITextField *)sender
+{
+    [UIView animateWithDuration:0.3 animations: ^ {
+        self.view.frame = CGRectMake(0, -164, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
+    }];
+}
+
+- (IBAction)didEndEditingTextField:(UITextField *)sender
+{
+//    [self resetViewFrame];
+//    [self.view endEditing:YES];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    [self resetViewFrame];
+    return YES;
+}
+
+- (void)resetViewFrame
+{
+    [UIView animateWithDuration:0.3 animations: ^ {
+        self.view.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
+    }];
 }
 @end
