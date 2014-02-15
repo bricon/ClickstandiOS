@@ -22,5 +22,5 @@ parseExamples
 
 
 # More shtuff
-*.xcodeproj/xcuserdata/*.xcuserdatad
-*.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad
+*.xcodeproj/xcuserdata/*.xcuserdata
+*.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdata

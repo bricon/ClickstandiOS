@@ -10,6 +10,8 @@
 #import "MASLoginViewController.h"
 #import "MASHomeViewController.h"
 #import "MASFeedViewController.h"
+#import "MASMenuViewController.h"
+#import "MASSideMenuViewController.h"
 
 @implementation MASAppDelegate
 
@@ -31,8 +33,11 @@
     
     // Initialize root view controller
     if ([PFUser currentUser]) {     // If the user is currently logged in skip the login page
+        MASMenuViewController *menuViewController = [[MASMenuViewController alloc]initWithNibName:@"MASMenuViewController"
+                                                                                           bundle:[NSBundle mainBundle]];
         UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:[[MASFeedViewController alloc]initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]]];
-        self.window.rootViewController = navigationController;
+        self.window.rootViewController = [[MASSideMenuViewController alloc]initWithContentController:navigationController
+                                                                                      menuController:menuViewController];
     } else {
         self.window.rootViewController = [[MASLoginViewController alloc]initWithNibName:@"MASLoginViewController"
                                                                                  bundle:[NSBundle mainBundle]];
