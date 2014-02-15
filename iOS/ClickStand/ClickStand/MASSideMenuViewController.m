@@ -79,10 +79,8 @@
     [self.view.window endEditing:YES];
     
     [UIView animateWithDuration:0.3f animations:^{
-        self.contentController.view.center = CGPointMake(CGRectGetWidth(self.view.bounds), self.view.center.y);
+        self.contentController.view.center = CGPointMake(1.25 * CGRectGetWidth(self.view.bounds), self.view.center.y);
         self.menuController.view.alpha = 1.0f;
-        self.menuController.view.transform = CGAffineTransformIdentity;
-//        self.backgroundImageView.transform = CGAffineTransformIdentity;
         
     } completion:^(BOOL finished) {
         [self configureMotionEffectsForViewController:self.contentController];
@@ -122,14 +120,10 @@
         self.backgroundImageView.frame = self.view.bounds;
         self.menuController.view.frame = self.view.bounds;
         [self.view.window endEditing:YES];
-    }
-    
-    if (gestureRecognizer.state == UIGestureRecognizerStateBegan || gestureRecognizer.state == UIGestureRecognizerStateChanged) {
+    } else if (gestureRecognizer.state == UIGestureRecognizerStateChanged) {
         CGFloat delta = self.menuVisible ? (point.x + originalPoint.x) / originalPoint.x : point.x / self.view.frame.size.width;
         self.contentController.view.transform = CGAffineTransformTranslate(self.contentController.view.transform, delta, 0);
-    }
-    
-    if (gestureRecognizer.state == UIGestureRecognizerStateEnded) {
+    } else if (gestureRecognizer.state == UIGestureRecognizerStateEnded) {
         if ([gestureRecognizer velocityInView:self.view].x > 0) {
             [self presentMenuController];
         } else {

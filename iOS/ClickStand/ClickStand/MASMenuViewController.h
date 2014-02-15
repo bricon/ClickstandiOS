@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MASMenuViewController : UIViewController
+@interface MASMenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *menuTableView;
 
 @end
