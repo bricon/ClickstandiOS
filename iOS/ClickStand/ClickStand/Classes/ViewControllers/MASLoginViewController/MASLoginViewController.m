@@ -14,7 +14,7 @@
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     if(self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        
+        self.view.backgroundColor = [UIColor blackColor];
     }
     return self;
 }
@@ -24,6 +24,8 @@
     [super viewDidLoad];
     [self.facebookLoginButton setImage:[UIImage imageNamed:@"facebook-highlighted"]
                               forState:UIControlStateHighlighted];
+    [self.twitterLoginButton setImage:[UIImage imageNamed:@"twitter-highlighted"]
+                             forState:UIControlStateHighlighted];
 }
 
 - (IBAction)didTouchUpInsideButton:(UIButton *)sender

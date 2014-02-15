@@ -30,9 +30,9 @@
     
     // Initialize root view controller
     {
-        self.window.rootViewController = [MASLoginViewController new];
         if ([PFUser currentUser]) {     // If the user is currently logged in skip the login page
-            self.window.rootViewController = [[MASFeedViewController alloc] initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]];
+            self.window.rootViewController = [[MASFeedViewController alloc]initWithNibName:@"MASFeedViewController"
+                                                                                     bundle:[NSBundle mainBundle]];
         } else {
             self.window.rootViewController = [[MASHomeViewController alloc]initWithNibName:nil bundle:nil];
         }
