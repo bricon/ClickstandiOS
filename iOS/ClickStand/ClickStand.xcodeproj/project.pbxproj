@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9316D28D18AEFDBC001F1646 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9316D28C18AEFDBC001F1646 /* Parse.framework */; };
 		DDED554A18AEF2A300E6E843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554918AEF2A300E6E843 /* Foundation.framework */; };
 		DDED554C18AEF2A300E6E843 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554B18AEF2A300E6E843 /* CoreGraphics.framework */; };
 		DDED554E18AEF2A300E6E843 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554D18AEF2A300E6E843 /* UIKit.framework */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9316D28C18AEFDBC001F1646 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		DDED554618AEF2A300E6E843 /* ClickStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDED554918AEF2A300E6E843 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DDED554B18AEF2A300E6E843 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +57,7 @@
 			files = (
 				DDED554C18AEF2A300E6E843 /* CoreGraphics.framework in Frameworks */,
 				DDED554E18AEF2A300E6E843 /* UIKit.framework in Frameworks */,
+				9316D28D18AEFDBC001F1646 /* Parse.framework in Frameworks */,
 				DDED554A18AEF2A300E6E843 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +97,7 @@
 		DDED554818AEF2A300E6E843 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9316D28C18AEFDBC001F1646 /* Parse.framework */,
 				DDED554918AEF2A300E6E843 /* Foundation.framework */,
 				DDED554B18AEF2A300E6E843 /* CoreGraphics.framework */,
 				DDED554D18AEF2A300E6E843 /* UIKit.framework */,
@@ -396,6 +400,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/matthewebeweber/Documents/clickstand/iOS/ClickStand,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClickStand/ClickStand-Prefix.pch";
 				INFOPLIST_FILE = "ClickStand/ClickStand-Info.plist";
@@ -409,6 +417,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/matthewebeweber/Documents/clickstand/iOS/ClickStand,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClickStand/ClickStand-Prefix.pch";
 				INFOPLIST_FILE = "ClickStand/ClickStand-Info.plist";
@@ -478,6 +490,7 @@
 				DDED557418AEF2A300E6E843 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDED557518AEF2A300E6E843 /* Build configuration list for PBXNativeTarget "ClickStandTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +499,7 @@
 				DDED557718AEF2A300E6E843 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
