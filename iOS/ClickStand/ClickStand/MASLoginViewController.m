@@ -165,7 +165,7 @@
 - (void)dismissSignUpViewController
 {
     [self.signUpViewController dismissViewControllerAnimated:YES completion:^ {
-        if ([PFUser user]) {
+        if ([PFUser currentUser]) {
             self.feedViewController = [[MASFeedViewController alloc] initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]];
             [self presentViewController:self.feedViewController animated:YES completion:nil];
         }
