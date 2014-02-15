@@ -10,4 +10,20 @@
 
 @implementation MASLoginViewController
 
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    if(self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        
+    }
+    return self;
+}
+
+- (IBAction)didTouchUpInsideButton:(UIButton *)sender
+{
+    if(sender == self.facebookLoginButton) {
+        // TODO Login with Facebook
+    } else if(sender == self.twitterLoginButton) {
+        // TODO Login with Twitter
+    }
+}
 @end

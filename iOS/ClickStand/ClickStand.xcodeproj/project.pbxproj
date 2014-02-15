@@ -31,6 +31,9 @@
 		DDED559018AF0EB300E6E843 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED558F18AF0EB300E6E843 /* SystemConfiguration.framework */; };
 		DDED559518AF14F600E6E843 /* MASLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED559418AF14F600E6E843 /* MASLoginViewController.m */; };
 		DDED559918AF166000E6E843 /* MASHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED559818AF166000E6E843 /* MASHomeViewController.m */; };
+		DDED559B18AF1F2600E6E843 /* MASLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDED559A18AF1F2600E6E843 /* MASLoginView.xib */; };
+		DDED559F18AF247300E6E843 /* facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDED559E18AF247300E6E843 /* facebook@2x.png */; };
+		DDED55A118AF254F00E6E843 /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDED55A018AF254F00E6E843 /* twitter@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		DDED559418AF14F600E6E843 /* MASLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASLoginViewController.m; path = Classes/ViewControllers/MASLoginViewController/MASLoginViewController.m; sourceTree = "<group>"; };
 		DDED559718AF166000E6E843 /* MASHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASHomeViewController.h; path = Classes/ViewControllers/MASHomeViewController/MASHomeViewController.h; sourceTree = "<group>"; };
 		DDED559818AF166000E6E843 /* MASHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASHomeViewController.m; path = Classes/ViewControllers/MASHomeViewController/MASHomeViewController.m; sourceTree = "<group>"; };
+		DDED559A18AF1F2600E6E843 /* MASLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MASLoginView.xib; path = Classes/ViewControllers/MASLoginViewController/MASLoginView.xib; sourceTree = "<group>"; };
+		DDED559E18AF247300E6E843 /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "facebook@2x.png"; path = "Assets/Images/facebook@2x.png"; sourceTree = "<group>"; };
+		DDED55A018AF254F00E6E843 /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twitter@2x.png"; path = "Assets/Images/twitter@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,7 @@
 		DDED554F18AEF2A300E6E843 /* ClickStand */ = {
 			isa = PBXGroup;
 			children = (
+				DDED559C18AF243A00E6E843 /* Assets */,
 				DDED557818AEF2F900E6E843 /* Classes */,
 				DDED555018AEF2A300E6E843 /* Supporting Files */,
 			);
@@ -238,6 +245,7 @@
 			children = (
 				DDED559318AF14F600E6E843 /* MASLoginViewController.h */,
 				DDED559418AF14F600E6E843 /* MASLoginViewController.m */,
+				DDED559A18AF1F2600E6E843 /* MASLoginView.xib */,
 			);
 			name = MASLoginViewController;
 			sourceTree = "<group>";
@@ -249,6 +257,23 @@
 				DDED559818AF166000E6E843 /* MASHomeViewController.m */,
 			);
 			name = MASHomeViewController;
+			sourceTree = "<group>";
+		};
+		DDED559C18AF243A00E6E843 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DDED559D18AF244300E6E843 /* Images */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		DDED559D18AF244300E6E843 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DDED55A018AF254F00E6E843 /* twitter@2x.png */,
+				DDED559E18AF247300E6E843 /* facebook@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +352,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDED559B18AF1F2600E6E843 /* MASLoginView.xib in Resources */,
+				DDED559F18AF247300E6E843 /* facebook@2x.png in Resources */,
+				DDED55A118AF254F00E6E843 /* twitter@2x.png in Resources */,
 				DDED555418AEF2A300E6E843 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

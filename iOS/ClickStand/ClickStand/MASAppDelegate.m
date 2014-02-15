@@ -8,14 +8,13 @@
 
 #import "MASAppDelegate.h"
 #import "MASLoginViewController.h"
+#import "MASHomeViewController.h"
 
 @implementation MASAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
     
     // Parse ID and Key. Change after handing over to Clickstand
     [Parse setApplicationId:@"hxjc7PsqUeQww2KZSMfMp3ZhFajFZHCT0JIPeR1t"
@@ -29,9 +28,14 @@
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     // Initialize root view controller
-    // TODO Determine if user is logged-in
-    
-    
+    {
+        self.window.rootViewController = [MASLoginViewController new];
+        // TODO check if user is logged in
+        {
+//            self.window.rootViewController = [[MASHomeViewController alloc]initWithNibName:nil bundle:nil];
+        }
+    }
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

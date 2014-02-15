@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MASLoginViewController : PFLogInViewController
+@interface MASLoginViewController : UIViewController
+
+- (IBAction)didTouchUpInsideButton:(UIButton *)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *facebookLoginButton;
+@property (weak, nonatomic) IBOutlet UIButton *twitterLoginButton;
+
+
 
 @end
