@@ -30,6 +30,26 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:true];
+    //make call to update the table
+    
+    // If the user is not logged in we simply return nothing
+    if (![PFUser currentUser]) {
+        return;
+    }
+    
+    // Query to get all posts by current user
+    PFQuery *postsFromCurrentUser = [PFQuery queryWithClassName:@"Post"];
+    [postsFromCurrentUser whereKey:@"createdBy" equalTo:[PFUser currentUser]];
+    [postsFromCurrentUser orderByDescending:@"createdAt"];
+    self.feedData = postsFromCurrentUser;
+    NSLog(@"feedData : %@", self.feedData);
+    
+    
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -59,6 +79,12 @@
     
     return cell;
 
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //TODO: modify height to message length
+    return 460;
 }
 
 

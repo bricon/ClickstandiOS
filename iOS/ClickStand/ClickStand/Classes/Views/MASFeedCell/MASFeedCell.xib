@@ -13,11 +13,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="426"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOT-Pj-uAK">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puppy.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KOT-Pj-uAK">
                         <rect key="frame" x="23" y="66" width="277" height="266"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H7B-E7-ko8">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boomerang1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="H7B-E7-ko8">
                         <rect key="frame" x="20" y="13" width="45" height="40"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
@@ -60,4 +60,8 @@
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="boomerang1.jpg" width="2048" height="1536"/>
+        <image name="puppy.jpg" width="960" height="960"/>
+    </resources>
 </document>
