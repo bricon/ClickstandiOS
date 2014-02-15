@@ -29,6 +29,7 @@
     [super viewDidLoad];
     self.menuTableView.dataSource = self;
     self.menuTableView.delegate = self;
+    self.menuTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 #pragma mark - UITableViewDataSource Methods
@@ -38,11 +39,24 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MASMenuTableViewCell"];
     if(!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MASMenuTableViewCell"];
+        cell.backgroundColor = [UIColor clearColor];
+        cell.textLabel.textColor = [UIColor lightGrayColor];
+        cell.selectionStyle = UITableViewCellSelectionStyleGray;
     }
     
     cell.textLabel.text = self.menuOptions[indexPath.section][indexPath.row];
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if(section == 0) {
+        return 64.0;
+    } else if(section == 1) {
+        return 320.0;
+    }
+    return 0.0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

@@ -14,7 +14,7 @@
 - (void)presentMenuController;
 - (void)hideMenuController;
 
-@property (strong, nonatomic) UIImage                       *backgroundImage;
+@property (assign, nonatomic, readonly) BOOL                menuVisible;
 @property (strong, nonatomic, readonly) UIViewController    *contentController;
 @property (strong, nonatomic, readonly) UIViewController    *menuController;
 
