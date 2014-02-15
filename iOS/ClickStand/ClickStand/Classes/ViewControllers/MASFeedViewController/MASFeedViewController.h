@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MASAddPostViewController.h>
 
-@interface MASFeedViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface MASFeedViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, MASAddPostViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (strong, nonatomic) MASAddPostViewController *addPostViewController;
+
 @property NSArray * feedData;
 
 @end

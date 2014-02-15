@@ -10,6 +10,7 @@
 #import "MASFeedCell.h"
 #import "MASFullPostViewController.h"
 #import "MASProfileViewController.h"
+#import "MASAddPostViewController.h"
 
 @interface MASFeedViewController ()
 
@@ -21,7 +22,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        ///Users/matthewebeweber/Documents/clickstand/iOS/ClickStand/ClickStand/MASAddPostViewController.m Custom initialization
     }
     return self;
 }
@@ -42,7 +43,14 @@
 
 -(void)plusButtonPressed:(id)sender
 {
-    
+    self.addPostViewController = [[MASAddPostViewController alloc] init];
+    self.addPostViewController.delegate = self;
+    [self presentViewController:self.addPostViewController animated:YES completion:nil];
+}
+
+-(void)dismissAddPostViewController
+{
+    [self.addPostViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(void)viewWillAppear:(BOOL)animated
