@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDED554A18AEF2A300E6E843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554918AEF2A300E6E843 /* Foundation.framework */; };
+		DDED554C18AEF2A300E6E843 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554B18AEF2A300E6E843 /* CoreGraphics.framework */; };
+		DDED554E18AEF2A300E6E843 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554D18AEF2A300E6E843 /* UIKit.framework */; };
+		DDED555418AEF2A300E6E843 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDED555218AEF2A300E6E843 /* InfoPlist.strings */; };
+		DDED555618AEF2A300E6E843 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED555518AEF2A300E6E843 /* main.m */; };
+		DDED555A18AEF2A300E6E843 /* MASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED555918AEF2A300E6E843 /* MASAppDelegate.m */; };
+		DDED556318AEF2A300E6E843 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED556218AEF2A300E6E843 /* XCTest.framework */; };
+		DDED556418AEF2A300E6E843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554918AEF2A300E6E843 /* Foundation.framework */; };
+		DDED556518AEF2A300E6E843 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554D18AEF2A300E6E843 /* UIKit.framework */; };
+		DDED556D18AEF2A300E6E843 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDED556B18AEF2A300E6E843 /* InfoPlist.strings */; };
+		DDED556F18AEF2A300E6E843 /* ClickStandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED556E18AEF2A300E6E843 /* ClickStandTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDED556618AEF2A300E6E843 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDED553E18AEF2A200E6E843 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDED554518AEF2A200E6E843;
+			remoteInfo = ClickStand;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDED554618AEF2A300E6E843 /* ClickStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDED554918AEF2A300E6E843 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DDED554B18AEF2A300E6E843 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DDED554D18AEF2A300E6E843 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DDED555118AEF2A300E6E843 /* ClickStand-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClickStand-Info.plist"; sourceTree = "<group>"; };
+		DDED555318AEF2A300E6E843 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDED555518AEF2A300E6E843 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDED555718AEF2A300E6E843 /* ClickStand-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClickStand-Prefix.pch"; sourceTree = "<group>"; };
+		DDED555818AEF2A300E6E843 /* MASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASAppDelegate.h; sourceTree = "<group>"; };
+		DDED555918AEF2A300E6E843 /* MASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASAppDelegate.m; sourceTree = "<group>"; };
+		DDED556118AEF2A300E6E843 /* ClickStandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickStandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDED556218AEF2A300E6E843 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DDED556A18AEF2A300E6E843 /* ClickStandTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClickStandTests-Info.plist"; sourceTree = "<group>"; };
+		DDED556C18AEF2A300E6E843 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDED556E18AEF2A300E6E843 /* ClickStandTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickStandTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDED554318AEF2A200E6E843 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDED554C18AEF2A300E6E843 /* CoreGraphics.framework in Frameworks */,
+				DDED554E18AEF2A300E6E843 /* UIKit.framework in Frameworks */,
+				DDED554A18AEF2A300E6E843 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDED555E18AEF2A300E6E843 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDED556318AEF2A300E6E843 /* XCTest.framework in Frameworks */,
+				DDED556518AEF2A300E6E843 /* UIKit.framework in Frameworks */,
+				DDED556418AEF2A300E6E843 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDED553D18AEF2A200E6E843 = {
+			isa = PBXGroup;
+			children = (
+				DDED554F18AEF2A300E6E843 /* ClickStand */,
+				DDED556818AEF2A300E6E843 /* ClickStandTests */,
+				DDED554818AEF2A300E6E843 /* Frameworks */,
+				DDED554718AEF2A300E6E843 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDED554718AEF2A300E6E843 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDED554618AEF2A300E6E843 /* ClickStand.app */,
+				DDED556118AEF2A300E6E843 /* ClickStandTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDED554818AEF2A300E6E843 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDED554918AEF2A300E6E843 /* Foundation.framework */,
+				DDED554B18AEF2A300E6E843 /* CoreGraphics.framework */,
+				DDED554D18AEF2A300E6E843 /* UIKit.framework */,
+				DDED556218AEF2A300E6E843 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDED554F18AEF2A300E6E843 /* ClickStand */ = {
+			isa = PBXGroup;
+			children = (
+				DDED557818AEF2F900E6E843 /* Classes */,
+				DDED555018AEF2A300E6E843 /* Supporting Files */,
+			);
+			path = ClickStand;
+			sourceTree = "<group>";
+		};
+		DDED555018AEF2A300E6E843 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDED555118AEF2A300E6E843 /* ClickStand-Info.plist */,
+				DDED555218AEF2A300E6E843 /* InfoPlist.strings */,
+				DDED555518AEF2A300E6E843 /* main.m */,
+				DDED555718AEF2A300E6E843 /* ClickStand-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDED556818AEF2A300E6E843 /* ClickStandTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDED556E18AEF2A300E6E843 /* ClickStandTests.m */,
+				DDED556918AEF2A300E6E843 /* Supporting Files */,
+			);
+			path = ClickStandTests;
+			sourceTree = "<group>";
+		};
+		DDED556918AEF2A300E6E843 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDED556A18AEF2A300E6E843 /* ClickStandTests-Info.plist */,
+				DDED556B18AEF2A300E6E843 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDED557818AEF2F900E6E843 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DDED557918AEF2FE00E6E843 /* AppDelegate */,
+				DDED557C18AEF30C00E6E843 /* Model */,
+				DDED557A18AEF30400E6E843 /* Views */,
+				DDED557B18AEF30800E6E843 /* ViewControllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		DDED557918AEF2FE00E6E843 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DDED555818AEF2A300E6E843 /* MASAppDelegate.h */,
+				DDED555918AEF2A300E6E843 /* MASAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DDED557A18AEF30400E6E843 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DDED557B18AEF30800E6E843 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DDED557C18AEF30C00E6E843 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDED554518AEF2A200E6E843 /* ClickStand */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDED557218AEF2A300E6E843 /* Build configuration list for PBXNativeTarget "ClickStand" */;
+			buildPhases = (
+				DDED554218AEF2A200E6E843 /* Sources */,
+				DDED554318AEF2A200E6E843 /* Frameworks */,
+				DDED554418AEF2A200E6E843 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClickStand;
+			productName = ClickStand;
+			productReference = DDED554618AEF2A300E6E843 /* ClickStand.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDED556018AEF2A300E6E843 /* ClickStandTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDED557518AEF2A300E6E843 /* Build configuration list for PBXNativeTarget "ClickStandTests" */;
+			buildPhases = (
+				DDED555D18AEF2A300E6E843 /* Sources */,
+				DDED555E18AEF2A300E6E843 /* Frameworks */,
+				DDED555F18AEF2A300E6E843 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDED556718AEF2A300E6E843 /* PBXTargetDependency */,
+			);
+			name = ClickStandTests;
+			productName = ClickStandTests;
+			productReference = DDED556118AEF2A300E6E843 /* ClickStandTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDED553E18AEF2A200E6E843 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MAS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Comyar Zaheri";
+				TargetAttributes = {
+					DDED556018AEF2A300E6E843 = {
+						TestTargetID = DDED554518AEF2A200E6E843;
+					};
+				};
+			};
+			buildConfigurationList = DDED554118AEF2A200E6E843 /* Build configuration list for PBXProject "ClickStand" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DDED553D18AEF2A200E6E843;
+			productRefGroup = DDED554718AEF2A300E6E843 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDED554518AEF2A200E6E843 /* ClickStand */,
+				DDED556018AEF2A300E6E843 /* ClickStandTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDED554418AEF2A200E6E843 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDED555418AEF2A300E6E843 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDED555F18AEF2A300E6E843 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDED556D18AEF2A300E6E843 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDED554218AEF2A200E6E843 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDED555A18AEF2A300E6E843 /* MASAppDelegate.m in Sources */,
+				DDED555618AEF2A300E6E843 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDED555D18AEF2A300E6E843 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDED556F18AEF2A300E6E843 /* ClickStandTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDED556718AEF2A300E6E843 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDED554518AEF2A200E6E843 /* ClickStand */;
+			targetProxy = DDED556618AEF2A300E6E843 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDED555218AEF2A300E6E843 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDED555318AEF2A300E6E843 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DDED556B18AEF2A300E6E843 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDED556C18AEF2A300E6E843 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDED557018AEF2A300E6E843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DDED557118AEF2A300E6E843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDED557318AEF2A300E6E843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClickStand/ClickStand-Prefix.pch";
+				INFOPLIST_FILE = "ClickStand/ClickStand-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DDED557418AEF2A300E6E843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClickStand/ClickStand-Prefix.pch";
+				INFOPLIST_FILE = "ClickStand/ClickStand-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DDED557618AEF2A300E6E843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ClickStand.app/ClickStand";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClickStand/ClickStand-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ClickStandTests/ClickStandTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DDED557718AEF2A300E6E843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ClickStand.app/ClickStand";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClickStand/ClickStand-Prefix.pch";
+				INFOPLIST_FILE = "ClickStandTests/ClickStandTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDED554118AEF2A200E6E843 /* Build configuration list for PBXProject "ClickStand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDED557018AEF2A300E6E843 /* Debug */,
+				DDED557118AEF2A300E6E843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDED557218AEF2A300E6E843 /* Build configuration list for PBXNativeTarget "ClickStand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDED557318AEF2A300E6E843 /* Debug */,
+				DDED557418AEF2A300E6E843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DDED557518AEF2A300E6E843 /* Build configuration list for PBXNativeTarget "ClickStandTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDED557618AEF2A300E6E843 /* Debug */,
+				DDED557718AEF2A300E6E843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDED553E18AEF2A200E6E843 /* Project object */;
+}
