@@ -127,6 +127,7 @@
         UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedMainImage:)];
         singleTap.numberOfTapsRequired = 1;
         cell.image.userInteractionEnabled = YES;
+        
         [cell.image addGestureRecognizer:singleTap];
         //add post ID tag so we can get post info in the next view
         
@@ -138,12 +139,22 @@
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         //set the position of the button
-        button.frame = CGRectMake(cell.frame.origin.x + 100, cell.frame.origin.y + 470, 100, 20);
+        button.frame = CGRectMake(cell.frame.origin.x + 16, cell.frame.origin.y + 444, CGRectGetWidth(self.view.bounds) - 32, 44);
         [button setTitle:@"Donate" forState:UIControlStateNormal];
         [button addTarget:self action:@selector(donate:) forControlEvents:UIControlEventTouchUpInside];
         button.backgroundColor= [UIColor clearColor];
+        button.layer.borderColor = [UIColor greenColor].CGColor;
+        button.layer.borderWidth = 1.0;
+        button.layer.cornerRadius = 5.0;
+        [button setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
         [cell.contentView addSubview:button];
     }
+    
+    cell.image.layer.cornerRadius = 4.0;
+    cell.image.layer.masksToBounds = YES;
+    
+    cell.userImage.layer.cornerRadius = 5.0;
+    cell.userImage.layer.masksToBounds = YES;
     
     return cell;
 
