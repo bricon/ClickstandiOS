@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MASFeedViewController.h"
 
 @interface MASLoginViewController : UIViewController
 
@@ -14,6 +15,8 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *facebookLoginButton;
 @property (weak, nonatomic) IBOutlet UIButton *twitterLoginButton;
+
+@property (strong, nonatomic) MASFeedViewController *feedViewController;
 
 
 

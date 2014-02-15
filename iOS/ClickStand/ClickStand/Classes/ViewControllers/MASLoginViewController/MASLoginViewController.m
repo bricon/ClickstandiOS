@@ -7,6 +7,7 @@
 //
 
 #import "MASLoginViewController.h"
+#import "MASFeedViewController.h"
 
 @implementation MASLoginViewController
 
@@ -28,7 +29,29 @@
 - (IBAction)didTouchUpInsideButton:(UIButton *)sender
 {
     if(sender == self.facebookLoginButton) {
-        // TODO Login with Facebook
+        NSLog(@"Attempting to log in the PFUser using facebook");
+        
+        NSArray *permissionsArray = @[@"user_about_me", @"user_relationships", @"user_birthday", @"user_location"];
+        
+        [PFFacebookUtils initializeFacebook];
+        [PFFacebookUtils logInWithPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
+            if (!user) {
+                if (!error) {
+                    NSLog(@"User cancelled Facebook login.");
+                } else {
+                    NSLog(@"Uh oh. An error occurred: %@", error);
+                }
+            } else if (user.isNew) { // TODO: You can consolidate these into one if statement. Left for debugging. 
+                NSLog(@"User with facebook signed up and logged in!");
+                self.feedViewController = [[MASFeedViewController alloc] initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]];
+                [self presentViewController:self.feedViewController animated:YES completion:nil];
+            } else {
+                NSLog(@"User with facebook logged in!");
+                self.feedViewController = [[MASFeedViewController alloc] initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]];
+                [self presentViewController:self.feedViewController animated:YES completion:nil];
+            }
+        }];
+
     } else if(sender == self.twitterLoginButton) {
         // TODO Login with Twitter
     }
