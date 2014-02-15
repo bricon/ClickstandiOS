@@ -11,6 +11,9 @@
 #import "MASFullPostViewController.h"
 #import "MASProfileViewController.h"
 #import "MASAddPostViewController.h"
+#import "MASPaymentViewController.h"
+#import "MASSideMenuViewController.h"
+#import "MASAppDelegate.h"
 
 @interface MASFeedViewController ()
 
@@ -37,8 +40,20 @@
                                                                                    target:self
  
                                                                                    action:@selector(plusButtonPressed:)];
-    
     self.navigationController.navigationBar.topItem.rightBarButtonItem = addPostButton;
+    
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"menuButton"] style:UIBarButtonItemStylePlain target:self action:@selector(menuButtonPressed:)];
+    self.navigationController.navigationBar.topItem.leftBarButtonItem = menuButton;
+}
+
+- (void)menuButtonPressed:(id)sender
+{
+    MASSideMenuViewController *sideMenuViewController = ((MASAppDelegate *)[[UIApplication sharedApplication]delegate]).sideMenuViewController;
+    if(sideMenuViewController.menuVisible) {
+        [sideMenuViewController hideMenuController];
+    } else {
+        [sideMenuViewController presentMenuController];
+    }
 }
 
 -(void)plusButtonPressed:(id)sender
@@ -66,9 +81,6 @@
     
     //get all posts
     [self getFeedDataFromParse];
-    
-    
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -116,31 +128,42 @@
     if (cell == nil) {
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"MASFeedCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
+        
+        //add parse data into cell
+        //commented out because no posts have been made
+        //NSDictionary * post = self.feedData[indexPath.row];
+        
+        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedMainImage:)];
+        singleTap.numberOfTapsRequired = 1;
+        cell.image.userInteractionEnabled = YES;
+        
+        [cell.image addGestureRecognizer:singleTap];
+        //add post ID tag so we can get post info in the next view
+        
+        UITapGestureRecognizer *profileTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedProfileImage:)];
+        profileTap.numberOfTapsRequired = 1;
+        cell.userImage.userInteractionEnabled = YES;
+        [cell.userImage addGestureRecognizer:profileTap];
+        //add user ID tag so we can get profile info in the next view
+        
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        //set the position of the button
+        button.frame = CGRectMake(cell.frame.origin.x + 16, cell.frame.origin.y + 444, CGRectGetWidth(self.view.bounds) - 32, 44);
+        [button setTitle:@"Donate" forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(donate:) forControlEvents:UIControlEventTouchUpInside];
+        button.backgroundColor= [UIColor clearColor];
+        button.layer.borderColor = [UIColor greenColor].CGColor;
+        button.layer.borderWidth = 1.0;
+        button.layer.cornerRadius = 5.0;
+        [button setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+        [cell.contentView addSubview:button];
     }
     
-    //add parse data into cell
-    //commented out because no posts have been made
-    //NSDictionary * post = self.feedData[indexPath.row];
+    cell.image.layer.cornerRadius = 4.0;
+    cell.image.layer.masksToBounds = YES;
     
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedMainImage:)];
-    singleTap.numberOfTapsRequired = 1;
-    cell.image.userInteractionEnabled = YES;
-    [cell.image addGestureRecognizer:singleTap];
-    //add post ID tag so we can get post info in the next view
-    
-    UITapGestureRecognizer *profileTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedProfileImage:)];
-    profileTap.numberOfTapsRequired = 1;
-    cell.userImage.userInteractionEnabled = YES;
-    [cell.userImage addGestureRecognizer:profileTap];
-    //add user ID tag so we can get profile info in the next view
-    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    //set the position of the button
-    button.frame = CGRectMake(cell.frame.origin.x + 100, cell.frame.origin.y + 470, 100, 20);
-    [button setTitle:@"Donate" forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(donate:) forControlEvents:UIControlEventTouchUpInside];
-    button.backgroundColor= [UIColor clearColor];
-    [cell.contentView addSubview:button];
+    cell.userImage.layer.cornerRadius = 5.0;
+    cell.userImage.layer.masksToBounds = YES;
     
     return cell;
 
@@ -163,6 +186,8 @@
 -(void)donate:(id) sender{
     NSLog(@"donate");
     //payment stuff
+    MASPaymentViewController * paymentViewController = [[MASPaymentViewController alloc] init];
+    [self.navigationController pushViewController:paymentViewController animated:YES];
     
 }
 

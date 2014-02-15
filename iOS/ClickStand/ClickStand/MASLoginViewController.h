@@ -26,7 +26,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *forgotPasswordButton;
 @property (weak, nonatomic) IBOutlet UIButton *signupButton;
 
-@property (strong, nonatomic) MASFeedViewController *feedViewController;
 @property (strong, nonatomic) MASSignUpViewController *signUpViewController;
 
 

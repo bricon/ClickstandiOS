@@ -13,6 +13,8 @@
 		844CE28618AFCAC4004E8893 /* MASProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844CE28418AFCAC4004E8893 /* MASProfileViewController.xib */; };
 		84A393CC18AFEF8800DDB4E8 /* MASPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A393CA18AFEF8800DDB4E8 /* MASPaymentViewController.m */; };
 		84A393CD18AFEF8800DDB4E8 /* MASPaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A393CB18AFEF8800DDB4E8 /* MASPaymentViewController.xib */; };
+		84A393EE18B003E600DDB4E8 /* MASDonateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A393EC18B003E600DDB4E8 /* MASDonateViewController.m */; };
+		84A393EF18B003E600DDB4E8 /* MASDonateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A393ED18B003E600DDB4E8 /* MASDonateViewController.xib */; };
 		84A734D818AFDD4A000FC694 /* MASSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A734D618AFDD4A000FC694 /* MASSignUpViewController.m */; };
 		84A734D918AFDD4A000FC694 /* MASSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A734D718AFDD4A000FC694 /* MASSignUpViewController.xib */; };
 		84A734DD18AFDD63000FC694 /* MASLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A734DA18AFDD63000FC694 /* MASLoginViewController.xib */; };
@@ -59,6 +61,7 @@
 		DD164E1E18AFF6B8006D7BEF /* gradient@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164DD518AFF6B8006D7BEF /* gradient@2x.png */; };
 		DD164E1F18AFF6B8006D7BEF /* textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164DD618AFF6B8006D7BEF /* textfield.png */; };
 		DD164E2018AFF6B8006D7BEF /* textfield@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164DD718AFF6B8006D7BEF /* textfield@2x.png */; };
+		DD164E3D18B00D7D006D7BEF /* menuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164E3C18B00D7D006D7BEF /* menuButton@2x.png */; };
 		DDED554A18AEF2A300E6E843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554918AEF2A300E6E843 /* Foundation.framework */; };
 		DDED554C18AEF2A300E6E843 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554B18AEF2A300E6E843 /* CoreGraphics.framework */; };
 		DDED554E18AEF2A300E6E843 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554D18AEF2A300E6E843 /* UIKit.framework */; };
@@ -113,6 +116,9 @@
 		84A393C918AFEF8800DDB4E8 /* MASPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPaymentViewController.h; sourceTree = "<group>"; };
 		84A393CA18AFEF8800DDB4E8 /* MASPaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASPaymentViewController.m; sourceTree = "<group>"; };
 		84A393CB18AFEF8800DDB4E8 /* MASPaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASPaymentViewController.xib; sourceTree = "<group>"; };
+		84A393EB18B003E600DDB4E8 /* MASDonateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASDonateViewController.h; sourceTree = "<group>"; };
+		84A393EC18B003E600DDB4E8 /* MASDonateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASDonateViewController.m; sourceTree = "<group>"; };
+		84A393ED18B003E600DDB4E8 /* MASDonateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASDonateViewController.xib; sourceTree = "<group>"; };
 		84A734D518AFDD4A000FC694 /* MASSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASSignUpViewController.h; sourceTree = "<group>"; };
 		84A734D618AFDD4A000FC694 /* MASSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASSignUpViewController.m; sourceTree = "<group>"; };
 		84A734D718AFDD4A000FC694 /* MASSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASSignUpViewController.xib; sourceTree = "<group>"; };
@@ -180,6 +186,7 @@
 		DD164DD518AFF6B8006D7BEF /* gradient@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradient@2x.png"; sourceTree = "<group>"; };
 		DD164DD618AFF6B8006D7BEF /* textfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textfield.png; sourceTree = "<group>"; };
 		DD164DD718AFF6B8006D7BEF /* textfield@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textfield@2x.png"; sourceTree = "<group>"; };
+		DD164E3C18B00D7D006D7BEF /* menuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuButton@2x.png"; sourceTree = "<group>"; };
 		DDED554618AEF2A300E6E843 /* ClickStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDED554918AEF2A300E6E843 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DDED554B18AEF2A300E6E843 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -302,6 +309,9 @@
 				84A393C918AFEF8800DDB4E8 /* MASPaymentViewController.h */,
 				84A393CA18AFEF8800DDB4E8 /* MASPaymentViewController.m */,
 				84A393CB18AFEF8800DDB4E8 /* MASPaymentViewController.xib */,
+				84A393EB18B003E600DDB4E8 /* MASDonateViewController.h */,
+				84A393EC18B003E600DDB4E8 /* MASDonateViewController.m */,
+				84A393ED18B003E600DDB4E8 /* MASDonateViewController.xib */,
 			);
 			name = MASPaymentViewController;
 			sourceTree = "<group>";
@@ -551,8 +561,8 @@
 			isa = PBXGroup;
 			children = (
 				84A734DA18AFDD63000FC694 /* MASLoginViewController.xib */,
-				84A734DB18AFDD63000FC694 /* MASLoginViewController.m */,
 				84A734DC18AFDD63000FC694 /* MASLoginViewController.h */,
+				84A734DB18AFDD63000FC694 /* MASLoginViewController.m */,
 			);
 			name = MASLoginViewController;
 			sourceTree = "<group>";
@@ -577,6 +587,7 @@
 		DDED559D18AF244300E6E843 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DD164E3C18B00D7D006D7BEF /* menuButton@2x.png */,
 				DD164D9D18AF4F03006D7BEF /* masLogo@2x.png */,
 				93400F5618AFFB1B008530A2 /* plusbutton@2x.png */,
 				DDED55BD18AF409900E6E843 /* Default-568h@2x.png */,
@@ -720,6 +731,7 @@
 				DDED55B718AF37B000E6E843 /* MASFeedCell.xib in Resources */,
 				DD164E1A18AFF6B8006D7BEF /* placeholder.png in Resources */,
 				844CE27D18AF5733004E8893 /* boomerang1.jpg in Resources */,
+				DD164E3D18B00D7D006D7BEF /* menuButton@2x.png in Resources */,
 				DD164E1218AFF6B8006D7BEF /* diners.png in Resources */,
 				DD164E0E18AFF6B8006D7BEF /* cvc-amex.png in Resources */,
 				DD164E1318AFF6B8006D7BEF /* diners@2x.png in Resources */,
@@ -734,6 +746,7 @@
 				DD164E1918AFF6B8006D7BEF /* mastercard@2x.png in Resources */,
 				DD164E1F18AFF6B8006D7BEF /* textfield.png in Resources */,
 				84A393CD18AFEF8800DDB4E8 /* MASPaymentViewController.xib in Resources */,
+				84A393EF18B003E600DDB4E8 /* MASDonateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,6 +774,7 @@
 				84A393CC18AFEF8800DDB4E8 /* MASPaymentViewController.m in Sources */,
 				DDED55B618AF37B000E6E843 /* MASFeedCell.m in Sources */,
 				DDED555618AEF2A300E6E843 /* main.m in Sources */,
+				84A393EE18B003E600DDB4E8 /* MASDonateViewController.m in Sources */,
 				84A734DE18AFDD63000FC694 /* MASLoginViewController.m in Sources */,
 				DD164E0418AFF6B8006D7BEF /* PKAddressZip.m in Sources */,
 				844CE28518AFCAC4004E8893 /* MASProfileViewController.m in Sources */,

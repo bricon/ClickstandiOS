@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MASAddPostViewController.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface MASFeedViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, MASAddPostViewControllerDelegate>
 
