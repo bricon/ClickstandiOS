@@ -21,6 +21,8 @@
 		93400F4818AFE62B008530A2 /* MASSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93400F4718AFE62B008530A2 /* MASSideMenuViewController.m */; };
 		93400F4D18AFE666008530A2 /* MASMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93400F4B18AFE666008530A2 /* MASMenuViewController.m */; };
 		93400F4E18AFE666008530A2 /* MASMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93400F4C18AFE666008530A2 /* MASMenuViewController.xib */; };
+		93400F5418AFF946008530A2 /* MASAddPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93400F5218AFF946008530A2 /* MASAddPostViewController.m */; };
+		93400F5518AFF946008530A2 /* MASAddPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93400F5318AFF946008530A2 /* MASAddPostViewController.xib */; };
 		DD164D9E18AF4F03006D7BEF /* masLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164D9D18AF4F03006D7BEF /* masLogo@2x.png */; };
 		DD164DFD18AFF6B8006D7BEF /* STPCard.m in Sources */ = {isa = PBXBuildFile; fileRef = DD164DA118AFF6B8006D7BEF /* STPCard.m */; };
 		DD164DFE18AFF6B8006D7BEF /* STPToken.m in Sources */ = {isa = PBXBuildFile; fileRef = DD164DA318AFF6B8006D7BEF /* STPToken.m */; };
@@ -123,6 +125,9 @@
 		93400F4A18AFE666008530A2 /* MASMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASMenuViewController.h; sourceTree = "<group>"; };
 		93400F4B18AFE666008530A2 /* MASMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASMenuViewController.m; sourceTree = "<group>"; };
 		93400F4C18AFE666008530A2 /* MASMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASMenuViewController.xib; sourceTree = "<group>"; };
+		93400F5118AFF946008530A2 /* MASAddPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASAddPostViewController.h; sourceTree = "<group>"; };
+		93400F5218AFF946008530A2 /* MASAddPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASAddPostViewController.m; sourceTree = "<group>"; };
+		93400F5318AFF946008530A2 /* MASAddPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASAddPostViewController.xib; sourceTree = "<group>"; };
 		DD164D9D18AF4F03006D7BEF /* masLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "masLogo@2x.png"; path = "Assets/Images/masLogo@2x.png"; sourceTree = "<group>"; };
 		DD164DA018AFF6B8006D7BEF /* STPCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPCard.h; sourceTree = "<group>"; };
 		DD164DA118AFF6B8006D7BEF /* STPCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPCard.m; sourceTree = "<group>"; };
@@ -287,6 +292,26 @@
 				93400F4C18AFE666008530A2 /* MASMenuViewController.xib */,
 			);
 			name = MASMenuViewController;
+			sourceTree = "<group>";
+		};
+		93400F4F18AFF920008530A2 /* MASPaymentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84A393C918AFEF8800DDB4E8 /* MASPaymentViewController.h */,
+				84A393CA18AFEF8800DDB4E8 /* MASPaymentViewController.m */,
+				84A393CB18AFEF8800DDB4E8 /* MASPaymentViewController.xib */,
+			);
+			name = MASPaymentViewController;
+			sourceTree = "<group>";
+		};
+		93400F5018AFF92D008530A2 /* MASAddPostViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93400F5118AFF946008530A2 /* MASAddPostViewController.h */,
+				93400F5218AFF946008530A2 /* MASAddPostViewController.m */,
+				93400F5318AFF946008530A2 /* MASAddPostViewController.xib */,
+			);
+			name = MASAddPostViewController;
 			sourceTree = "<group>";
 		};
 		DD164D9F18AFF6B8006D7BEF /* Stripe */ = {
@@ -500,6 +525,8 @@
 		DDED557B18AEF30800E6E843 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				93400F5018AFF92D008530A2 /* MASAddPostViewController */,
+				93400F4F18AFF920008530A2 /* MASPaymentViewController */,
 				93400F4918AFE659008530A2 /* MASMenuViewController */,
 				93400F4518AFE60A008530A2 /* MASSideMenuViewController */,
 				DDED55AC18AF376900E6E843 /* MASFeedViewController */,
@@ -507,9 +534,6 @@
 				DDED559618AF163300E6E843 /* MASHomeViewController */,
 				DDED559218AF14BB00E6E843 /* MASLoginViewController */,
 				844CE28718AFCAC8004E8893 /* MASProfileViewController */,
-				84A393C918AFEF8800DDB4E8 /* MASPaymentViewController.h */,
-				84A393CA18AFEF8800DDB4E8 /* MASPaymentViewController.m */,
-				84A393CB18AFEF8800DDB4E8 /* MASPaymentViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -677,6 +701,7 @@
 				DDED55A418AF2BCF00E6E843 /* facebook-highlighted@2x.png in Resources */,
 				DD164E1818AFF6B8006D7BEF /* mastercard.png in Resources */,
 				DDED55BB18AF3FF500E6E843 /* twitter@2x.png in Resources */,
+				93400F5518AFF946008530A2 /* MASAddPostViewController.xib in Resources */,
 				DD164E1018AFF6B8006D7BEF /* cvc.png in Resources */,
 				DDED55BE18AF409900E6E843 /* Default-568h@2x.png in Resources */,
 				DD164E1518AFF6B8006D7BEF /* discover@2x.png in Resources */,
@@ -739,6 +764,7 @@
 				DD164E0018AFF6B8006D7BEF /* Stripe.m in Sources */,
 				DD164E0B18AFF6B8006D7BEF /* PKView.m in Sources */,
 				DD164DFE18AFF6B8006D7BEF /* STPToken.m in Sources */,
+				93400F5418AFF946008530A2 /* MASAddPostViewController.m in Sources */,
 				DD164E0518AFF6B8006D7BEF /* PKCard.m in Sources */,
 				DD164E0618AFF6B8006D7BEF /* PKCardCVC.m in Sources */,
 				DDED559918AF166000E6E843 /* MASHomeViewController.m in Sources */,
