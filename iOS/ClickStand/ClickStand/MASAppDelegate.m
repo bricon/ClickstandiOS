@@ -29,13 +29,12 @@
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     // Initialize root view controller
-    {
-        if ([PFUser currentUser]) {     // If the user is currently logged in skip the login page
-            self.window.rootViewController = [[MASFeedViewController alloc]initWithNibName:@"MASFeedViewController"
-                                                                                     bundle:[NSBundle mainBundle]];
-        } else {
-            self.window.rootViewController = [[MASHomeViewController alloc]initWithNibName:nil bundle:nil];
-        }
+    if ([PFUser currentUser]) {     // If the user is currently logged in skip the login page
+        self.window.rootViewController = [[MASFeedViewController alloc]initWithNibName:@"MASFeedViewController"
+                                                                                bundle:[NSBundle mainBundle]];
+    } else {
+        self.window.rootViewController = [[MASLoginViewController alloc]initWithNibName:@"MASLoginViewController"
+                                                                                 bundle:[NSBundle mainBundle]];
     }
     [self.window makeKeyAndVisible];
     return YES;
