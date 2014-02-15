@@ -10,7 +10,7 @@
 #import "MASFeedViewController.h"
 #import "MASSignUpViewController.h"
 #import "MASAppDelegate.h"
-#import "MASSideMenuViewController.h"
+#import "RESideMenu.h"
 
 @implementation MASLoginViewController
 
@@ -160,9 +160,14 @@
     }];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 - (void)presentSideMenuViewController
 {
-    MASSideMenuViewController *sideMenuViewController = ((MASAppDelegate *)[[UIApplication sharedApplication]delegate]).sideMenuViewController;
+    RESideMenu *sideMenuViewController = ((MASAppDelegate *)[[UIApplication sharedApplication]delegate]).sideMenuViewController;
     [self presentViewController:sideMenuViewController animated:YES completion:nil];
 }
 
