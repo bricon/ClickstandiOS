@@ -13,6 +13,8 @@
 		844CE28618AFCAC4004E8893 /* MASProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844CE28418AFCAC4004E8893 /* MASProfileViewController.xib */; };
 		84A393CC18AFEF8800DDB4E8 /* MASPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A393CA18AFEF8800DDB4E8 /* MASPaymentViewController.m */; };
 		84A393CD18AFEF8800DDB4E8 /* MASPaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A393CB18AFEF8800DDB4E8 /* MASPaymentViewController.xib */; };
+		84A393EE18B003E600DDB4E8 /* MASDonateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A393EC18B003E600DDB4E8 /* MASDonateViewController.m */; };
+		84A393EF18B003E600DDB4E8 /* MASDonateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A393ED18B003E600DDB4E8 /* MASDonateViewController.xib */; };
 		84A734D818AFDD4A000FC694 /* MASSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A734D618AFDD4A000FC694 /* MASSignUpViewController.m */; };
 		84A734D918AFDD4A000FC694 /* MASSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A734D718AFDD4A000FC694 /* MASSignUpViewController.xib */; };
 		84A734DD18AFDD63000FC694 /* MASLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A734DA18AFDD63000FC694 /* MASLoginViewController.xib */; };
@@ -112,6 +114,9 @@
 		84A393C918AFEF8800DDB4E8 /* MASPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPaymentViewController.h; sourceTree = "<group>"; };
 		84A393CA18AFEF8800DDB4E8 /* MASPaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASPaymentViewController.m; sourceTree = "<group>"; };
 		84A393CB18AFEF8800DDB4E8 /* MASPaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASPaymentViewController.xib; sourceTree = "<group>"; };
+		84A393EB18B003E600DDB4E8 /* MASDonateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASDonateViewController.h; sourceTree = "<group>"; };
+		84A393EC18B003E600DDB4E8 /* MASDonateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASDonateViewController.m; sourceTree = "<group>"; };
+		84A393ED18B003E600DDB4E8 /* MASDonateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASDonateViewController.xib; sourceTree = "<group>"; };
 		84A734D518AFDD4A000FC694 /* MASSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASSignUpViewController.h; sourceTree = "<group>"; };
 		84A734D618AFDD4A000FC694 /* MASSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASSignUpViewController.m; sourceTree = "<group>"; };
 		84A734D718AFDD4A000FC694 /* MASSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASSignUpViewController.xib; sourceTree = "<group>"; };
@@ -300,6 +305,9 @@
 				84A393C918AFEF8800DDB4E8 /* MASPaymentViewController.h */,
 				84A393CA18AFEF8800DDB4E8 /* MASPaymentViewController.m */,
 				84A393CB18AFEF8800DDB4E8 /* MASPaymentViewController.xib */,
+				84A393EB18B003E600DDB4E8 /* MASDonateViewController.h */,
+				84A393EC18B003E600DDB4E8 /* MASDonateViewController.m */,
+				84A393ED18B003E600DDB4E8 /* MASDonateViewController.xib */,
 			);
 			name = MASPaymentViewController;
 			sourceTree = "<group>";
@@ -730,6 +738,7 @@
 				DD164E1918AFF6B8006D7BEF /* mastercard@2x.png in Resources */,
 				DD164E1F18AFF6B8006D7BEF /* textfield.png in Resources */,
 				84A393CD18AFEF8800DDB4E8 /* MASPaymentViewController.xib in Resources */,
+				84A393EF18B003E600DDB4E8 /* MASDonateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,6 +766,7 @@
 				84A393CC18AFEF8800DDB4E8 /* MASPaymentViewController.m in Sources */,
 				DDED55B618AF37B000E6E843 /* MASFeedCell.m in Sources */,
 				DDED555618AEF2A300E6E843 /* main.m in Sources */,
+				84A393EE18B003E600DDB4E8 /* MASDonateViewController.m in Sources */,
 				84A734DE18AFDD63000FC694 /* MASLoginViewController.m in Sources */,
 				DD164E0418AFF6B8006D7BEF /* PKAddressZip.m in Sources */,
 				844CE28518AFCAC4004E8893 /* MASProfileViewController.m in Sources */,

@@ -10,6 +10,7 @@
 #import "MASFeedCell.h"
 #import "MASFullPostViewController.h"
 #import "MASProfileViewController.h"
+#import "MASPaymentViewController.h"
 
 @interface MASFeedViewController ()
 
@@ -142,6 +143,8 @@
 -(void)donate:(id) sender{
     NSLog(@"donate");
     //payment stuff
+    MASPaymentViewController * paymentViewController = [[MASPaymentViewController alloc] init];
+    [self.navigationController pushViewController:paymentViewController animated:YES];
     
 }
 
