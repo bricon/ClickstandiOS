@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9316D28D18AEFDBC001F1646 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9316D28C18AEFDBC001F1646 /* Parse.framework */; };
 		9316D28F18AF0200001F1646 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9316D28E18AF0200001F1646 /* FacebookSDK.framework */; };
 		DDED554A18AEF2A300E6E843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554918AEF2A300E6E843 /* Foundation.framework */; };
 		DDED554C18AEF2A300E6E843 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554B18AEF2A300E6E843 /* CoreGraphics.framework */; };
@@ -20,6 +19,16 @@
 		DDED556518AEF2A300E6E843 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554D18AEF2A300E6E843 /* UIKit.framework */; };
 		DDED556D18AEF2A300E6E843 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDED556B18AEF2A300E6E843 /* InfoPlist.strings */; };
 		DDED556F18AEF2A300E6E843 /* ClickStandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED556E18AEF2A300E6E843 /* ClickStandTests.m */; };
+		DDED557E18AF0D2700E6E843 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9316D28C18AEFDBC001F1646 /* Parse.framework */; };
+		DDED558018AF0E1600E6E843 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED557F18AF0E1600E6E843 /* Security.framework */; };
+		DDED558218AF0E5E00E6E843 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED558118AF0E5E00E6E843 /* AudioToolbox.framework */; };
+		DDED558418AF0E6600E6E843 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED558318AF0E6600E6E843 /* CFNetwork.framework */; };
+		DDED558618AF0E7900E6E843 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED558518AF0E7900E6E843 /* CoreLocation.framework */; };
+		DDED558818AF0E8400E6E843 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED558718AF0E8400E6E843 /* libz.1.1.3.dylib */; };
+		DDED558A18AF0E8E00E6E843 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED558918AF0E8E00E6E843 /* MobileCoreServices.framework */; };
+		DDED558C18AF0E9800E6E843 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED558B18AF0E9800E6E843 /* QuartzCore.framework */; };
+		DDED558E18AF0EA300E6E843 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED558D18AF0EA300E6E843 /* StoreKit.framework */; };
+		DDED559018AF0EB300E6E843 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED558F18AF0EB300E6E843 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9316D28C18AEFDBC001F1646 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		9316D28C18AEFDBC001F1646 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = SOURCE_ROOT; };
 		9316D28E18AF0200001F1646 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		DDED554618AEF2A300E6E843 /* ClickStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDED554918AEF2A300E6E843 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,6 +59,15 @@
 		DDED556A18AEF2A300E6E843 /* ClickStandTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClickStandTests-Info.plist"; sourceTree = "<group>"; };
 		DDED556C18AEF2A300E6E843 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DDED556E18AEF2A300E6E843 /* ClickStandTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickStandTests.m; sourceTree = "<group>"; };
+		DDED557F18AF0E1600E6E843 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DDED558118AF0E5E00E6E843 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DDED558318AF0E6600E6E843 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DDED558518AF0E7900E6E843 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DDED558718AF0E8400E6E843 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		DDED558918AF0E8E00E6E843 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DDED558B18AF0E9800E6E843 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DDED558D18AF0EA300E6E843 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DDED558F18AF0EB300E6E843 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +75,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDED559018AF0EB300E6E843 /* SystemConfiguration.framework in Frameworks */,
+				DDED558E18AF0EA300E6E843 /* StoreKit.framework in Frameworks */,
+				DDED558C18AF0E9800E6E843 /* QuartzCore.framework in Frameworks */,
+				DDED558A18AF0E8E00E6E843 /* MobileCoreServices.framework in Frameworks */,
+				DDED558818AF0E8400E6E843 /* libz.1.1.3.dylib in Frameworks */,
+				DDED558618AF0E7900E6E843 /* CoreLocation.framework in Frameworks */,
+				DDED558418AF0E6600E6E843 /* CFNetwork.framework in Frameworks */,
+				DDED558218AF0E5E00E6E843 /* AudioToolbox.framework in Frameworks */,
+				DDED558018AF0E1600E6E843 /* Security.framework in Frameworks */,
 				DDED554C18AEF2A300E6E843 /* CoreGraphics.framework in Frameworks */,
 				9316D28F18AF0200001F1646 /* FacebookSDK.framework in Frameworks */,
+				DDED557E18AF0D2700E6E843 /* Parse.framework in Frameworks */,
 				DDED554E18AEF2A300E6E843 /* UIKit.framework in Frameworks */,
-				9316D28D18AEFDBC001F1646 /* Parse.framework in Frameworks */,
 				DDED554A18AEF2A300E6E843 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +127,15 @@
 		DDED554818AEF2A300E6E843 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DDED558F18AF0EB300E6E843 /* SystemConfiguration.framework */,
+				DDED558D18AF0EA300E6E843 /* StoreKit.framework */,
+				DDED558B18AF0E9800E6E843 /* QuartzCore.framework */,
+				DDED558918AF0E8E00E6E843 /* MobileCoreServices.framework */,
+				DDED558718AF0E8400E6E843 /* libz.1.1.3.dylib */,
+				DDED558518AF0E7900E6E843 /* CoreLocation.framework */,
+				DDED558318AF0E6600E6E843 /* CFNetwork.framework */,
+				DDED558118AF0E5E00E6E843 /* AudioToolbox.framework */,
+				DDED557F18AF0E1600E6E843 /* Security.framework */,
 				9316D28E18AF0200001F1646 /* FacebookSDK.framework */,
 				9316D28C18AEFDBC001F1646 /* Parse.framework */,
 				DDED554918AEF2A300E6E843 /* Foundation.framework */,
@@ -330,7 +366,7 @@
 		DDED557018AEF2A300E6E843 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -369,7 +405,7 @@
 		DDED557118AEF2A300E6E843 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -402,12 +438,10 @@
 		DDED557318AEF2A300E6E843 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/matthewebeweber/Documents/clickstand/iOS/ClickStand,
-				);
+				FRAMEWORK_SEARCH_PATHS = /Users/Comyar/Dropbox/Development/clickstand/iOS/ClickStand;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClickStand/ClickStand-Prefix.pch";
 				INFOPLIST_FILE = "ClickStand/ClickStand-Info.plist";
@@ -419,12 +453,10 @@
 		DDED557418AEF2A300E6E843 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/matthewebeweber/Documents/clickstand/iOS/ClickStand,
-				);
+				FRAMEWORK_SEARCH_PATHS = /Users/Comyar/Dropbox/Development/clickstand/iOS/ClickStand;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClickStand/ClickStand-Prefix.pch";
 				INFOPLIST_FILE = "ClickStand/ClickStand-Info.plist";
