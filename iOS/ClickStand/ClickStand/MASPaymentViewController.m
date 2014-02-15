@@ -26,7 +26,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    //test key for now, change to publisable key later
+    self.stripeView = [[STPView alloc] initWithFrame:CGRectMake(15,20,290,55)
+                                              andKey:@"pk_test_pchEhEqli57yAGBQhMxxe1PS"];
+    self.stripeView.delegate = self;
+    [self.view addSubview:self.stripeView];
 }
 
 - (void)didReceiveMemoryWarning
