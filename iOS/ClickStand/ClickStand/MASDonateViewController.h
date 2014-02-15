@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "STPView.h"
 
-@interface MASDonateViewController : UIViewController <STPViewDelegate>
-@property STPView* stripeView;
+
+@interface MASDonateViewController : UIViewController 
+
 
 @end

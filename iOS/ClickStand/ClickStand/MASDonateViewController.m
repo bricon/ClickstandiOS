@@ -7,6 +7,7 @@
 //
 
 #import "MASDonateViewController.h"
+#import "MASPaymentViewController.h"
 
 @interface MASDonateViewController ()
 
@@ -29,20 +30,43 @@
     // Do any additional setup after loading the view from its nib.
     
     self.title = @"Donate";
-    if([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
-        self.edgesForExtendedLayout = UIRectEdgeNone;
     
-    // Setup save button
-    UIBarButtonItem *saveButton = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:0 target:self action:@selector(save:)];
-    saveButton.enabled = NO;
-    self.navigationItem.rightBarButtonItem = saveButton;
+    UIButton *donateExisting = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    //set the position of the button
+    donateExisting.frame = CGRectMake(self.view.frame.origin.x + 16, self.view.frame.origin.y + 150, CGRectGetWidth(self.view.bounds) - 32, 44);
+    [donateExisting setTitle:@"Use an existing card" forState:UIControlStateNormal];
+    [donateExisting addTarget:self action:@selector(donateWithExistingCard) forControlEvents:UIControlEventTouchUpInside];
+    donateExisting.backgroundColor= [UIColor clearColor];
+    donateExisting.layer.borderColor = [UIColor greenColor].CGColor;
+    donateExisting.layer.borderWidth = 1.0;
+    donateExisting.layer.cornerRadius = 5.0;
+    [donateExisting setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [self.view addSubview:donateExisting];
     
     
-    //test key for now, change to publisable key later
-    self.stripeView = [[STPView alloc] initWithFrame:CGRectMake(15,20,290,55)
-                                              andKey:@"pk_test_pchEhEqli57yAGBQhMxxe1PS"];
-    self.stripeView.delegate = self;
-    [self.view addSubview:self.stripeView];
+    UIButton *donateNew = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    //set the position of the button
+    donateNew.frame = CGRectMake(self.view.frame.origin.x + 16, self.view.frame.origin.y + 210, CGRectGetWidth(self.view.bounds) - 32, 44);
+    [donateNew setTitle:@"Use a new card" forState:UIControlStateNormal];
+    [donateNew addTarget:self action:@selector(donateWithNewCard) forControlEvents:UIControlEventTouchUpInside];
+    donateNew.backgroundColor= [UIColor clearColor];
+    donateNew.layer.borderColor = [UIColor greenColor].CGColor;
+    donateNew.layer.borderWidth = 1.0;
+    donateNew.layer.cornerRadius = 5.0;
+    [donateNew setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [self.view addSubview:donateNew];
+
+
+}
+
+-(void)donateWithExistingCard{
+    
+}
+
+-(void)donateWithNewCard{
+    MASPaymentViewController * paymentViewController = [[MASPaymentViewController alloc] init];
+    [self.navigationController pushViewController:paymentViewController animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning
