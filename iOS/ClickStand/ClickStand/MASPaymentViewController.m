@@ -101,6 +101,7 @@
     //add card token to user
    [user setObject:token.tokenId forKey:@"cardToken"];
    [user saveInBackground];
+    [self.navigationController popViewControllerAnimated:YES];
     
 
 }
