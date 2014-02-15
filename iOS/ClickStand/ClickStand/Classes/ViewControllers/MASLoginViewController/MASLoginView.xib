@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="facebookLoginButton" destination="EeL-8z-hA9" id="Iz2-xC-mCV"/>
                 <outlet property="twitterLoginButton" destination="eOU-bi-bw2" id="NFD-ox-NDa"/>
+                <outlet property="view" destination="1" id="XEm-0I-egz"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -36,13 +37,13 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
     <resources>
-        <image name="facebook.png" width="64" height="64"/>
+        <image name="facebook.png" width="128" height="128"/>
         <image name="twitter.png" width="250" height="250"/>
     </resources>
 </document>

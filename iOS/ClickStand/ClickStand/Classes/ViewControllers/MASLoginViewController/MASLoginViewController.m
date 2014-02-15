@@ -18,6 +18,13 @@
     return self;
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self.facebookLoginButton setImage:[UIImage imageNamed:@"facebook-highlighted"]
+                              forState:UIControlStateHighlighted];
+}
+
 - (IBAction)didTouchUpInsideButton:(UIButton *)sender
 {
     if(sender == self.facebookLoginButton) {
