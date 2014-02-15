@@ -445,6 +445,7 @@
 					/Users/Comyar/Dropbox/Development/clickstand/iOS/ClickStand,
 					/Users/matthewebeweber/Documents/clickstand/iOS/ClickStand,
 					/Users/admin/PennApps/clickstand/iOS/ClickStand,
+					/Users/ninalu/clickstand/iOS/ClickStand,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClickStand/ClickStand-Prefix.pch";
@@ -464,6 +465,7 @@
 					/Users/Comyar/Dropbox/Development/clickstand/iOS/ClickStand,
 					/Users/matthewebeweber/Documents/clickstand/iOS/ClickStand,
 					/Users/admin/PennApps/clickstand/iOS/ClickStand,
+					/Users/ninalu/clickstand/iOS/ClickStand,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClickStand/ClickStand-Prefix.pch";
