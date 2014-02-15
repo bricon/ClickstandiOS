@@ -83,7 +83,6 @@
     [UIView animateWithDuration:0.3f animations:^{
         self.contentController.view.center = CGPointMake(1.25 * CGRectGetWidth(self.view.bounds), self.view.center.y);
         self.menuController.view.alpha = 1.0f;
-        self.contentController.view.alpha = 0.5f;
     } completion:^(BOOL finished) {
         [self configureMotionEffectsForViewController:self.contentController];
         self.menuVisible = YES;
@@ -96,7 +95,6 @@
     [UIView animateWithDuration:0.3f animations:^{
         self.contentController.view.frame = self.view.bounds;
         self.menuController.view.alpha = 0.0;
-        self.contentController.view.alpha = 1.0;
         for (UIMotionEffect *effect in self.contentController.view.motionEffects) {
             [self.contentController.view removeMotionEffect:effect];
         }
