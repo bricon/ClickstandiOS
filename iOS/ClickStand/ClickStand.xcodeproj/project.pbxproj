@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		844CE27D18AF5733004E8893 /* boomerang1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 844CE27C18AF5733004E8893 /* boomerang1.jpg */; };
+		844CE28118AF5D9E004E8893 /* puppy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 844CE28018AF5D9E004E8893 /* puppy.jpg */; };
 		9316D28F18AF0200001F1646 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9316D28E18AF0200001F1646 /* FacebookSDK.framework */; };
 		DD164D9E18AF4F03006D7BEF /* masLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164D9D18AF4F03006D7BEF /* masLogo@2x.png */; };
 		DDED554A18AEF2A300E6E843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554918AEF2A300E6E843 /* Foundation.framework */; };
@@ -59,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		844CE27C18AF5733004E8893 /* boomerang1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boomerang1.jpg; sourceTree = "<group>"; };
+		844CE28018AF5D9E004E8893 /* puppy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppy.jpg; sourceTree = "<group>"; };
 		9316D28C18AEFDBC001F1646 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = SOURCE_ROOT; };
 		9316D28E18AF0200001F1646 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		DD164D9D18AF4F03006D7BEF /* masLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "masLogo@2x.png"; path = "Assets/Images/masLogo@2x.png"; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		DDED555018AEF2A300E6E843 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				844CE28018AF5D9E004E8893 /* puppy.jpg */,
 				844CE27C18AF5733004E8893 /* boomerang1.jpg */,
 				DDED555118AEF2A300E6E843 /* ClickStand-Info.plist */,
 				DDED555218AEF2A300E6E843 /* InfoPlist.strings */,
@@ -427,6 +430,7 @@
 				844CE27D18AF5733004E8893 /* boomerang1.jpg in Resources */,
 				DDED555418AEF2A300E6E843 /* InfoPlist.strings in Resources */,
 				DDED55AB18AF376000E6E843 /* MASFullPostViewController.xib in Resources */,
+				844CE28118AF5D9E004E8893 /* puppy.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

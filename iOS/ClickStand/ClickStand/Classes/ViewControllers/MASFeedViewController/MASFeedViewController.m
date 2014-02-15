@@ -81,5 +81,11 @@
 
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //TODO: modify height to message length
+    return 460;
+}
+
 
 @end
