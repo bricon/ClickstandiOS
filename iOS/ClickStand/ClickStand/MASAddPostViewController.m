@@ -36,12 +36,29 @@
                                                         otherButtonTitles: nil];
         [alert show];
     }
+    
+    self.postTitleTextField.delegate = self;
+    self.postBodyTextField.delegate  = self;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (textField == self.postTitleTextField) {
+        [self.postBodyTextField becomeFirstResponder];
+    } else if (textField == self.postBodyTextField) {
+        [self.postBodyTextField resignFirstResponder];
+    }
+    
+    return YES;
+    
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self.view endEditing:YES];
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {

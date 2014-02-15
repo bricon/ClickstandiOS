@@ -15,7 +15,8 @@
 @end
 
 @interface MASAddPostViewController : UIViewController <UIImagePickerControllerDelegate,
-                                                        UINavigationControllerDelegate>
+                                                        UINavigationControllerDelegate,
+                                                        UITextFieldDelegate>
 
 @property (weak, nonatomic) id<MASAddPostViewControllerDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UITextField *postTitleTextField;
