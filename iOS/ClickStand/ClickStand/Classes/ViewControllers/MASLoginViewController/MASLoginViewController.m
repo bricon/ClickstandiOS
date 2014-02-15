@@ -28,6 +28,8 @@
                              forState:UIControlStateHighlighted];
     self.usernameTextField.delegate = self;
     self.passwordTextField.delegate = self;
+    self.loginButton.layer.masksToBounds = YES;
+    self.loginButton.layer.cornerRadius = 5.0;
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
