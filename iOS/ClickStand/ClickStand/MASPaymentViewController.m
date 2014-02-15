@@ -31,7 +31,7 @@
     [super viewDidLoad];
     
     
-    self.title = @"Add Card";
+    self.title = @"New Card";
     if([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
         self.edgesForExtendedLayout = UIRectEdgeNone;
     

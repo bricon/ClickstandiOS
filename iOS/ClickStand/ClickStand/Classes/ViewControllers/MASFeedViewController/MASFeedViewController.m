@@ -100,6 +100,7 @@
             // The find succeeded.
             NSLog(@"Successfully retrieved %lu posts.", (unsigned long)objects.count);
             self.feedData = objects;
+            NSLog(@"self.feedData : %@," , self.feedData);
             
         } else {
             // Log details of the failure
@@ -140,6 +141,7 @@
         
         [cell.image addGestureRecognizer:singleTap];
         //add post ID tag so we can get post info in the next view
+
         
         UITapGestureRecognizer *profileTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedProfileImage:)];
         profileTap.numberOfTapsRequired = 1;
