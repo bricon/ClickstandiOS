@@ -30,6 +30,19 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    
+    UIBarButtonItem *addPostButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                                                   target:self
+ 
+                                                                                   action:@selector(plusButtonPressed:)];
+    
+    self.navigationController.navigationBar.topItem.rightBarButtonItem = addPostButton;
+}
+
+-(void)plusButtonPressed:(id)sender
+{
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated
