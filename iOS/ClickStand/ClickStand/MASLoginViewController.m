@@ -8,6 +8,7 @@
 
 #import "MASLoginViewController.h"
 #import "MASFeedViewController.h"
+#import "MASSignUpViewController.h"
 
 @implementation MASLoginViewController
 
@@ -106,7 +107,17 @@
     } else if(sender == self.loginButton) {
         NSLog(@"login button pressed");
         
-        // TODO: Attempt to log in the user.
+        NSString *username = [self.usernameTextField.text lowercaseString];
+        NSString *password = self.passwordTextField.text;
+        [PFUser logInWithUsernameInBackground:username password:password
+            block:^(PFUser *user, NSError *error) {
+                if (user) {
+                    self.feedViewController = [[MASFeedViewController alloc] initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]];
+                    [self presentViewController:self.feedViewController animated:YES completion:nil];
+                } else {
+                    // TODO: Print a better error message when the login fails
+                }
+            }];
         
     } else if(sender == self.forgotPasswordButton) {
         NSLog(@"forgot password button pressed");
@@ -115,7 +126,12 @@
     } else if(sender == self.signupButton) {
         NSLog(@"sign up button pressed");
         
-        // TODO: Add sign up page and link this
+        // Present the sign up view controller
+        self.signUpViewController = [[MASSignUpViewController alloc] initWithNibName:@"MASSignUpViewController"
+                                                                              bundle:[NSBundle mainBundle]];
+        self.signUpViewController.delegate = self;
+        [self presentViewController:self.signUpViewController animated:YES completion:nil];
+        
     }
 }
 
@@ -145,4 +161,15 @@
         self.view.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
     }];
 }
+
+- (void)dismissSignUpViewController
+{
+    [self.signUpViewController dismissViewControllerAnimated:YES completion:^ {
+        if ([PFUser user]) {
+            self.feedViewController = [[MASFeedViewController alloc] initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]];
+            [self presentViewController:self.feedViewController animated:YES completion:nil];
+        }
+    }];
+}
+
 @end

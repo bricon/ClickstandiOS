@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import "MASFeedViewController.h"
+#import "MASSignUpViewController.h"
 
-@interface MASLoginViewController : UIViewController <UITextFieldDelegate>
+
+@interface MASLoginViewController : UIViewController <UITextFieldDelegate, MASSignUpViewControllerDelegate>
 
 - (IBAction)didTouchUpInsideButton:(UIButton *)sender;
 - (IBAction)didBeginEditingTextField:(UITextField *)sender;
@@ -25,6 +27,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *signupButton;
 
 @property (strong, nonatomic) MASFeedViewController *feedViewController;
+@property (strong, nonatomic) MASSignUpViewController *signUpViewController;
 
 
 
