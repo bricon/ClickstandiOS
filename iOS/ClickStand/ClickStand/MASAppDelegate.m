@@ -9,6 +9,7 @@
 #import "MASAppDelegate.h"
 #import "MASLoginViewController.h"
 #import "MASHomeViewController.h"
+#import "MASFeedViewController.h"
 
 @implementation MASAppDelegate
 
@@ -30,9 +31,10 @@
     // Initialize root view controller
     {
         self.window.rootViewController = [MASLoginViewController new];
-        // TODO check if user is logged in
-        {
-//            self.window.rootViewController = [[MASHomeViewController alloc]initWithNibName:nil bundle:nil];
+        if ([PFUser currentUser]) {     // If the user is currently logged in skip the login page
+            self.window.rootViewController = [[MASFeedViewController alloc] initWithNibName:@"MASFeedViewController" bundle:[NSBundle mainBundle]];
+        } else {
+            self.window.rootViewController = [[MASHomeViewController alloc]initWithNibName:nil bundle:nil];
         }
     }
     [self.window makeKeyAndVisible];
