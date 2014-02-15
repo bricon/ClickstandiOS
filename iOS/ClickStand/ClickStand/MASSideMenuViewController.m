@@ -13,9 +13,6 @@
 
 @interface MASSideMenuViewController ()
 
-// Image view displaying the background image behind the menu and content controller
-@property (strong, nonatomic) UIImageView               *backgroundImageView;
-
 //
 @property (strong, nonatomic) UIPanGestureRecognizer    *panGestureRecognizer;
 
@@ -52,17 +49,11 @@
 {
     [super viewDidLoad];
     
-    self.backgroundImageView = [[UIImageView alloc]initWithFrame:self.view.bounds];
-    [self.view addSubview:self.backgroundImageView];
-    
     
     [self displayChildViewController:self.menuController];
     [self displayChildViewController:self.contentController];
     
     self.menuController.view.alpha = 0.0;
-    [self configureMotionEffectsForViewController:self.menuController];
-    
-    self.backgroundImageView.transform = CGAffineTransformMakeScale(1.7f, 1.7f);
     
     self.panGestureRecognizer = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panGestureRecognized:)];
     self.panGestureRecognizer.delegate = self;
@@ -73,9 +64,6 @@
 
 - (void)presentMenuController
 {
-    self.menuController.view.transform = CGAffineTransformIdentity;
-    self.backgroundImageView.transform = CGAffineTransformIdentity;
-    self.backgroundImageView.frame = self.view.bounds;
     self.menuController.view.frame = self.view.bounds;
     
     [self.view.window endEditing:YES];
@@ -84,22 +72,16 @@
         self.contentController.view.center = CGPointMake(1.25 * CGRectGetWidth(self.view.bounds), self.view.center.y);
         self.menuController.view.alpha = 1.0f;
     } completion:^(BOOL finished) {
-        [self configureMotionEffectsForViewController:self.contentController];
         self.menuVisible = YES;
     }];
 }
 
 - (void)hideMenuController
 {
-    [[UIApplication sharedApplication]beginIgnoringInteractionEvents];
     [UIView animateWithDuration:0.3f animations:^{
         self.contentController.view.frame = self.view.bounds;
         self.menuController.view.alpha = 0.0;
-        for (UIMotionEffect *effect in self.contentController.view.motionEffects) {
-            [self.contentController.view removeMotionEffect:effect];
-        }
     } completion:^(BOOL finished) {
-        [[UIApplication sharedApplication]endIgnoringInteractionEvents];
         self.menuVisible = NO;
     }];
 }
@@ -108,23 +90,21 @@
 
 - (void)panGestureRecognized:(UIPanGestureRecognizer *)gestureRecognizer
 {
-    static CGPoint originalPoint = {0,0};
     CGPoint point = [gestureRecognizer translationInView:self.view];
-    
-    if (gestureRecognizer.state == UIGestureRecognizerStateBegan) {
-        originalPoint = CGPointMake(self.contentController.view.center.x - CGRectGetWidth(self.contentController.view.bounds) / 2.0,
-                                    self.contentController.view.center.y - CGRectGetHeight(self.contentController.view.bounds) / 2.0);
-        self.menuController.view.transform = CGAffineTransformIdentity;
-        self.backgroundImageView.transform = CGAffineTransformIdentity;
-        self.backgroundImageView.frame = self.view.bounds;
-        self.menuController.view.frame = self.view.bounds;
+    if(gestureRecognizer.state == UIGestureRecognizerStateBegan) {
+        self.originalPanPoint = point;
         [self.view.window endEditing:YES];
-    } else if (gestureRecognizer.state == UIGestureRecognizerStateChanged) {
-        CGFloat delta = self.menuVisible ? (point.x + originalPoint.x) / originalPoint.x : point.x / self.view.frame.size.width;
-        if(self.contentController.view.bounds.origin.x + delta > 0.8 * CGRectGetWidth(self.view.bounds)) {
-            self.contentController.view.transform = CGAffineTransformTranslate(self.contentController.view.transform, delta, 0);
+    } else if(gestureRecognizer.state == UIGestureRecognizerStateChanged) {
+        CGFloat delta = point.x - self.originalPanPoint.x;
+        if(point.x > 0.8 * CGRectGetWidth(self.view.bounds)) {
+            delta = 0.0;
         }
-    } else if (gestureRecognizer.state == UIGestureRecognizerStateEnded) {
+        if(self.contentController.view.bounds.origin.x + delta < 0.8 * CGRectGetWidth(self.view.bounds) &&
+           self.contentController.view.bounds.origin.x + delta > 0.0) {
+            self.contentController.view.frame = CGRectMake(self.originalPanPoint.x + delta, self.contentController.view.frame.origin.y, CGRectGetWidth(self.contentController.view.bounds), CGRectGetHeight(self.contentController.view.bounds));
+            NSLog(@"%f", self.contentController.view.frame.origin.x);
+        }
+    } else if(gestureRecognizer.state == UIGestureRecognizerStateEnded) {
         if ([gestureRecognizer velocityInView:self.view].x > 0) {
             [self presentMenuController];
         } else {
@@ -168,34 +148,6 @@
     [childViewController willMoveToParentViewController:nil];
     [childViewController.view removeFromSuperview];
     [childViewController removeFromParentViewController];
-}
-
-#pragma mark Configuring Motion Effects
-
-- (void)configureMotionEffectsForViewController:(UIViewController *)viewController
-{
-    for(UIMotionEffect *effect in viewController.view.motionEffects) {
-        [viewController.view removeMotionEffect:effect];
-    }
-    
-    UIInterpolatingMotionEffect *interpolationHorizontalMotionEffect = [[UIInterpolatingMotionEffect alloc]initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
-    interpolationHorizontalMotionEffect.minimumRelativeValue = @(-15);
-    interpolationHorizontalMotionEffect.maximumRelativeValue = @(15);
-    
-    UIInterpolatingMotionEffect *interpolationVerticalMotionEffect = [[UIInterpolatingMotionEffect alloc]initWithKeyPath:@"center.y" type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
-    interpolationVerticalMotionEffect.minimumRelativeValue = @(-15);
-    interpolationVerticalMotionEffect.maximumRelativeValue = @(15);
-    
-    [viewController.view addMotionEffect:interpolationHorizontalMotionEffect];
-    [viewController.view addMotionEffect:interpolationVerticalMotionEffect];
-}
-
-#pragma mark Overridden Property Setters
-
-- (void)setBackgroundImage:(UIImage *)backgroundImage
-{
-    _backgroundImage                = backgroundImage;
-    self.backgroundImageView.image  = backgroundImage;
 }
 
 @end

@@ -10,6 +10,8 @@
 #import "MASFeedCell.h"
 #import "MASFullPostViewController.h"
 #import "MASProfileViewController.h"
+#import "MASSideMenuViewController.h"
+#import "MASAppDelegate.h"
 
 @interface MASFeedViewController ()
 
@@ -36,8 +38,20 @@
                                                                                    target:self
  
                                                                                    action:@selector(plusButtonPressed:)];
-    
     self.navigationController.navigationBar.topItem.rightBarButtonItem = addPostButton;
+    
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"menuButton"] style:UIBarButtonItemStylePlain target:self action:@selector(menuButtonPressed:)];
+    self.navigationController.navigationBar.topItem.leftBarButtonItem = menuButton;
+}
+
+- (void)menuButtonPressed:(id)sender
+{
+    MASSideMenuViewController *sideMenuViewController = ((MASAppDelegate *)[[UIApplication sharedApplication]delegate]).sideMenuViewController;
+    if(sideMenuViewController.menuVisible) {
+        [sideMenuViewController hideMenuController];
+    } else {
+        [sideMenuViewController presentMenuController];
+    }
 }
 
 -(void)plusButtonPressed:(id)sender
@@ -58,9 +72,6 @@
     
     //get all posts
     [self getFeedDataFromParse];
-    
-    
-    
 }
 
 - (void)didReceiveMemoryWarning
