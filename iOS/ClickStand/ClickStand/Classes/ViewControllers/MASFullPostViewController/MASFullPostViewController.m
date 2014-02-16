@@ -24,6 +24,16 @@
     return self;
 }
 
+-(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andPfObj:(PFObject *) object andImage:(UIImageView *)image
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.postImage = image;
+        self.userObj   = object;
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -33,6 +43,11 @@
     profileTap.numberOfTapsRequired = 1;
     self.userImage.userInteractionEnabled = YES;
     [self.userImage addGestureRecognizer:profileTap];
+    
+    // Add the preloaded things now, Comyar may know how to make better
+    self.image.image = self.postImage.image;
+    self.description.text = self.userObj[@"description"];
+    self.description.text = self.userObj[@"postTitle"];
     
 }
 

@@ -9,12 +9,18 @@
 #import <UIKit/UIKit.h>
 
 @interface MASFullPostViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UIImageView *image;
-@property (weak, nonatomic) IBOutlet UITextView *description;
-@property (weak, nonatomic) IBOutlet UIImageView *userImage;
-@property (strong, nonatomic) NSString * userID;
+@property (weak, nonatomic) IBOutlet UIScrollView           *scrollView;
+@property (weak, nonatomic) IBOutlet UIImageView            *image;
+@property (weak, nonatomic) IBOutlet UILabel                *postTitle;
+@property (weak, nonatomic) IBOutlet UITextView             *description;
+@property (weak, nonatomic) IBOutlet UIImageView            *userImage;
+@property (strong, nonatomic) NSString                      *userID;
 
-//TODO: comyar, you can make stuff look pretty by dragging or dropping or programatically, whatever your feels are.
+@property (weak, nonatomic) UIImageView                     *postImage;
+@property (weak, nonatomic) PFObject                        *userObj;
+
+
+// Added this to load faster
+-(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andPfObj:(PFObject *) object andImage:(UIImageView *)image;
 
 @end

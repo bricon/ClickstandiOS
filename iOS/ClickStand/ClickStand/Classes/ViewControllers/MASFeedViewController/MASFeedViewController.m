@@ -162,6 +162,7 @@
                     if (image){
                         NSLog(@"Setting the image aww yeah");
                         cell.postImage.image = image;
+                        cell.postImage.tag = index;
                     }
                 }
             }];
@@ -176,6 +177,7 @@
         cell.postImage.layer.cornerRadius = 10.0;
         cell.postImage.layer.masksToBounds = YES;
         [cell.postImage addGestureRecognizer:singleTap];
+        
         //add post ID tag so we can get post info in the next view
         
         UITapGestureRecognizer *profileTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedProfileImage:)];
@@ -205,10 +207,15 @@
 
 }
 
--(void)tapDetectedMainImage:(id) sender{
-    NSLog(@"single Tap on imageview");
-    //load full post page
-    MASFullPostViewController * fullPostViewController = [[MASFullPostViewController alloc] init];
+-(void)tapDetectedMainImage:(id) sender
+{
+    // All the images have been tagged with their index in self.feedData
+    UITapGestureRecognizer *gesture = (UITapGestureRecognizer *) sender;
+    NSInteger index = gesture.view.tag;
+    UIImageView *imgView = (UIImageView *) gesture.view;
+    
+    // Initialize the appropriate one, pass down the information to avoid reloading it
+    MASFullPostViewController * fullPostViewController = [[MASFullPostViewController alloc] initWithNibName:nil bundle:[NSBundle mainBundle] andPfObj:(PFObject *)self.feedData[index] andImage:imgView];
     [self.navigationController pushViewController:fullPostViewController animated:YES];
 }
 
