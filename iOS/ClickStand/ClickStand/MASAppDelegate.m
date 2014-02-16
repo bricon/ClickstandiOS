@@ -8,7 +8,6 @@
 
 #import "MASAppDelegate.h"
 #import "MASLoginViewController.h"
-#import "MASHomeViewController.h"
 #import "MASFeedViewController.h"
 #import "MASMenuViewController.h"
 
@@ -18,6 +17,7 @@
 {
     
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    self.window.backgroundColor = [UIColor darkGrayColor];
     
     // Parse ID and Key. Change after handing over to Clickstand
     [Parse setApplicationId:@"hxjc7PsqUeQww2KZSMfMp3ZhFajFZHCT0JIPeR1t"
@@ -43,7 +43,7 @@
         self.window.rootViewController = [[MASLoginViewController alloc]initWithNibName:@"MASLoginViewController"
                                                                                  bundle:[NSBundle mainBundle]];
     }
-    
+    [self configureAppearance];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -55,6 +55,12 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
+}
+
+- (void)configureAppearance
+{
+    [[UINavigationBar appearance]setBarTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance]setTintColor:[UIColor darkGrayColor]];
 }
 
 @end

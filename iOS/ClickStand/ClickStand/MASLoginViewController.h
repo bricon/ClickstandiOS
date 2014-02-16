@@ -16,7 +16,6 @@
 
 - (IBAction)didTouchUpInsideButton:(UIButton *)sender;
 - (IBAction)didBeginEditingTextField:(UITextField *)sender;
-- (IBAction)didEndEditingTextField:(UITextField *)sender;
 
 @property (weak, nonatomic) IBOutlet UIButton *facebookLoginButton;
 @property (weak, nonatomic) IBOutlet UIButton *twitterLoginButton;

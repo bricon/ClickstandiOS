@@ -25,10 +25,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.facebookLoginButton setImage:[UIImage imageNamed:@"facebook-highlighted"]
-                              forState:UIControlStateHighlighted];
-    [self.twitterLoginButton setImage:[UIImage imageNamed:@"twitter-highlighted"]
-                             forState:UIControlStateHighlighted];
     self.usernameTextField.delegate = self;
     self.passwordTextField.delegate = self;
     self.loginButton.layer.masksToBounds = YES;
@@ -96,10 +92,9 @@
                 if (user.isNew) {
                     NSLog(@"User signed up and logged in with Twitter!");
                 }
-                
-                
             }
         }];
+        
     } else if(sender == self.loginButton) {
         NSLog(@"login button pressed");
         
@@ -113,7 +108,7 @@
                     // TODO: Print a better error message when the login fails
                 }
             }];
-        
+        [self resetViewFrame];
     } else if(sender == self.forgotPasswordButton) {
         NSLog(@"forgot password button pressed");
         
@@ -126,27 +121,30 @@
                                                                               bundle:[NSBundle mainBundle]];
         self.signUpViewController.delegate = self;
         [self presentViewController:self.signUpViewController animated:YES completion:nil];
-        
     }
 }
 
 - (IBAction)didBeginEditingTextField:(UITextField *)sender
 {
-    [UIView animateWithDuration:0.3 animations: ^ {
+    [UIView animateWithDuration:0.25 animations: ^ {
         self.view.frame = CGRectMake(0, -164, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
     }];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    [textField resignFirstResponder];
-    [self resetViewFrame];
+    if(textField == self.usernameTextField) {
+        [self.passwordTextField becomeFirstResponder];
+    } else if(textField == self.passwordTextField) {
+        [self.passwordTextField resignFirstResponder];
+    }
+//    [self resetViewFrame];
     return YES;
 }
 
 - (void)resetViewFrame
 {
-    [UIView animateWithDuration:0.3 animations: ^ {
+    [UIView animateWithDuration:0.25 animations: ^ {
         self.view.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
     }];
 }

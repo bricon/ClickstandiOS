@@ -24,8 +24,7 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         ///Users/matthewebeweber/Documents/clickstand/iOS/ClickStand/ClickStand/MASAddPostViewController.m Custom initialization
     }
     return self;
@@ -34,17 +33,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    
+    self.tableView.contentSize = self.view.bounds.size;
     
     UIBarButtonItem *addPostButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                                                    target:self
  
                                                                                    action:@selector(plusButtonPressed:)];
     self.navigationController.navigationBar.topItem.rightBarButtonItem = addPostButton;
+    self.navigationController.navigationBar.topItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MAS_Logo"]];
     
     UIBarButtonItem *menuButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"menuButton"] style:UIBarButtonItemStylePlain target:self action:@selector(menuButtonPressed:)];
     self.navigationController.navigationBar.topItem.leftBarButtonItem = menuButton;
+    
 }
 
 - (void)menuButtonPressed:(id)sender
@@ -115,9 +115,14 @@
 {
     if (self.feedData.count ==0){
         NSLog(@"yo nothing is populated");
-        return 5;
+        return 1;
     }
     return self.feedData.count;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -137,15 +142,17 @@
         
         UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedMainImage:)];
         singleTap.numberOfTapsRequired = 1;
-        cell.image.userInteractionEnabled = YES;
-        
-        [cell.image addGestureRecognizer:singleTap];
+        cell.postImage.layer.cornerRadius = 10.0;
+        cell.postImage.layer.masksToBounds = YES;
+        [cell.postImage addGestureRecognizer:singleTap];
         //add post ID tag so we can get post info in the next view
-
         
         UITapGestureRecognizer *profileTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedProfileImage:)];
         profileTap.numberOfTapsRequired = 1;
-        cell.userImage.userInteractionEnabled = YES;
+        if(cell.userImage)
+            NSLog(@"%@", cell.userImage);
+        cell.userImage.layer.cornerRadius = 22.5;
+        cell.userImage.layer.masksToBounds = YES;
         [cell.userImage addGestureRecognizer:profileTap];
         //add user ID tag so we can get profile info in the next view
         
@@ -161,12 +168,6 @@
         [button setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
         [cell.contentView addSubview:button];
     }
-    
-    cell.image.layer.cornerRadius = 4.0;
-    cell.image.layer.masksToBounds = YES;
-    
-    cell.userImage.layer.cornerRadius = 5.0;
-    cell.userImage.layer.masksToBounds = YES;
     
     return cell;
 

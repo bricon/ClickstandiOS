@@ -67,6 +67,9 @@
 		DD164E4B18B025AC006D7BEF /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164E4A18B025AC006D7BEF /* home@2x.png */; };
 		DD164E6E18B025D2006D7BEF /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164E6D18B025D2006D7BEF /* settings@2x.png */; };
 		DD164E7018B028B3006D7BEF /* menuBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164E6F18B028B3006D7BEF /* menuBackground@2x.png */; };
+		DD164E7318B03256006D7BEF /* facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164E7118B03256006D7BEF /* facebook@2x.png */; };
+		DD164E7418B03256006D7BEF /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164E7218B03256006D7BEF /* twitter@2x.png */; };
+		DDD1A21218B0361E00B732A3 /* MAS_Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD1A21118B0361E00B732A3 /* MAS_Logo@2x.png */; };
 		DDED554A18AEF2A300E6E843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554918AEF2A300E6E843 /* Foundation.framework */; };
 		DDED554C18AEF2A300E6E843 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554B18AEF2A300E6E843 /* CoreGraphics.framework */; };
 		DDED554E18AEF2A300E6E843 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554D18AEF2A300E6E843 /* UIKit.framework */; };
@@ -88,17 +91,12 @@
 		DDED558C18AF0E9800E6E843 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED558B18AF0E9800E6E843 /* QuartzCore.framework */; };
 		DDED558E18AF0EA300E6E843 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED558D18AF0EA300E6E843 /* StoreKit.framework */; };
 		DDED559018AF0EB300E6E843 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED558F18AF0EB300E6E843 /* SystemConfiguration.framework */; };
-		DDED559918AF166000E6E843 /* MASHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED559818AF166000E6E843 /* MASHomeViewController.m */; };
-		DDED55A418AF2BCF00E6E843 /* facebook-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDED55A218AF2BCF00E6E843 /* facebook-highlighted@2x.png */; };
-		DDED55A518AF2BCF00E6E843 /* facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDED55A318AF2BCF00E6E843 /* facebook@2x.png */; };
 		DDED55AA18AF376000E6E843 /* MASFullPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED55A818AF376000E6E843 /* MASFullPostViewController.m */; };
 		DDED55AB18AF376000E6E843 /* MASFullPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDED55A918AF376000E6E843 /* MASFullPostViewController.xib */; };
 		DDED55B018AF377500E6E843 /* MASFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED55AE18AF377500E6E843 /* MASFeedViewController.m */; };
 		DDED55B118AF377500E6E843 /* MASFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDED55AF18AF377500E6E843 /* MASFeedViewController.xib */; };
 		DDED55B618AF37B000E6E843 /* MASFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED55B418AF37B000E6E843 /* MASFeedCell.m */; };
 		DDED55B718AF37B000E6E843 /* MASFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDED55B518AF37B000E6E843 /* MASFeedCell.xib */; };
-		DDED55B918AF3FDF00E6E843 /* twitter-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDED55B818AF3FDF00E6E843 /* twitter-highlighted@2x.png */; };
-		DDED55BB18AF3FF500E6E843 /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDED55BA18AF3FF500E6E843 /* twitter@2x.png */; };
 		DDED55BE18AF409900E6E843 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDED55BD18AF409900E6E843 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -199,6 +197,9 @@
 		DD164E4A18B025AC006D7BEF /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
 		DD164E6D18B025D2006D7BEF /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
 		DD164E6F18B028B3006D7BEF /* menuBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuBackground@2x.png"; sourceTree = "<group>"; };
+		DD164E7118B03256006D7BEF /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook@2x.png"; sourceTree = "<group>"; };
+		DD164E7218B03256006D7BEF /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@2x.png"; sourceTree = "<group>"; };
+		DDD1A21118B0361E00B732A3 /* MAS_Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MAS_Logo@2x.png"; sourceTree = "<group>"; };
 		DDED554618AEF2A300E6E843 /* ClickStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDED554918AEF2A300E6E843 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DDED554B18AEF2A300E6E843 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -223,10 +224,6 @@
 		DDED558B18AF0E9800E6E843 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DDED558D18AF0EA300E6E843 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DDED558F18AF0EB300E6E843 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		DDED559718AF166000E6E843 /* MASHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASHomeViewController.h; path = Classes/ViewControllers/MASHomeViewController/MASHomeViewController.h; sourceTree = "<group>"; };
-		DDED559818AF166000E6E843 /* MASHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASHomeViewController.m; path = Classes/ViewControllers/MASHomeViewController/MASHomeViewController.m; sourceTree = "<group>"; };
-		DDED55A218AF2BCF00E6E843 /* facebook-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "facebook-highlighted@2x.png"; path = "Assets/Images/facebook-highlighted@2x.png"; sourceTree = "<group>"; };
-		DDED55A318AF2BCF00E6E843 /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "facebook@2x.png"; path = "Assets/Images/facebook@2x.png"; sourceTree = "<group>"; };
 		DDED55A718AF376000E6E843 /* MASFullPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASFullPostViewController.h; path = Classes/ViewControllers/MASFullPostViewController/MASFullPostViewController.h; sourceTree = "<group>"; };
 		DDED55A818AF376000E6E843 /* MASFullPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASFullPostViewController.m; path = Classes/ViewControllers/MASFullPostViewController/MASFullPostViewController.m; sourceTree = "<group>"; };
 		DDED55A918AF376000E6E843 /* MASFullPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MASFullPostViewController.xib; path = Classes/ViewControllers/MASFullPostViewController/MASFullPostViewController.xib; sourceTree = "<group>"; };
@@ -236,8 +233,6 @@
 		DDED55B318AF37B000E6E843 /* MASFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASFeedCell.h; path = Classes/Views/MASFeedCell/MASFeedCell.h; sourceTree = "<group>"; };
 		DDED55B418AF37B000E6E843 /* MASFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASFeedCell.m; path = Classes/Views/MASFeedCell/MASFeedCell.m; sourceTree = "<group>"; };
 		DDED55B518AF37B000E6E843 /* MASFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MASFeedCell.xib; path = Classes/Views/MASFeedCell/MASFeedCell.xib; sourceTree = "<group>"; };
-		DDED55B818AF3FDF00E6E843 /* twitter-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twitter-highlighted@2x.png"; path = "Assets/Images/twitter-highlighted@2x.png"; sourceTree = "<group>"; };
-		DDED55BA18AF3FF500E6E843 /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twitter@2x.png"; path = "Assets/Images/twitter@2x.png"; sourceTree = "<group>"; };
 		DDED55BD18AF409900E6E843 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Assets/Images/Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -559,7 +554,6 @@
 				93400F4918AFE659008530A2 /* MASMenuViewController */,
 				DDED55AC18AF376900E6E843 /* MASFeedViewController */,
 				DDED55A618AF374E00E6E843 /* MASFullPostViewController */,
-				DDED559618AF163300E6E843 /* MASHomeViewController */,
 				DDED559218AF14BB00E6E843 /* MASLoginViewController */,
 				844CE28718AFCAC8004E8893 /* MASProfileViewController */,
 			);
@@ -583,15 +577,6 @@
 			name = MASLoginViewController;
 			sourceTree = "<group>";
 		};
-		DDED559618AF163300E6E843 /* MASHomeViewController */ = {
-			isa = PBXGroup;
-			children = (
-				DDED559718AF166000E6E843 /* MASHomeViewController.h */,
-				DDED559818AF166000E6E843 /* MASHomeViewController.m */,
-			);
-			name = MASHomeViewController;
-			sourceTree = "<group>";
-		};
 		DDED559C18AF243A00E6E843 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -603,6 +588,9 @@
 		DDED559D18AF244300E6E843 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DDD1A21118B0361E00B732A3 /* MAS_Logo@2x.png */,
+				DD164E7118B03256006D7BEF /* facebook@2x.png */,
+				DD164E7218B03256006D7BEF /* twitter@2x.png */,
 				DD164E6F18B028B3006D7BEF /* menuBackground@2x.png */,
 				DD164E6D18B025D2006D7BEF /* settings@2x.png */,
 				DD164E4A18B025AC006D7BEF /* home@2x.png */,
@@ -610,10 +598,6 @@
 				DD164D9D18AF4F03006D7BEF /* masLogo@2x.png */,
 				93400F5618AFFB1B008530A2 /* plusbutton@2x.png */,
 				DDED55BD18AF409900E6E843 /* Default-568h@2x.png */,
-				DDED55BA18AF3FF500E6E843 /* twitter@2x.png */,
-				DDED55B818AF3FDF00E6E843 /* twitter-highlighted@2x.png */,
-				DDED55A218AF2BCF00E6E843 /* facebook-highlighted@2x.png */,
-				DDED55A318AF2BCF00E6E843 /* facebook@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -724,7 +708,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDED55A518AF2BCF00E6E843 /* facebook@2x.png in Resources */,
 				DD164E1118AFF6B8006D7BEF /* cvc@2x.png in Resources */,
 				DD164E1C18AFF6B8006D7BEF /* visa.png in Resources */,
 				DD164E6E18B025D2006D7BEF /* settings@2x.png in Resources */,
@@ -732,9 +715,7 @@
 				DD164E0D18AFF6B8006D7BEF /* amex@2x.png in Resources */,
 				DD164D9E18AF4F03006D7BEF /* masLogo@2x.png in Resources */,
 				DD164E0F18AFF6B8006D7BEF /* cvc-amex@2x.png in Resources */,
-				DDED55A418AF2BCF00E6E843 /* facebook-highlighted@2x.png in Resources */,
 				DD164E1818AFF6B8006D7BEF /* mastercard.png in Resources */,
-				DDED55BB18AF3FF500E6E843 /* twitter@2x.png in Resources */,
 				93400F5518AFF946008530A2 /* MASAddPostViewController.xib in Resources */,
 				93400F5718AFFB1B008530A2 /* plusbutton@2x.png in Resources */,
 				DD164E1018AFF6B8006D7BEF /* cvc.png in Resources */,
@@ -745,7 +726,6 @@
 				84A734D918AFDD4A000FC694 /* MASSignUpViewController.xib in Resources */,
 				DD164E0C18AFF6B8006D7BEF /* amex.png in Resources */,
 				DD164E1B18AFF6B8006D7BEF /* placeholder@2x.png in Resources */,
-				DDED55B918AF3FDF00E6E843 /* twitter-highlighted@2x.png in Resources */,
 				DDED55B118AF377500E6E843 /* MASFeedViewController.xib in Resources */,
 				DD164E4B18B025AC006D7BEF /* home@2x.png in Resources */,
 				844CE28618AFCAC4004E8893 /* MASProfileViewController.xib in Resources */,
@@ -761,9 +741,12 @@
 				DDED555418AEF2A300E6E843 /* InfoPlist.strings in Resources */,
 				84A734DD18AFDD63000FC694 /* MASLoginViewController.xib in Resources */,
 				DDED55AB18AF376000E6E843 /* MASFullPostViewController.xib in Resources */,
+				DD164E7318B03256006D7BEF /* facebook@2x.png in Resources */,
 				844CE28118AF5D9E004E8893 /* puppy.jpg in Resources */,
 				93400F4E18AFE666008530A2 /* MASMenuViewController.xib in Resources */,
 				DD164E1E18AFF6B8006D7BEF /* gradient@2x.png in Resources */,
+				DDD1A21218B0361E00B732A3 /* MAS_Logo@2x.png in Resources */,
+				DD164E7418B03256006D7BEF /* twitter@2x.png in Resources */,
 				DD164E1918AFF6B8006D7BEF /* mastercard@2x.png in Resources */,
 				DD164E1F18AFF6B8006D7BEF /* textfield.png in Resources */,
 				84A393CD18AFEF8800DDB4E8 /* MASPaymentViewController.xib in Resources */,
@@ -809,7 +792,6 @@
 				93400F5418AFF946008530A2 /* MASAddPostViewController.m in Sources */,
 				DD164E0518AFF6B8006D7BEF /* PKCard.m in Sources */,
 				DD164E0618AFF6B8006D7BEF /* PKCardCVC.m in Sources */,
-				DDED559918AF166000E6E843 /* MASHomeViewController.m in Sources */,
 				DD164E0918AFF6B8006D7BEF /* PKTextField.m in Sources */,
 				93400F4D18AFE666008530A2 /* MASMenuViewController.m in Sources */,
 				DD164DFD18AFF6B8006D7BEF /* STPCard.m in Sources */,
