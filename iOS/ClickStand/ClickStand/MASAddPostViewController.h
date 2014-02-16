@@ -16,11 +16,12 @@
 
 @interface MASAddPostViewController : UIViewController <UIImagePickerControllerDelegate,
                                                         UINavigationControllerDelegate,
-                                                        UITextFieldDelegate>
+                                                        UITextFieldDelegate,UITextViewDelegate>
 
 @property (weak, nonatomic) id<MASAddPostViewControllerDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UITextField *postTitleTextField;
-@property (weak, nonatomic) IBOutlet UITextField *postBodyTextField;
+@property (weak, nonatomic) IBOutlet UITextView *postBodyTextField;
+
 @property (weak, nonatomic) IBOutlet UIButton *submitPostButton;
 
 // Fields related to taking a picture

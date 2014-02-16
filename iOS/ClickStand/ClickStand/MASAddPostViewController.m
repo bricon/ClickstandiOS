@@ -7,12 +7,14 @@
 //
 
 #import "MASAddPostViewController.h"
+#define kOFFSET_FOR_KEYBOARD 150
 
 @interface MASAddPostViewController ()
-
+@property BOOL stayup;
 @end
 
 @implementation MASAddPostViewController
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,12 +47,24 @@
 {
     if (textField == self.postTitleTextField) {
         [self.postBodyTextField becomeFirstResponder];
-    } else if (textField == self.postBodyTextField) {
-        [self.postBodyTextField resignFirstResponder];
     }
     
     return YES;
     
+}
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range
+ replacementText:(NSString *)text
+{
+    
+    if ([text isEqualToString:@"\n"]) {
+        
+        [textView resignFirstResponder];
+        // Return FALSE so that the final '\n' character doesn't get added
+        return NO;
+    }
+    // For any other character return TRUE so that the text gets added to the view
+    return YES;
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -160,5 +174,75 @@
 {
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
+
+
+//shit to move the view up with the keyboard
+//NOT A GOOD WAY TO DO THIS IN THE LONG RUN
+
+-(void)setViewMovedUp:(BOOL)movedUp
+{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.3]; // if you want to slide up the view
+    [UIView setAnimationBeginsFromCurrentState:YES];
+    
+    CGRect rect = self.view.frame;
+    if (movedUp)
+    {
+        // 1. move the view's origin up so that the text field that will be hidden come above the keyboard
+        // 2. increase the size of the view so that the area behind the keyboard is covered up.
+        
+        if (rect.origin.y == 0 ) {
+            rect.origin.y -= kOFFSET_FOR_KEYBOARD;
+            //rect.size.height += kOFFSET_FOR_KEYBOARD;
+        }
+        
+    }
+    else
+    {
+        if (_stayup == NO) {
+            rect.origin.y += kOFFSET_FOR_KEYBOARD;
+            //rect.size.height -= kOFFSET_FOR_KEYBOARD;
+        }
+    }
+    self.view.frame = rect;
+    [UIView commitAnimations];
+}
+
+- (void)keyboardWillHide:(NSNotification *)notif {
+    [self setViewMovedUp:NO];
+}
+
+
+- (void)keyboardWillShow:(NSNotification *)notif{
+    [self setViewMovedUp:YES];
+}
+
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    self.stayup = YES;
+    [self setViewMovedUp:YES];
+}
+
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    self.stayup = NO;
+    [self setViewMovedUp:NO];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:)
+                                                 name:UIKeyboardWillShowNotification object:self.view.window];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:)
+                                                 name:UIKeyboardWillHideNotification object:self.view.window];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    // unregister for keyboard notifications while not visible.
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
+}
+
 
 @end
