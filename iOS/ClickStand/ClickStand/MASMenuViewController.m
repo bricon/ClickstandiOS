@@ -20,9 +20,8 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        self.menuOptions = @[@[@"Home", @"Settings", @"Profile"],@[@"        Logout"]];
-        //change icon 
-        self.menuIconNames = @[@"home",@"settings",@"settings"];
+        self.menuOptions = @[@[@"Home", @"Profile", @"Settings"],@[@"        Logout"]];
+        self.menuIconNames = @[@"home",@"profile",@"settings"];
     }
     return self;
 }
@@ -44,7 +43,7 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MASMenuTableViewCell"];
         cell.backgroundColor = [UIColor clearColor];
         cell.textLabel.textColor = [UIColor whiteColor];
-        cell.textLabel.highlightedTextColor = [UIColor lightGrayColor];
+        cell.textLabel.highlightedTextColor = [UIColor darkGrayColor];
         cell.selectedBackgroundView = [[UIView alloc]init];
         if(indexPath.section == 0) {
             cell.imageView.image = [UIImage imageNamed:self.menuIconNames[indexPath.row]];

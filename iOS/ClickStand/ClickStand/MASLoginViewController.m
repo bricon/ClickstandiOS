@@ -27,6 +27,8 @@
     [super viewDidLoad];
     self.usernameTextField.delegate = self;
     self.passwordTextField.delegate = self;
+    self.loginButton.layer.borderColor = [UIColor colorWithRed:1.000 green:0.333 blue:0.389 alpha:1.000].CGColor;
+    self.loginButton.layer.borderWidth = 1.0;
     self.loginButton.layer.masksToBounds = YES;
     self.loginButton.layer.cornerRadius = 5.0;
 }
