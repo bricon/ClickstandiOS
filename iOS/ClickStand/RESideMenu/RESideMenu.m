@@ -81,6 +81,7 @@
 {
     self = [self init];
     if (self) {
+        self.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
         _contentViewController = contentViewController;
         _menuViewController = menuViewController;
     }
