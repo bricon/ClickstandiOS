@@ -24,3 +24,16 @@ parseExamples
 # More shtuff
 *.xcodeproj/xcuserdata/*.xcuserdata
 *.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdata
+
+
+# python gitignore 
+*.pyc
+*.pyo
+env
+env*
+dist
+*.egg
+*.egg-info
+_mailinglist
+.tox
+venv
