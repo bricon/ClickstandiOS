@@ -273,13 +273,12 @@ didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
              // `prepareForDismissal`, on your `BTPaymentViewController`
              [self.paymentViewController prepareForDismissal];
              
-             // Now you can dismiss and tell the user everything worked.
-             [self dismissViewControllerAnimated:YES completion:^(void) {
-                 [[[UIAlertView alloc] initWithTitle:@"Success"
-                                             message:@"Saved your card!" delegate:nil
-                                   cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
-             }];
-             
+             [self.navigationController popViewControllerAnimated:YES];
+             [[[UIAlertView alloc]initWithTitle:@"Success"
+                                        message:@"Saved your card!"
+                                       delegate:nil
+                              cancelButtonTitle:@"Ok"
+                              otherButtonTitles:nil]show];
          } else {
              // Card did not save correctly, so show server error using `showErrorWithTitle:message:`
              [self.paymentViewController
