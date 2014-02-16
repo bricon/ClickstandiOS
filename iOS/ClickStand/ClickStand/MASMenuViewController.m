@@ -7,7 +7,7 @@
 //
 
 #import "MASMenuViewController.h"
-
+#import "MASLoginViewController.h"
 
 
 @interface MASMenuViewController ()
@@ -60,7 +60,7 @@
     if(section == 0) {
         return 64.0;
     } else if(section == 1) {
-        return 320.0;
+        return 300.0;
     }
     return 0.0;
 }
@@ -69,6 +69,16 @@
 {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     cell.selected = NO;
+    if(indexPath.section == 0) {
+        
+    } else if(indexPath.section == 1) {
+        if(indexPath.row == 0) {
+            [PFUser logOut];
+            [self presentViewController:[MASLoginViewController new] animated:YES completion: ^ {
+                [[[UIAlertView alloc]initWithTitle:@"Success" message:@"Logged out successfully!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil]show];
+            }];
+        }
+    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

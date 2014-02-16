@@ -17,7 +17,7 @@
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     if(self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        
+        self.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     }
     return self;
 }
@@ -41,9 +41,10 @@
 
 - (IBAction)didTouchUpInsideButton:(UIButton *)sender
 {
+    [self.view endEditing:YES];
+    [self resetViewFrame];
     if(sender == self.facebookLoginButton) {
         NSLog(@"Attempting to log in the PFUser using facebook");
-        
         NSArray *permissionsArray = @[@"user_about_me", @"user_relationships", @"user_birthday", @"user_location"];
         
         [PFFacebookUtils initializeFacebook];
@@ -115,7 +116,6 @@
                     [alertView show];
                 }
             }];
-        [self resetViewFrame];
     } else if(sender == self.forgotPasswordButton) {
         NSLog(@"forgot password button pressed");
         
@@ -133,7 +133,7 @@
         NSLog(@"sign up button pressed");
         
         // Present the sign up view controller
-        self.signUpViewController = [[MASSignUpViewController alloc] initWithNibName:@"MASSignUpViewController"
+        self.signUpViewController = [[MASSignUpViewController alloc]initWithNibName:@"MASSignUpViewController"
                                                                               bundle:[NSBundle mainBundle]];
         self.signUpViewController.delegate = self;
         [self presentViewController:self.signUpViewController animated:YES completion:nil];
@@ -142,9 +142,14 @@
 
 - (IBAction)didBeginEditingTextField:(UITextField *)sender
 {
-    [UIView animateWithDuration:0.25 animations: ^ {
+    [UIView animateWithDuration:0.8 delay:0.0 usingSpringWithDamping:10.0 initialSpringVelocity:0.1 options:UIViewAnimationOptionCurveEaseOut animations: ^ {
         self.view.frame = CGRectMake(0, -164, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
-    }];
+    } completion:nil];
+}
+
+- (IBAction)didEndEditingTextField:(UITextField *)sender
+{
+//    [self resetViewFrame];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -153,16 +158,16 @@
         [self.passwordTextField becomeFirstResponder];
     } else if(textField == self.passwordTextField) {
         [self.passwordTextField resignFirstResponder];
+        [self resetViewFrame];
     }
-//    [self resetViewFrame];
     return YES;
 }
 
 - (void)resetViewFrame
 {
-    [UIView animateWithDuration:0.25 animations: ^ {
+    [UIView animateWithDuration:0.8 delay:0.0 usingSpringWithDamping:10.0 initialSpringVelocity:0.1 options:UIViewAnimationOptionCurveEaseOut animations: ^ {
         self.view.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
-    }];
+    } completion:nil];
 }
 
 - (void)dismissSignUpViewController

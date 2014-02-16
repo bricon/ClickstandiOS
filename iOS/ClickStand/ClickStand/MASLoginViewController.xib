@@ -80,6 +80,7 @@
                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="light" returnKeyType="done" secureTextEntry="YES"/>
                     <connections>
                         <action selector="didBeginEditingTextField:" destination="-1" eventType="editingDidBegin" id="mE9-tr-MPw"/>
+                        <action selector="didEndEditingTextField:" destination="-1" eventType="editingDidEnd" id="zW1-2K-TVu"/>
                     </connections>
                 </textField>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oLb-RG-NnU">
