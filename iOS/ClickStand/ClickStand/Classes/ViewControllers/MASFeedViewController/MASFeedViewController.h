@@ -9,13 +9,16 @@
 #import <UIKit/UIKit.h>
 #import <MASAddPostViewController.h>
 #import <QuartzCore/QuartzCore.h>
+#import "BTPaymentViewController.h"
 
-@interface MASFeedViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, MASAddPostViewControllerDelegate>
+@interface MASFeedViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, MASAddPostViewControllerDelegate, BTPaymentViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) MASAddPostViewController *addPostViewController;
 
 @property NSArray * feedData;
+
+@property BTPaymentViewController *paymentViewController;
 
 @end

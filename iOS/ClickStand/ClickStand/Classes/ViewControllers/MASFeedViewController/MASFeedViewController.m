@@ -16,6 +16,7 @@
 #import "RESideMenu.h"
 #import "MASAppDelegate.h"
 
+
 @interface MASFeedViewController ()
 
 @end
@@ -187,11 +188,18 @@
     [self.navigationController pushViewController:profileViewController animated:YES];
 }
 
+
+
 -(void)donate:(id) sender{
     NSLog(@"donate");
     //payment stuff
-    MASDonateViewController * paymentViewController = [[MASDonateViewController alloc] init];
-    [self.navigationController pushViewController:paymentViewController animated:YES];
+//    MASDonateViewController * paymentViewController = [[MASDonateViewController alloc] init];
+//    [self.navigationController pushViewController:paymentViewController animated:YES];
+    
+    //venmo
+    self.paymentViewController = [BTPaymentViewController paymentViewControllerWithVenmoTouchEnabled:YES];
+    self.paymentViewController.delegate = self;
+    [self.navigationController pushViewController:self.paymentViewController animated:YES];
     
 }
 
@@ -201,5 +209,76 @@
     return 500;
 }
 
+//venmo delegate method
+- (void)paymentViewController:(BTPaymentViewController *)paymentViewController
+        didSubmitCardWithInfo:(NSDictionary *)cardInfo
+         andCardInfoEncrypted:(NSDictionary *)cardInfoEncrypted {
+    NSLog(@"didSubmitCardWithInfo %@ andCardInfoEncrypted %@", cardInfo, cardInfoEncrypted);
+    
+    // Make a network request to send the cardInfoEncrypted dictionary from your app to the server.
+    // (Sample implementation of this method is below)
+    [self savePaymentInfoToServer:cardInfoEncrypted];
+}
+
+//venmo delegate method
+- (void)paymentViewController:(BTPaymentViewController *)paymentViewController
+didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
+    NSLog(@"didAuthorizeCardWithPaymentMethodCode %@", paymentMethodCode);
+    // Create a dictionary of POST data of the format
+    // {"payment_method_code": "[encrypted payment_method_code data from Venmo Touch client]"}
+    NSMutableDictionary *paymentInfo = [NSMutableDictionary dictionaryWithObject:paymentMethodCode
+                                                                          forKey:@"venmo_sdk_payment_method_code"];
+    
+    // Make a network request to send the paymentInfo from your app to the server.
+    // (Sample implementation of this method is below)
+    [self savePaymentInfoToServer:paymentInfo];
+}
+
+//venmo helper method
+- (void) savePaymentInfoToServer:(NSDictionary *)paymentInfo {
+    NSURL *url = [NSURL URLWithString: @"http://localhost:5000/card"];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+    
+    // You need a customer id in order to save a card to the Braintree vault.
+    // Here, for the sake of example, we set customer_id to device id.
+    // In practice, this is probably whatever user_id your app has assigned to this user.
+    NSString *customerId = [[UIDevice currentDevice] identifierForVendor].UUIDString;
+    [paymentInfo setValue:customerId forKey:@"customer_id"];
+    
+    //implement this "postDataFromDictionary" thing
+    //request.HTTPBody = [self postDataFromDictionary:paymentInfo];
+    request.HTTPMethod = @"POST";
+    
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response, NSData *body, NSError *requestError)
+     {
+         NSError *err = nil;
+         NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:body
+                                                                            options:kNilOptions error:&err];
+         NSLog(@"saveCardToServer: paymentInfo: %@ response: %@, error: %@",
+               paymentInfo, responseDictionary, requestError);
+         
+         if ([[responseDictionary valueForKey:@"success"] isEqualToNumber:@1]) { // Success!
+             // Don't forget to call the cleanup method,
+             // `prepareForDismissal`, on your `BTPaymentViewController`
+             [self.paymentViewController prepareForDismissal];
+             
+             // Now you can dismiss and tell the user everything worked.
+             [self dismissViewControllerAnimated:YES completion:^(void) {
+                 [[[UIAlertView alloc] initWithTitle:@"Success"
+                                             message:@"Saved your card!" delegate:nil
+                                   cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+             }];
+             
+         } /*else {
+             // Card did not save correctly, so show server error using `showErrorWithTitle:message:`
+             [self.paymentViewController
+              showErrorWithTitle:@"Error saving your card"
+              //implement this
+              message:[self messageStringFromResponse:responseDictionary]];
+         }*/
+     }];
+}
 
 @end

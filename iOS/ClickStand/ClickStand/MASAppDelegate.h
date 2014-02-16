@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "RESideMenu.h"
+#import <VenmoTouch/VenmoTouch.h>
 
 @interface MASAppDelegate : UIResponder <UIApplicationDelegate, RESideMenuDelegate>
 

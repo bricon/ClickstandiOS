@@ -20,8 +20,9 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        self.menuOptions = @[@[@"Home", @"Settings"],@[@"        Logout"]];
-        self.menuIconNames = @[@"home",@"settings"];
+        self.menuOptions = @[@[@"Home", @"Settings", @"Profile"],@[@"        Logout"]];
+        //change icon 
+        self.menuIconNames = @[@"home",@"settings",@"settings"];
     }
     return self;
 }
