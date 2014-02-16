@@ -240,7 +240,7 @@ didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
     NSLog(@"Calling SavePaymentInfoToServer");
     
     
-    NSURL *url = [NSURL URLWithString: @"http://http://clickstand.herokuapp.com/card"];
+    NSURL *url = [NSURL URLWithString: @"http://localhost:5000/card"];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
     
     // You need a customer id in order to save a card to the Braintree vault.
