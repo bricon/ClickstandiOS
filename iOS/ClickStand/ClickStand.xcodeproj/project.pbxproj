@@ -330,7 +330,7 @@
 		936F154B18B0798A008F92FC /* VenmoTouchResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VenmoTouchResources.bundle; sourceTree = "<group>"; };
 		936F157418B0C099008F92FC /* NSDate+TimeAgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+TimeAgo.h"; path = "ClickStand/NSDate+TimeAgo.h"; sourceTree = "<group>"; };
 		936F157518B0C099008F92FC /* NSDate+TimeAgo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+TimeAgo.m"; path = "ClickStand/NSDate+TimeAgo.m"; sourceTree = "<group>"; };
-		936F157F18B0CA78008F92FC /* NSDateTimeAgo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NSDateTimeAgo.bundle; path = "../../../../Downloads/NSDate-TimeAgo-master/NSDateTimeAgo.bundle"; sourceTree = "<group>"; };
+		936F157F18B0CA78008F92FC /* NSDateTimeAgo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NSDateTimeAgo.bundle; sourceTree = "<group>"; };
 		DD164D9D18AF4F03006D7BEF /* masLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "masLogo@2x.png"; path = "Assets/Images/masLogo@2x.png"; sourceTree = "<group>"; };
 		DD164DA018AFF6B8006D7BEF /* STPCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPCard.h; sourceTree = "<group>"; };
 		DD164DA118AFF6B8006D7BEF /* STPCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPCard.m; sourceTree = "<group>"; };
