@@ -540,7 +540,6 @@
 		DDED557A18AEF30400E6E843 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				84A734D418AFDBC0000FC694 /* MASSignUpViewController */,
 				DDED55B218AF379000E6E843 /* MASFeedCell */,
 			);
 			name = Views;
@@ -549,6 +548,7 @@
 		DDED557B18AEF30800E6E843 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				84A734D418AFDBC0000FC694 /* MASSignUpViewController */,
 				93400F5018AFF92D008530A2 /* MASAddPostViewController */,
 				93400F4F18AFF920008530A2 /* MASPaymentViewController */,
 				93400F4918AFE659008530A2 /* MASMenuViewController */,
