@@ -108,13 +108,27 @@
                 if (user) {
                     [self presentSideMenuViewController];
                 } else {
-                    // TODO: Print a better error message when the login fails
+                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Login failed. Please try again."
+                                                                        message:nil
+                                                                       delegate:self
+                                                              cancelButtonTitle:nil
+                                                              otherButtonTitles:@"Ok", nil];
+                    [alertView show];
                 }
             }];
     } else if(sender == self.forgotPasswordButton) {
         NSLog(@"forgot password button pressed");
         
-        // TODO: Add forgot user sequence
+        NSString *email = self.usernameTextField.text;
+        [PFUser requestPasswordResetForEmailInBackground:email];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Reset email sent to the specified email (if existed)."
+                                                            message:nil
+                                                           delegate:self
+                                                  cancelButtonTitle:nil
+                                                  otherButtonTitles:@"Ok", nil];
+        [alertView show];
+
+        
     } else if(sender == self.signupButton) {
         NSLog(@"sign up button pressed");
         

@@ -228,7 +228,7 @@ didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
     // Create a dictionary of POST data of the format
     // {"payment_method_code": "[encrypted payment_method_code data from Venmo Touch client]"}
     NSMutableDictionary *paymentInfo = [NSMutableDictionary dictionaryWithObject:paymentMethodCode
-                                                                          forKey:@"venmo_sdk_payment_method_code"];
+                                                                          forKey:@"payment_method_code"];
     
     // Make a network request to send the paymentInfo from your app to the server.
     // (Sample implementation of this method is below)
@@ -239,8 +239,12 @@ didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
 - (void) savePaymentInfoToServer:(NSDictionary *)paymentInfo {
     NSLog(@"Calling SavePaymentInfoToServer");
     
-    
-    NSURL *url = [NSURL URLWithString: @"http://localhost:5000/card"];
+    NSURL *url;
+    if ([paymentInfo objectForKey:@"payment_method_code"]) {
+        url = [NSURL URLWithString: @"http://localhost:5000/touch"];
+    } else {
+        url = [NSURL URLWithString: @"http://localhost:5000/card"];
+    }
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
     
     // You need a customer id in order to save a card to the Braintree vault.
