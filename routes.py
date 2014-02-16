@@ -1,5 +1,5 @@
 import os
-from flask import Flask
+from flask import Flask, jsonify
 from flask import request
 import braintree
 
@@ -21,6 +21,7 @@ def index():
 
 @app.route('/card', methods=["POST"])
 def card():
+    print "HITTING /card"
     result = braintree.Transaction.sale({
             "amount": "10.00",
             "credit_card": {
@@ -35,6 +36,7 @@ def card():
 
     if result.is_success:
         print "success!: " + result.transaction.id
+        return jsonify( {"success": 1} )
     elif result.transaction:
         print "Error processing transaction:"
         print "  message: " + result.message
@@ -46,7 +48,9 @@ def card():
             print "attribute: " + error.attribute
             print "  code: " + error.code
             print "  message: " + error.message
-    return flask.jsonify(**{success: 1})
+
+    return jsonify( {"success": 0} )
+    # return flask.jsonify(**{success: 1})
 
 
 if __name__ == '__main__':
