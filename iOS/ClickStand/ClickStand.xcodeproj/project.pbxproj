@@ -45,6 +45,8 @@
 		936F157018B07A1A008F92FC /* BTPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936F151818B0798A008F92FC /* BTPaymentViewController.m */; };
 		936F157118B07A2F008F92FC /* BraintreeResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 936F14E218B0798A008F92FC /* BraintreeResources.bundle */; };
 		936F157218B07A3A008F92FC /* VenmoTouchResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 936F154B18B0798A008F92FC /* VenmoTouchResources.bundle */; };
+		936F157618B0C099008F92FC /* NSDate+TimeAgo.m in Sources */ = {isa = PBXBuildFile; fileRef = 936F157518B0C099008F92FC /* NSDate+TimeAgo.m */; };
+		936F158018B0CA78008F92FC /* NSDateTimeAgo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 936F157F18B0CA78008F92FC /* NSDateTimeAgo.bundle */; };
 		DD164D9E18AF4F03006D7BEF /* masLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164D9D18AF4F03006D7BEF /* masLogo@2x.png */; };
 		DD164DFD18AFF6B8006D7BEF /* STPCard.m in Sources */ = {isa = PBXBuildFile; fileRef = DD164DA118AFF6B8006D7BEF /* STPCard.m */; };
 		DD164DFE18AFF6B8006D7BEF /* STPToken.m in Sources */ = {isa = PBXBuildFile; fileRef = DD164DA318AFF6B8006D7BEF /* STPToken.m */; };
@@ -326,6 +328,9 @@
 		936F154918B0798A008F92FC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		936F154A18B0798A008F92FC /* VenmoTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VenmoTouch.framework; sourceTree = "<group>"; };
 		936F154B18B0798A008F92FC /* VenmoTouchResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VenmoTouchResources.bundle; sourceTree = "<group>"; };
+		936F157418B0C099008F92FC /* NSDate+TimeAgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+TimeAgo.h"; path = "ClickStand/NSDate+TimeAgo.h"; sourceTree = "<group>"; };
+		936F157518B0C099008F92FC /* NSDate+TimeAgo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+TimeAgo.m"; path = "ClickStand/NSDate+TimeAgo.m"; sourceTree = "<group>"; };
+		936F157F18B0CA78008F92FC /* NSDateTimeAgo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NSDateTimeAgo.bundle; path = "../../../../Downloads/NSDate-TimeAgo-master/NSDateTimeAgo.bundle"; sourceTree = "<group>"; };
 		DD164D9D18AF4F03006D7BEF /* masLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "masLogo@2x.png"; path = "Assets/Images/masLogo@2x.png"; sourceTree = "<group>"; };
 		DD164DA018AFF6B8006D7BEF /* STPCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPCard.h; sourceTree = "<group>"; };
 		DD164DA118AFF6B8006D7BEF /* STPCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPCard.m; sourceTree = "<group>"; };
@@ -743,6 +748,16 @@
 			path = "venmo-touch";
 			sourceTree = "<group>";
 		};
+		936F157E18B0CA5F008F92FC /* NSDate+TimeAgo */ = {
+			isa = PBXGroup;
+			children = (
+				936F157F18B0CA78008F92FC /* NSDateTimeAgo.bundle */,
+				936F157418B0C099008F92FC /* NSDate+TimeAgo.h */,
+				936F157518B0C099008F92FC /* NSDate+TimeAgo.m */,
+			);
+			name = "NSDate+TimeAgo";
+			sourceTree = "<group>";
+		};
 		DD164D9F18AFF6B8006D7BEF /* Stripe */ = {
 			isa = PBXGroup;
 			children = (
@@ -855,6 +870,7 @@
 		DDED553D18AEF2A200E6E843 = {
 			isa = PBXGroup;
 			children = (
+				936F157E18B0CA5F008F92FC /* NSDate+TimeAgo */,
 				936F14C518B0798A008F92FC /* braintree_ios */,
 				DD164E3E18B01F72006D7BEF /* RESideMenu */,
 				DD164D9F18AFF6B8006D7BEF /* Stripe */,
@@ -1223,6 +1239,7 @@
 				DD164E1318AFF6B8006D7BEF /* diners@2x.png in Resources */,
 				DD164E1618AFF6B8006D7BEF /* jcb.png in Resources */,
 				DD164E1D18AFF6B8006D7BEF /* visa@2x.png in Resources */,
+				936F158018B0CA78008F92FC /* NSDateTimeAgo.bundle in Resources */,
 				DDED555418AEF2A300E6E843 /* InfoPlist.strings in Resources */,
 				84A734DD18AFDD63000FC694 /* MASLoginViewController.xib in Resources */,
 				DDED55AB18AF376000E6E843 /* MASFullPostViewController.xib in Resources */,
@@ -1286,6 +1303,7 @@
 				844CE28518AFCAC4004E8893 /* MASProfileViewController.m in Sources */,
 				84A734D818AFDD4A000FC694 /* MASSignUpViewController.m in Sources */,
 				DD164E0018AFF6B8006D7BEF /* Stripe.m in Sources */,
+				936F157618B0C099008F92FC /* NSDate+TimeAgo.m in Sources */,
 				DD164E0B18AFF6B8006D7BEF /* PKView.m in Sources */,
 				DD164E4718B01F72006D7BEF /* UIViewController+RESideMenu.m in Sources */,
 				DD164DFE18AFF6B8006D7BEF /* STPToken.m in Sources */,

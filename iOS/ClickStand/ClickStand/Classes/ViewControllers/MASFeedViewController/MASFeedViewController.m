@@ -15,6 +15,7 @@
 #import "MASDonateViewController.h"
 #import "RESideMenu.h"
 #import "MASAppDelegate.h"
+#import "NSDate+TimeAgo.h"
 
 
 @interface MASFeedViewController ()
@@ -94,7 +95,9 @@
 -(void)getFeedDataFromParse{
     //get all posts
     PFQuery *query = [PFQuery queryWithClassName:@"Post"];
+    query.cachePolicy = kPFCachePolicyNetworkOnly;          // Set the cache policy, maybe this is good?
     [query setLimit:25];
+    [query orderByDescending:@"createdAt"]; // order them by time
     
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
@@ -141,10 +144,32 @@
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"MASFeedCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
         
+        
         cell.description.text = self.feedData[index][@"description"];
         cell.title.text = self.feedData[index][@"title"];
         cell.stands.text = [NSString stringWithFormat:@"%@ stands", self.feedData[index][@"num_stands"]];
         cell.dollars.text = [NSString stringWithFormat:@"$%@ raised", self.feedData[index][@"money_raised"]];
+        
+        if ([self.feedData[index] isKindOfClass:[PFObject class]]) {
+            PFObject *parseObj = (PFObject *) self.feedData[index];
+            cell.time.text = [[parseObj createdAt] timeAgo];
+        
+            PFFile *imageFile = [parseObj objectForKey:@"image"];
+            [imageFile getDataInBackgroundWithBlock:^(NSData *result, NSError *error) {
+                if (result) {
+                    NSData* data = [[NSData alloc] initWithData:result];
+                    UIImage *image = [UIImage imageWithData:data];
+                    if (image){
+                        NSLog(@"Setting the image aww yeah");
+                        cell.postImage.image = image;
+                    }
+                }
+            }];
+            
+        }
+        
+        
+        
         
         UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedMainImage:)];
         singleTap.numberOfTapsRequired = 1;
