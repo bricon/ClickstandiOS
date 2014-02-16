@@ -11,7 +11,7 @@
 
 @interface MASProfileViewController ()
 @property BOOL stayup;
-
+@property (strong, nonatomic) UIBarButtonItem   *editBarButtonItem;
 @end
 
 @implementation MASProfileViewController
@@ -38,49 +38,16 @@
     self.description.delegate  = self;
     self.basicInfo.delegate = self;
   
+    self.profileImage.layer.cornerRadius = 50.0;
+    self.profileImage.layer.masksToBounds = YES;
     
+    self.editBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:nil];
+    self.navigationItem.rightBarButtonItem = self.editBarButtonItem;
     
-    //TODO: check if it's the user's profile
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    //set the position of the button
-    button.frame = CGRectMake(self.view.frame.origin.x + 200, self.view.frame.origin.y + 465, CGRectGetWidth(self.view.bounds) -230, 20);
-    [button setTitle:@"Edit" forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(editInfo:) forControlEvents:UIControlEventTouchUpInside];
-    button.backgroundColor= [UIColor clearColor];
-    button.layer.borderColor = [UIColor greenColor].CGColor;
-    button.layer.borderWidth = 1.0;
-    button.layer.cornerRadius = 5.0;
-    [button setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
-    [self.view addSubview:button];
+    self.postsCollectionView.dataSource = self;
+    self.postsCollectionView.delegate = self;
     
-
-}
-
-
--(void)editInfo:(id)sender{
-    NSLog(@"edit info");
-    
-    //show save button, hide edit
-    [sender removeFromSuperview];
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame = CGRectMake(self.view.frame.origin.x + 200, self.view.frame.origin.y + 465, CGRectGetWidth(self.view.bounds) -230, 20);
-    [button setTitle:@"Save" forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(saveInfo:) forControlEvents:UIControlEventTouchUpInside];
-    button.backgroundColor= [UIColor clearColor];
-    button.layer.borderColor = [UIColor greenColor].CGColor;
-    button.layer.borderWidth = 1.0;
-    button.layer.cornerRadius = 5.0;
-    [button setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
-    [self.view addSubview:button];
-    
-    
-    self.name.enabled = YES;
-    self.description.editable = YES;
-    self.basicInfo.enabled = YES;
-    
-    self.name.backgroundColor = [UIColor grayColor];
-    self.basicInfo.backgroundColor = [UIColor grayColor];
-    self.description.backgroundColor=[UIColor grayColor];
+    [self.postsCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"PostCollectionViewCell"];
 }
 
 -(void)saveInfo:(id)sender{
@@ -88,15 +55,6 @@
     //make things uneditable
     //send that shit back to parse
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
-
 
 //shit to move the view up with the keyboard
 //NOT A GOOD WAY TO DO THIS IN THE LONG RUN
@@ -132,6 +90,33 @@
     }
     // For any other character return TRUE so that the text gets added to the view
     return YES;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PostCollectionViewCell" forIndexPath:indexPath];
+    if(!cell) {
+        cell = [[UICollectionViewCell alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
+        
+        UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
+        imageView.tag = 1;
+        [cell.contentView addSubview:imageView];
+    }
+    
+    cell.backgroundColor = [UIColor redColor];
+    UIImageView *imageView = (UIImageView *)[cell.contentView viewWithTag:1];
+    imageView.image = [UIImage imageNamed:@"puppy.jpg"];
+    return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 5;
 }
 
 -(void)setViewMovedUp:(BOOL)movedUp
@@ -186,6 +171,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:)
                                                  name:UIKeyboardWillShowNotification object:self.view.window];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:)

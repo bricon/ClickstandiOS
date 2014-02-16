@@ -28,7 +28,6 @@
 		93400F5418AFF946008530A2 /* MASAddPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93400F5218AFF946008530A2 /* MASAddPostViewController.m */; };
 		93400F5518AFF946008530A2 /* MASAddPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93400F5318AFF946008530A2 /* MASAddPostViewController.xib */; };
 		93400F5718AFFB1B008530A2 /* plusbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93400F5618AFFB1B008530A2 /* plusbutton@2x.png */; };
-		936F156118B079C3008F92FC /* VenmoTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936F154A18B0798A008F92FC /* VenmoTouch.framework */; };
 		936F156218B07A1A008F92FC /* BTPayment-Prefix.pch in Sources */ = {isa = PBXBuildFile; fileRef = 936F150A18B0798A008F92FC /* BTPayment-Prefix.pch */; };
 		936F156318B07A1A008F92FC /* BTPaymentActivityOverlayView.h in Sources */ = {isa = PBXBuildFile; fileRef = 936F150B18B0798A008F92FC /* BTPaymentActivityOverlayView.h */; };
 		936F156418B07A1A008F92FC /* BTPaymentActivityOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 936F150C18B0798A008F92FC /* BTPaymentActivityOverlayView.m */; };
@@ -87,9 +86,11 @@
 		DD164E4718B01F72006D7BEF /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DD164E4418B01F72006D7BEF /* UIViewController+RESideMenu.m */; };
 		DD164E4B18B025AC006D7BEF /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164E4A18B025AC006D7BEF /* home@2x.png */; };
 		DD164E6E18B025D2006D7BEF /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164E6D18B025D2006D7BEF /* settings@2x.png */; };
-		DD164E7018B028B3006D7BEF /* menuBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164E6F18B028B3006D7BEF /* menuBackground@2x.png */; };
 		DD164E7318B03256006D7BEF /* facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164E7118B03256006D7BEF /* facebook@2x.png */; };
 		DD164E7418B03256006D7BEF /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164E7218B03256006D7BEF /* twitter@2x.png */; };
+		DDA34BD618B09500004D6A6F /* VenmoTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936F154A18B0798A008F92FC /* VenmoTouch.framework */; };
+		DDA34BD818B0954F004D6A6F /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA34BD718B0954F004D6A6F /* profile@2x.png */; };
+		DDA34BDC18B09BF8004D6A6F /* menuBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA34BDB18B09BF8004D6A6F /* menuBackground@2x.png */; };
 		DDD1A21218B0361E00B732A3 /* MAS_Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD1A21118B0361E00B732A3 /* MAS_Logo@2x.png */; };
 		DDED554A18AEF2A300E6E843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554918AEF2A300E6E843 /* Foundation.framework */; };
 		DDED554C18AEF2A300E6E843 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED554B18AEF2A300E6E843 /* CoreGraphics.framework */; };
@@ -384,9 +385,10 @@
 		DD164E4418B01F72006D7BEF /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
 		DD164E4A18B025AC006D7BEF /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
 		DD164E6D18B025D2006D7BEF /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
-		DD164E6F18B028B3006D7BEF /* menuBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuBackground@2x.png"; sourceTree = "<group>"; };
 		DD164E7118B03256006D7BEF /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook@2x.png"; sourceTree = "<group>"; };
 		DD164E7218B03256006D7BEF /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@2x.png"; sourceTree = "<group>"; };
+		DDA34BD718B0954F004D6A6F /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
+		DDA34BDB18B09BF8004D6A6F /* menuBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuBackground@2x.png"; sourceTree = "<group>"; };
 		DDD1A21118B0361E00B732A3 /* MAS_Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MAS_Logo@2x.png"; sourceTree = "<group>"; };
 		DDED554618AEF2A300E6E843 /* ClickStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDED554918AEF2A300E6E843 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -429,7 +431,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				936F156118B079C3008F92FC /* VenmoTouch.framework in Frameworks */,
+				DDA34BD618B09500004D6A6F /* VenmoTouch.framework in Frameworks */,
 				84BC323F18B06852005E3E01 /* CoreText.framework in Frameworks */,
 				84BC323D18B0684A005E3E01 /* CoreTelephony.framework in Frameworks */,
 				84BC323B18B06843005E3E01 /* AdSupport.framework in Frameworks */,
@@ -1009,10 +1011,11 @@
 		DDED559D18AF244300E6E843 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DDA34BDB18B09BF8004D6A6F /* menuBackground@2x.png */,
+				DDA34BD718B0954F004D6A6F /* profile@2x.png */,
 				DDD1A21118B0361E00B732A3 /* MAS_Logo@2x.png */,
 				DD164E7118B03256006D7BEF /* facebook@2x.png */,
 				DD164E7218B03256006D7BEF /* twitter@2x.png */,
-				DD164E6F18B028B3006D7BEF /* menuBackground@2x.png */,
 				DD164E6D18B025D2006D7BEF /* settings@2x.png */,
 				DD164E4A18B025AC006D7BEF /* home@2x.png */,
 				DD164E3C18B00D7D006D7BEF /* menuButton@2x.png */,
@@ -1187,6 +1190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA34BD818B0954F004D6A6F /* profile@2x.png in Resources */,
 				936F157218B07A3A008F92FC /* VenmoTouchResources.bundle in Resources */,
 				936F157118B07A2F008F92FC /* BraintreeResources.bundle in Resources */,
 				DD164E1118AFF6B8006D7BEF /* cvc@2x.png in Resources */,
@@ -1225,6 +1229,7 @@
 				DD164E7318B03256006D7BEF /* facebook@2x.png in Resources */,
 				844CE28118AF5D9E004E8893 /* puppy.jpg in Resources */,
 				93400F4E18AFE666008530A2 /* MASMenuViewController.xib in Resources */,
+				DDA34BDC18B09BF8004D6A6F /* menuBackground@2x.png in Resources */,
 				DD164E1E18AFF6B8006D7BEF /* gradient@2x.png in Resources */,
 				DDD1A21218B0361E00B732A3 /* MAS_Logo@2x.png in Resources */,
 				DD164E7418B03256006D7BEF /* twitter@2x.png in Resources */,
@@ -1232,7 +1237,6 @@
 				DD164E1F18AFF6B8006D7BEF /* textfield.png in Resources */,
 				84A393CD18AFEF8800DDB4E8 /* MASPaymentViewController.xib in Resources */,
 				84A393EF18B003E600DDB4E8 /* MASDonateViewController.xib in Resources */,
-				DD164E7018B028B3006D7BEF /* menuBackground@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1468,6 +1472,7 @@
 					/Users/ninalu/clickstand/iOS/ClickStand,
 					"/Users/admin/PennApps/clickstand/iOS/ClickStand/braintree_ios/venmo-touch",
 					"/Users/matthewebeweber/Documents/clickstand/braintree_ios/venmo-touch",
+					"/Users/Comyar/Dropbox/Development/clickstand/braintree_ios/venmo-touch",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClickStand/ClickStand-Prefix.pch";
@@ -1490,6 +1495,7 @@
 					/Users/ninalu/clickstand/iOS/ClickStand,
 					"/Users/admin/PennApps/clickstand/iOS/ClickStand/braintree_ios/venmo-touch",
 					"/Users/matthewebeweber/Documents/clickstand/braintree_ios/venmo-touch",
+					"/Users/Comyar/Dropbox/Development/clickstand/braintree_ios/venmo-touch",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClickStand/ClickStand-Prefix.pch";

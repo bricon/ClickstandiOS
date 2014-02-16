@@ -40,11 +40,11 @@
                                                                                    target:self
  
                                                                                    action:@selector(plusButtonPressed:)];
-    self.navigationController.navigationBar.topItem.rightBarButtonItem = addPostButton;
-    self.navigationController.navigationBar.topItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MAS_Logo"]];
+    self.navigationItem.rightBarButtonItem = addPostButton;
+    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MAS_Logo"]];
     
     UIBarButtonItem *menuButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"menuButton"] style:UIBarButtonItemStylePlain target:self action:@selector(menuButtonPressed:)];
-    self.navigationController.navigationBar.topItem.leftBarButtonItem = menuButton;
+    self.navigationItem.leftBarButtonItem = menuButton;
     
 }
 
@@ -163,10 +163,11 @@
         [button setTitle:@"Donate" forState:UIControlStateNormal];
         [button addTarget:self action:@selector(donate:) forControlEvents:UIControlEventTouchUpInside];
         button.backgroundColor= [UIColor clearColor];
-        button.layer.borderColor = [UIColor greenColor].CGColor;
+        button.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:18];
+        button.layer.borderColor = [UIColor colorWithRed:1.000 green:0.333 blue:0.389 alpha:1.000].CGColor;
         button.layer.borderWidth = 1.0;
         button.layer.cornerRadius = 5.0;
-        [button setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor colorWithRed:1.000 green:0.333 blue:0.389 alpha:1.000] forState:UIControlStateNormal];
         [cell.contentView addSubview:button];
     }
     
