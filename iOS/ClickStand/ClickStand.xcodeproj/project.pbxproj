@@ -19,34 +19,33 @@
 		84A734D918AFDD4A000FC694 /* MASSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A734D718AFDD4A000FC694 /* MASSignUpViewController.xib */; };
 		84A734DD18AFDD63000FC694 /* MASLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A734DA18AFDD63000FC694 /* MASLoginViewController.xib */; };
 		84A734DE18AFDD63000FC694 /* MASLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A734DB18AFDD63000FC694 /* MASLoginViewController.m */; };
-		84BC322818B06810005E3E01 /* BTDefines.h in Sources */ = {isa = PBXBuildFile; fileRef = 84BC31D018B067E9005E3E01 /* BTDefines.h */; };
-		84BC322918B06810005E3E01 /* BTPayment-Prefix.pch in Sources */ = {isa = PBXBuildFile; fileRef = 84BC31D118B067E9005E3E01 /* BTPayment-Prefix.pch */; };
-		84BC322A18B06810005E3E01 /* BTPaymentActivityOverlayView.h in Sources */ = {isa = PBXBuildFile; fileRef = 84BC31D218B067E9005E3E01 /* BTPaymentActivityOverlayView.h */; };
-		84BC322B18B06810005E3E01 /* BTPaymentActivityOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC31D318B067E9005E3E01 /* BTPaymentActivityOverlayView.m */; };
-		84BC322C18B06810005E3E01 /* BTPaymentCardType.h in Sources */ = {isa = PBXBuildFile; fileRef = 84BC31D418B067E9005E3E01 /* BTPaymentCardType.h */; };
-		84BC322D18B06810005E3E01 /* BTPaymentCardType.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC31D518B067E9005E3E01 /* BTPaymentCardType.m */; };
-		84BC322E18B06810005E3E01 /* BTPaymentCardUtils.h in Sources */ = {isa = PBXBuildFile; fileRef = 84BC31D618B067E9005E3E01 /* BTPaymentCardUtils.h */; };
-		84BC322F18B06810005E3E01 /* BTPaymentCardUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC31D718B067E9005E3E01 /* BTPaymentCardUtils.m */; };
-		84BC323018B06810005E3E01 /* BTPaymentFormTextField.h in Sources */ = {isa = PBXBuildFile; fileRef = 84BC31D818B067E9005E3E01 /* BTPaymentFormTextField.h */; };
-		84BC323118B06810005E3E01 /* BTPaymentFormTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC31D918B067E9005E3E01 /* BTPaymentFormTextField.m */; };
-		84BC323218B06810005E3E01 /* BTPaymentFormView.h in Sources */ = {isa = PBXBuildFile; fileRef = 84BC31DA18B067E9005E3E01 /* BTPaymentFormView.h */; };
-		84BC323318B06810005E3E01 /* BTPaymentFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC31DB18B067E9005E3E01 /* BTPaymentFormView.m */; };
-		84BC323418B06810005E3E01 /* BTPaymentSectionHeaderView.h in Sources */ = {isa = PBXBuildFile; fileRef = 84BC31DC18B067E9005E3E01 /* BTPaymentSectionHeaderView.h */; };
-		84BC323518B06810005E3E01 /* BTPaymentSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC31DD18B067E9005E3E01 /* BTPaymentSectionHeaderView.m */; };
-		84BC323618B06810005E3E01 /* BTPaymentViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 84BC31DE18B067E9005E3E01 /* BTPaymentViewController.h */; };
-		84BC323718B06810005E3E01 /* BTPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC31DF18B067E9005E3E01 /* BTPaymentViewController.m */; };
-		84BC323818B06825005E3E01 /* VenmoTouchResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84BC321218B067E9005E3E01 /* VenmoTouchResources.bundle */; };
-		84BC323918B0682C005E3E01 /* BraintreeResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84BC31A918B067E9005E3E01 /* BraintreeResources.bundle */; };
 		84BC323B18B06843005E3E01 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BC323A18B06843005E3E01 /* AdSupport.framework */; };
 		84BC323D18B0684A005E3E01 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BC323C18B0684A005E3E01 /* CoreTelephony.framework */; };
 		84BC323F18B06852005E3E01 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BC323E18B06852005E3E01 /* CoreText.framework */; };
-		84BC324018B0688E005E3E01 /* VenmoTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BC321118B067E9005E3E01 /* VenmoTouch.framework */; };
 		9316D28F18AF0200001F1646 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9316D28E18AF0200001F1646 /* FacebookSDK.framework */; };
 		93400F4D18AFE666008530A2 /* MASMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93400F4B18AFE666008530A2 /* MASMenuViewController.m */; };
 		93400F4E18AFE666008530A2 /* MASMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93400F4C18AFE666008530A2 /* MASMenuViewController.xib */; };
 		93400F5418AFF946008530A2 /* MASAddPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93400F5218AFF946008530A2 /* MASAddPostViewController.m */; };
 		93400F5518AFF946008530A2 /* MASAddPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93400F5318AFF946008530A2 /* MASAddPostViewController.xib */; };
 		93400F5718AFFB1B008530A2 /* plusbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93400F5618AFFB1B008530A2 /* plusbutton@2x.png */; };
+		936F156118B079C3008F92FC /* VenmoTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936F154A18B0798A008F92FC /* VenmoTouch.framework */; };
+		936F156218B07A1A008F92FC /* BTPayment-Prefix.pch in Sources */ = {isa = PBXBuildFile; fileRef = 936F150A18B0798A008F92FC /* BTPayment-Prefix.pch */; };
+		936F156318B07A1A008F92FC /* BTPaymentActivityOverlayView.h in Sources */ = {isa = PBXBuildFile; fileRef = 936F150B18B0798A008F92FC /* BTPaymentActivityOverlayView.h */; };
+		936F156418B07A1A008F92FC /* BTPaymentActivityOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 936F150C18B0798A008F92FC /* BTPaymentActivityOverlayView.m */; };
+		936F156518B07A1A008F92FC /* BTPaymentCardType.h in Sources */ = {isa = PBXBuildFile; fileRef = 936F150D18B0798A008F92FC /* BTPaymentCardType.h */; };
+		936F156618B07A1A008F92FC /* BTPaymentCardType.m in Sources */ = {isa = PBXBuildFile; fileRef = 936F150E18B0798A008F92FC /* BTPaymentCardType.m */; };
+		936F156718B07A1A008F92FC /* BTPaymentCardUtils.h in Sources */ = {isa = PBXBuildFile; fileRef = 936F150F18B0798A008F92FC /* BTPaymentCardUtils.h */; };
+		936F156818B07A1A008F92FC /* BTPaymentCardUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 936F151018B0798A008F92FC /* BTPaymentCardUtils.m */; };
+		936F156918B07A1A008F92FC /* BTPaymentFormTextField.h in Sources */ = {isa = PBXBuildFile; fileRef = 936F151118B0798A008F92FC /* BTPaymentFormTextField.h */; };
+		936F156A18B07A1A008F92FC /* BTPaymentFormTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 936F151218B0798A008F92FC /* BTPaymentFormTextField.m */; };
+		936F156B18B07A1A008F92FC /* BTPaymentFormView.h in Sources */ = {isa = PBXBuildFile; fileRef = 936F151318B0798A008F92FC /* BTPaymentFormView.h */; };
+		936F156C18B07A1A008F92FC /* BTPaymentFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 936F151418B0798A008F92FC /* BTPaymentFormView.m */; };
+		936F156D18B07A1A008F92FC /* BTPaymentSectionHeaderView.h in Sources */ = {isa = PBXBuildFile; fileRef = 936F151518B0798A008F92FC /* BTPaymentSectionHeaderView.h */; };
+		936F156E18B07A1A008F92FC /* BTPaymentSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 936F151618B0798A008F92FC /* BTPaymentSectionHeaderView.m */; };
+		936F156F18B07A1A008F92FC /* BTPaymentViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 936F151718B0798A008F92FC /* BTPaymentViewController.h */; };
+		936F157018B07A1A008F92FC /* BTPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936F151818B0798A008F92FC /* BTPaymentViewController.m */; };
+		936F157118B07A2F008F92FC /* BraintreeResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 936F14E218B0798A008F92FC /* BraintreeResources.bundle */; };
+		936F157218B07A3A008F92FC /* VenmoTouchResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 936F154B18B0798A008F92FC /* VenmoTouchResources.bundle */; };
 		DD164D9E18AF4F03006D7BEF /* masLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD164D9D18AF4F03006D7BEF /* masLogo@2x.png */; };
 		DD164DFD18AFF6B8006D7BEF /* STPCard.m in Sources */ = {isa = PBXBuildFile; fileRef = DD164DA118AFF6B8006D7BEF /* STPCard.m */; };
 		DD164DFE18AFF6B8006D7BEF /* STPToken.m in Sources */ = {isa = PBXBuildFile; fileRef = DD164DA318AFF6B8006D7BEF /* STPToken.m */; };
@@ -123,51 +122,51 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		84BC321A18B067E9005E3E01 /* PBXContainerItemProxy */ = {
+		936F155318B0798A008F92FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 84BC318F18B067E8005E3E01 /* braintree_ios.xcodeproj */;
+			containerPortal = 936F14C818B0798A008F92FC /* braintree_ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9CB582861704EC2700448E5C;
 			remoteInfo = BTEncryption;
 		};
-		84BC321C18B067E9005E3E01 /* PBXContainerItemProxy */ = {
+		936F155518B0798A008F92FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 84BC318F18B067E8005E3E01 /* braintree_ios.xcodeproj */;
+			containerPortal = 936F14C818B0798A008F92FC /* braintree_ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9CB582941704EC2700448E5C;
 			remoteInfo = BTEncryptionTests;
 		};
-		84BC321E18B067E9005E3E01 /* PBXContainerItemProxy */ = {
+		936F155718B0798A008F92FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 84BC318F18B067E8005E3E01 /* braintree_ios.xcodeproj */;
+			containerPortal = 936F14C818B0798A008F92FC /* braintree_ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9C2865B11704F995000C411C;
 			remoteInfo = BTPayment;
 		};
-		84BC322018B067E9005E3E01 /* PBXContainerItemProxy */ = {
+		936F155918B0798A008F92FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 84BC318F18B067E8005E3E01 /* braintree_ios.xcodeproj */;
+			containerPortal = 936F14C818B0798A008F92FC /* braintree_ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9C2865BF1704F995000C411C;
 			remoteInfo = BTPaymentTests;
 		};
-		84BC322218B067E9005E3E01 /* PBXContainerItemProxy */ = {
+		936F155B18B0798A008F92FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 84BC318F18B067E8005E3E01 /* braintree_ios.xcodeproj */;
+			containerPortal = 936F14C818B0798A008F92FC /* braintree_ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9C28664517053C33000C411C;
 			remoteInfo = SampleCheckout;
 		};
-		84BC322418B067E9005E3E01 /* PBXContainerItemProxy */ = {
+		936F155D18B0798A008F92FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 84BC318F18B067E8005E3E01 /* braintree_ios.xcodeproj */;
+			containerPortal = 936F14C818B0798A008F92FC /* braintree_ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9C28666917053C34000C411C;
 			remoteInfo = SampleCheckoutTests;
 		};
-		84BC322618B067E9005E3E01 /* PBXContainerItemProxy */ = {
+		936F155F18B0798A008F92FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 84BC318F18B067E8005E3E01 /* braintree_ios.xcodeproj */;
+			containerPortal = 936F14C818B0798A008F92FC /* braintree_ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9CB3D6E1170639440080631F;
 			remoteInfo = BraintreeResources;
@@ -199,121 +198,6 @@
 		84A734DA18AFDD63000FC694 /* MASLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASLoginViewController.xib; sourceTree = "<group>"; };
 		84A734DB18AFDD63000FC694 /* MASLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLoginViewController.m; sourceTree = "<group>"; };
 		84A734DC18AFDD63000FC694 /* MASLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLoginViewController.h; sourceTree = "<group>"; };
-		84BC318D18B067E8005E3E01 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		84BC318F18B067E8005E3E01 /* braintree_ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = braintree_ios.xcodeproj; sourceTree = "<group>"; };
-		84BC319318B067E9005E3E01 /* BraintreeResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BraintreeResources-Info.plist"; sourceTree = "<group>"; };
-		84BC319418B067E9005E3E01 /* BraintreeResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BraintreeResources-Prefix.pch"; sourceTree = "<group>"; };
-		84BC319518B067E9005E3E01 /* BTAmex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTAmex.png; sourceTree = "<group>"; };
-		84BC319618B067E9005E3E01 /* BTAmex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTAmex@2x.png"; sourceTree = "<group>"; };
-		84BC319718B067E9005E3E01 /* BTAmexCVV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTAmexCVV.png; sourceTree = "<group>"; };
-		84BC319818B067E9005E3E01 /* BTAmexCVV@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTAmexCVV@2x.png"; sourceTree = "<group>"; };
-		84BC319918B067E9005E3E01 /* BTCVV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTCVV.png; sourceTree = "<group>"; };
-		84BC319A18B067E9005E3E01 /* BTCVV@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTCVV@2x.png"; sourceTree = "<group>"; };
-		84BC319B18B067E9005E3E01 /* BTDinersClub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTDinersClub.png; sourceTree = "<group>"; };
-		84BC319C18B067E9005E3E01 /* BTDinersClub@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTDinersClub@2x.png"; sourceTree = "<group>"; };
-		84BC319D18B067E9005E3E01 /* BTDiscover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTDiscover.png; sourceTree = "<group>"; };
-		84BC319E18B067E9005E3E01 /* BTDiscover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTDiscover@2x.png"; sourceTree = "<group>"; };
-		84BC319F18B067E9005E3E01 /* BTGenericCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTGenericCard.png; sourceTree = "<group>"; };
-		84BC31A018B067E9005E3E01 /* BTGenericCard@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTGenericCard@2X.png"; sourceTree = "<group>"; };
-		84BC31A118B067E9005E3E01 /* BTJCB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTJCB.png; sourceTree = "<group>"; };
-		84BC31A218B067E9005E3E01 /* BTJCB@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTJCB@2x.png"; sourceTree = "<group>"; };
-		84BC31A318B067E9005E3E01 /* BTMastercard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTMastercard.png; sourceTree = "<group>"; };
-		84BC31A418B067E9005E3E01 /* BTMastercard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTMastercard@2x.png"; sourceTree = "<group>"; };
-		84BC31A518B067E9005E3E01 /* BTVisa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTVisa.png; sourceTree = "<group>"; };
-		84BC31A618B067E9005E3E01 /* BTVisa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTVisa@2x.png"; sourceTree = "<group>"; };
-		84BC31A818B067E9005E3E01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		84BC31A918B067E9005E3E01 /* BraintreeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BraintreeResources.bundle; sourceTree = "<group>"; };
-		84BC31AB18B067E9005E3E01 /* BTAES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTAES.h; sourceTree = "<group>"; };
-		84BC31AC18B067E9005E3E01 /* BTAES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTAES.m; sourceTree = "<group>"; };
-		84BC31AD18B067E9005E3E01 /* BTEncryption-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTEncryption-Prefix.pch"; sourceTree = "<group>"; };
-		84BC31AE18B067E9005E3E01 /* BTEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTEncryption.h; sourceTree = "<group>"; };
-		84BC31AF18B067E9005E3E01 /* BTEncryption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTEncryption.m; sourceTree = "<group>"; };
-		84BC31B018B067E9005E3E01 /* BTEncyption-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTEncyption-Prefix.pch"; sourceTree = "<group>"; };
-		84BC31B118B067E9005E3E01 /* BTHmac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTHmac.h; sourceTree = "<group>"; };
-		84BC31B218B067E9005E3E01 /* BTHmac.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTHmac.m; sourceTree = "<group>"; };
-		84BC31B318B067E9005E3E01 /* BTRandom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTRandom.h; sourceTree = "<group>"; };
-		84BC31B418B067E9005E3E01 /* BTRandom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTRandom.m; sourceTree = "<group>"; };
-		84BC31B518B067E9005E3E01 /* BTRSA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTRSA.h; sourceTree = "<group>"; };
-		84BC31B618B067E9005E3E01 /* BTRSA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTRSA.m; sourceTree = "<group>"; };
-		84BC31B718B067E9005E3E01 /* BTSecKeyWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTSecKeyWrapper.h; sourceTree = "<group>"; };
-		84BC31B818B067E9005E3E01 /* BTSecKeyWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTSecKeyWrapper.m; sourceTree = "<group>"; };
-		84BC31B918B067E9005E3E01 /* NSData+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		84BC31BA18B067E9005E3E01 /* NSData+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		84BC31BB18B067E9005E3E01 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		84BC31BD18B067E9005E3E01 /* BTAESTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTAESTest.h; sourceTree = "<group>"; };
-		84BC31BE18B067E9005E3E01 /* BTAESTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTAESTest.m; sourceTree = "<group>"; };
-		84BC31BF18B067E9005E3E01 /* BTDecrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTDecrypt.h; sourceTree = "<group>"; };
-		84BC31C018B067E9005E3E01 /* BTDecrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTDecrypt.m; sourceTree = "<group>"; };
-		84BC31C118B067E9005E3E01 /* BTEncryptionTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTEncryptionTest.h; sourceTree = "<group>"; };
-		84BC31C218B067E9005E3E01 /* BTEncryptionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTEncryptionTest.m; sourceTree = "<group>"; };
-		84BC31C318B067E9005E3E01 /* BTEncryptionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTEncryptionTests-Info.plist"; sourceTree = "<group>"; };
-		84BC31C418B067E9005E3E01 /* BTHmacTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTHmacTest.h; sourceTree = "<group>"; };
-		84BC31C518B067E9005E3E01 /* BTHmacTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTHmacTest.m; sourceTree = "<group>"; };
-		84BC31C618B067E9005E3E01 /* BTRandomTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTRandomTest.h; sourceTree = "<group>"; };
-		84BC31C718B067E9005E3E01 /* BTRandomTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTRandomTest.m; sourceTree = "<group>"; };
-		84BC31C818B067E9005E3E01 /* BTRSAKeysTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTRSAKeysTest.h; sourceTree = "<group>"; };
-		84BC31C918B067E9005E3E01 /* BTRSAKeysTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTRSAKeysTest.m; sourceTree = "<group>"; };
-		84BC31CA18B067E9005E3E01 /* BTRSATest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTRSATest.h; sourceTree = "<group>"; };
-		84BC31CB18B067E9005E3E01 /* BTRSATest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTRSATest.m; sourceTree = "<group>"; };
-		84BC31CC18B067E9005E3E01 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
-		84BC31CD18B067E9005E3E01 /* NSDataBase64Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDataBase64Test.h; sourceTree = "<group>"; };
-		84BC31CE18B067E9005E3E01 /* NSDataBase64Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDataBase64Test.m; sourceTree = "<group>"; };
-		84BC31D018B067E9005E3E01 /* BTDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTDefines.h; sourceTree = "<group>"; };
-		84BC31D118B067E9005E3E01 /* BTPayment-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTPayment-Prefix.pch"; sourceTree = "<group>"; };
-		84BC31D218B067E9005E3E01 /* BTPaymentActivityOverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentActivityOverlayView.h; sourceTree = "<group>"; };
-		84BC31D318B067E9005E3E01 /* BTPaymentActivityOverlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentActivityOverlayView.m; sourceTree = "<group>"; };
-		84BC31D418B067E9005E3E01 /* BTPaymentCardType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentCardType.h; sourceTree = "<group>"; };
-		84BC31D518B067E9005E3E01 /* BTPaymentCardType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentCardType.m; sourceTree = "<group>"; };
-		84BC31D618B067E9005E3E01 /* BTPaymentCardUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentCardUtils.h; sourceTree = "<group>"; };
-		84BC31D718B067E9005E3E01 /* BTPaymentCardUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentCardUtils.m; sourceTree = "<group>"; };
-		84BC31D818B067E9005E3E01 /* BTPaymentFormTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentFormTextField.h; sourceTree = "<group>"; };
-		84BC31D918B067E9005E3E01 /* BTPaymentFormTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentFormTextField.m; sourceTree = "<group>"; };
-		84BC31DA18B067E9005E3E01 /* BTPaymentFormView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentFormView.h; sourceTree = "<group>"; };
-		84BC31DB18B067E9005E3E01 /* BTPaymentFormView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentFormView.m; sourceTree = "<group>"; };
-		84BC31DC18B067E9005E3E01 /* BTPaymentSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentSectionHeaderView.h; sourceTree = "<group>"; };
-		84BC31DD18B067E9005E3E01 /* BTPaymentSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentSectionHeaderView.m; sourceTree = "<group>"; };
-		84BC31DE18B067E9005E3E01 /* BTPaymentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentViewController.h; sourceTree = "<group>"; };
-		84BC31DF18B067E9005E3E01 /* BTPaymentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentViewController.m; sourceTree = "<group>"; };
-		84BC31E118B067E9005E3E01 /* BTPaymentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTPaymentTests-Info.plist"; sourceTree = "<group>"; };
-		84BC31E218B067E9005E3E01 /* BTPaymentTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentTests.h; sourceTree = "<group>"; };
-		84BC31E318B067E9005E3E01 /* BTPaymentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentTests.m; sourceTree = "<group>"; };
-		84BC31E518B067E9005E3E01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		84BC31E618B067E9005E3E01 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		84BC31E818B067E9005E3E01 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		84BC31E918B067E9005E3E01 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		84BC31EA18B067E9005E3E01 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		84BC31EC18B067E9005E3E01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		84BC31EE18B067E9005E3E01 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCViewController_iPad.xib; sourceTree = "<group>"; };
-		84BC31F018B067E9005E3E01 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCViewController_iPhone.xib; sourceTree = "<group>"; };
-		84BC31F118B067E9005E3E01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		84BC31F218B067E9005E3E01 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		84BC31F318B067E9005E3E01 /* SampleCheckout-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleCheckout-Info.plist"; sourceTree = "<group>"; };
-		84BC31F418B067E9005E3E01 /* SampleCheckout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleCheckout-Prefix.pch"; sourceTree = "<group>"; };
-		84BC31F618B067E9005E3E01 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		84BC31F718B067E9005E3E01 /* .rvmrc */ = {isa = PBXFileReference; lastKnownFileType = text; path = .rvmrc; sourceTree = "<group>"; };
-		84BC31F818B067E9005E3E01 /* app.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = app.rb; sourceTree = "<group>"; };
-		84BC31F918B067E9005E3E01 /* config.ru */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.ru; sourceTree = "<group>"; };
-		84BC31FA18B067E9005E3E01 /* config.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.yml; sourceTree = "<group>"; };
-		84BC31FB18B067E9005E3E01 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
-		84BC31FC18B067E9005E3E01 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
-		84BC31FE18B067E9005E3E01 /* form.erb */ = {isa = PBXFileReference; lastKnownFileType = text; path = form.erb; sourceTree = "<group>"; };
-		84BC31FF18B067E9005E3E01 /* SCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
-		84BC320018B067E9005E3E01 /* SCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
-		84BC320118B067E9005E3E01 /* SCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = "<group>"; };
-		84BC320218B067E9005E3E01 /* SCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = "<group>"; };
-		84BC320518B067E9005E3E01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		84BC320618B067E9005E3E01 /* SampleCheckoutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleCheckoutTests-Info.plist"; sourceTree = "<group>"; };
-		84BC320718B067E9005E3E01 /* SampleCheckoutTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleCheckoutTests.h; sourceTree = "<group>"; };
-		84BC320818B067E9005E3E01 /* SampleCheckoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleCheckoutTests.m; sourceTree = "<group>"; };
-		84BC320918B067E9005E3E01 /* Braintree.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Braintree.podspec; sourceTree = "<group>"; };
-		84BC320A18B067E9005E3E01 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
-		84BC320B18B067E9005E3E01 /* ci.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci.sh; sourceTree = "<group>"; };
-		84BC320C18B067E9005E3E01 /* LICENSES */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSES; sourceTree = "<group>"; };
-		84BC320D18B067E9005E3E01 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		84BC320F18B067E9005E3E01 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		84BC321018B067E9005E3E01 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		84BC321118B067E9005E3E01 /* VenmoTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VenmoTouch.framework; sourceTree = "<group>"; };
-		84BC321218B067E9005E3E01 /* VenmoTouchResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VenmoTouchResources.bundle; sourceTree = "<group>"; };
 		84BC323A18B06843005E3E01 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		84BC323C18B0684A005E3E01 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		84BC323E18B06852005E3E01 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -326,6 +210,121 @@
 		93400F5218AFF946008530A2 /* MASAddPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASAddPostViewController.m; sourceTree = "<group>"; };
 		93400F5318AFF946008530A2 /* MASAddPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASAddPostViewController.xib; sourceTree = "<group>"; };
 		93400F5618AFFB1B008530A2 /* plusbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plusbutton@2x.png"; sourceTree = "<group>"; };
+		936F14C618B0798A008F92FC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		936F14C818B0798A008F92FC /* braintree_ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = braintree_ios.xcodeproj; sourceTree = "<group>"; };
+		936F14CC18B0798A008F92FC /* BraintreeResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BraintreeResources-Info.plist"; sourceTree = "<group>"; };
+		936F14CD18B0798A008F92FC /* BraintreeResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BraintreeResources-Prefix.pch"; sourceTree = "<group>"; };
+		936F14CE18B0798A008F92FC /* BTAmex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTAmex.png; sourceTree = "<group>"; };
+		936F14CF18B0798A008F92FC /* BTAmex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTAmex@2x.png"; sourceTree = "<group>"; };
+		936F14D018B0798A008F92FC /* BTAmexCVV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTAmexCVV.png; sourceTree = "<group>"; };
+		936F14D118B0798A008F92FC /* BTAmexCVV@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTAmexCVV@2x.png"; sourceTree = "<group>"; };
+		936F14D218B0798A008F92FC /* BTCVV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTCVV.png; sourceTree = "<group>"; };
+		936F14D318B0798A008F92FC /* BTCVV@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTCVV@2x.png"; sourceTree = "<group>"; };
+		936F14D418B0798A008F92FC /* BTDinersClub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTDinersClub.png; sourceTree = "<group>"; };
+		936F14D518B0798A008F92FC /* BTDinersClub@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTDinersClub@2x.png"; sourceTree = "<group>"; };
+		936F14D618B0798A008F92FC /* BTDiscover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTDiscover.png; sourceTree = "<group>"; };
+		936F14D718B0798A008F92FC /* BTDiscover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTDiscover@2x.png"; sourceTree = "<group>"; };
+		936F14D818B0798A008F92FC /* BTGenericCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTGenericCard.png; sourceTree = "<group>"; };
+		936F14D918B0798A008F92FC /* BTGenericCard@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTGenericCard@2X.png"; sourceTree = "<group>"; };
+		936F14DA18B0798A008F92FC /* BTJCB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTJCB.png; sourceTree = "<group>"; };
+		936F14DB18B0798A008F92FC /* BTJCB@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTJCB@2x.png"; sourceTree = "<group>"; };
+		936F14DC18B0798A008F92FC /* BTMastercard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTMastercard.png; sourceTree = "<group>"; };
+		936F14DD18B0798A008F92FC /* BTMastercard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTMastercard@2x.png"; sourceTree = "<group>"; };
+		936F14DE18B0798A008F92FC /* BTVisa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTVisa.png; sourceTree = "<group>"; };
+		936F14DF18B0798A008F92FC /* BTVisa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTVisa@2x.png"; sourceTree = "<group>"; };
+		936F14E118B0798A008F92FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		936F14E218B0798A008F92FC /* BraintreeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BraintreeResources.bundle; sourceTree = "<group>"; };
+		936F14E418B0798A008F92FC /* BTAES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTAES.h; sourceTree = "<group>"; };
+		936F14E518B0798A008F92FC /* BTAES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTAES.m; sourceTree = "<group>"; };
+		936F14E618B0798A008F92FC /* BTEncryption-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTEncryption-Prefix.pch"; sourceTree = "<group>"; };
+		936F14E718B0798A008F92FC /* BTEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTEncryption.h; sourceTree = "<group>"; };
+		936F14E818B0798A008F92FC /* BTEncryption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTEncryption.m; sourceTree = "<group>"; };
+		936F14E918B0798A008F92FC /* BTEncyption-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTEncyption-Prefix.pch"; sourceTree = "<group>"; };
+		936F14EA18B0798A008F92FC /* BTHmac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTHmac.h; sourceTree = "<group>"; };
+		936F14EB18B0798A008F92FC /* BTHmac.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTHmac.m; sourceTree = "<group>"; };
+		936F14EC18B0798A008F92FC /* BTRandom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTRandom.h; sourceTree = "<group>"; };
+		936F14ED18B0798A008F92FC /* BTRandom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTRandom.m; sourceTree = "<group>"; };
+		936F14EE18B0798A008F92FC /* BTRSA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTRSA.h; sourceTree = "<group>"; };
+		936F14EF18B0798A008F92FC /* BTRSA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTRSA.m; sourceTree = "<group>"; };
+		936F14F018B0798A008F92FC /* BTSecKeyWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTSecKeyWrapper.h; sourceTree = "<group>"; };
+		936F14F118B0798A008F92FC /* BTSecKeyWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTSecKeyWrapper.m; sourceTree = "<group>"; };
+		936F14F218B0798A008F92FC /* NSData+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		936F14F318B0798A008F92FC /* NSData+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		936F14F418B0798A008F92FC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		936F14F618B0798A008F92FC /* BTAESTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTAESTest.h; sourceTree = "<group>"; };
+		936F14F718B0798A008F92FC /* BTAESTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTAESTest.m; sourceTree = "<group>"; };
+		936F14F818B0798A008F92FC /* BTDecrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTDecrypt.h; sourceTree = "<group>"; };
+		936F14F918B0798A008F92FC /* BTDecrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTDecrypt.m; sourceTree = "<group>"; };
+		936F14FA18B0798A008F92FC /* BTEncryptionTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTEncryptionTest.h; sourceTree = "<group>"; };
+		936F14FB18B0798A008F92FC /* BTEncryptionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTEncryptionTest.m; sourceTree = "<group>"; };
+		936F14FC18B0798A008F92FC /* BTEncryptionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTEncryptionTests-Info.plist"; sourceTree = "<group>"; };
+		936F14FD18B0798A008F92FC /* BTHmacTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTHmacTest.h; sourceTree = "<group>"; };
+		936F14FE18B0798A008F92FC /* BTHmacTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTHmacTest.m; sourceTree = "<group>"; };
+		936F14FF18B0798A008F92FC /* BTRandomTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTRandomTest.h; sourceTree = "<group>"; };
+		936F150018B0798A008F92FC /* BTRandomTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTRandomTest.m; sourceTree = "<group>"; };
+		936F150118B0798A008F92FC /* BTRSAKeysTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTRSAKeysTest.h; sourceTree = "<group>"; };
+		936F150218B0798A008F92FC /* BTRSAKeysTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTRSAKeysTest.m; sourceTree = "<group>"; };
+		936F150318B0798A008F92FC /* BTRSATest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTRSATest.h; sourceTree = "<group>"; };
+		936F150418B0798A008F92FC /* BTRSATest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTRSATest.m; sourceTree = "<group>"; };
+		936F150518B0798A008F92FC /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		936F150618B0798A008F92FC /* NSDataBase64Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDataBase64Test.h; sourceTree = "<group>"; };
+		936F150718B0798A008F92FC /* NSDataBase64Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDataBase64Test.m; sourceTree = "<group>"; };
+		936F150918B0798A008F92FC /* BTDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTDefines.h; sourceTree = "<group>"; };
+		936F150A18B0798A008F92FC /* BTPayment-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTPayment-Prefix.pch"; sourceTree = "<group>"; };
+		936F150B18B0798A008F92FC /* BTPaymentActivityOverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentActivityOverlayView.h; sourceTree = "<group>"; };
+		936F150C18B0798A008F92FC /* BTPaymentActivityOverlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentActivityOverlayView.m; sourceTree = "<group>"; };
+		936F150D18B0798A008F92FC /* BTPaymentCardType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentCardType.h; sourceTree = "<group>"; };
+		936F150E18B0798A008F92FC /* BTPaymentCardType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentCardType.m; sourceTree = "<group>"; };
+		936F150F18B0798A008F92FC /* BTPaymentCardUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentCardUtils.h; sourceTree = "<group>"; };
+		936F151018B0798A008F92FC /* BTPaymentCardUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentCardUtils.m; sourceTree = "<group>"; };
+		936F151118B0798A008F92FC /* BTPaymentFormTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentFormTextField.h; sourceTree = "<group>"; };
+		936F151218B0798A008F92FC /* BTPaymentFormTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentFormTextField.m; sourceTree = "<group>"; };
+		936F151318B0798A008F92FC /* BTPaymentFormView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentFormView.h; sourceTree = "<group>"; };
+		936F151418B0798A008F92FC /* BTPaymentFormView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentFormView.m; sourceTree = "<group>"; };
+		936F151518B0798A008F92FC /* BTPaymentSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentSectionHeaderView.h; sourceTree = "<group>"; };
+		936F151618B0798A008F92FC /* BTPaymentSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentSectionHeaderView.m; sourceTree = "<group>"; };
+		936F151718B0798A008F92FC /* BTPaymentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentViewController.h; sourceTree = "<group>"; };
+		936F151818B0798A008F92FC /* BTPaymentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentViewController.m; sourceTree = "<group>"; };
+		936F151A18B0798A008F92FC /* BTPaymentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTPaymentTests-Info.plist"; sourceTree = "<group>"; };
+		936F151B18B0798A008F92FC /* BTPaymentTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentTests.h; sourceTree = "<group>"; };
+		936F151C18B0798A008F92FC /* BTPaymentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentTests.m; sourceTree = "<group>"; };
+		936F151E18B0798A008F92FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		936F151F18B0798A008F92FC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		936F152118B0798A008F92FC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		936F152218B0798A008F92FC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		936F152318B0798A008F92FC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		936F152518B0798A008F92FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		936F152718B0798A008F92FC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCViewController_iPad.xib; sourceTree = "<group>"; };
+		936F152918B0798A008F92FC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCViewController_iPhone.xib; sourceTree = "<group>"; };
+		936F152A18B0798A008F92FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		936F152B18B0798A008F92FC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		936F152C18B0798A008F92FC /* SampleCheckout-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleCheckout-Info.plist"; sourceTree = "<group>"; };
+		936F152D18B0798A008F92FC /* SampleCheckout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleCheckout-Prefix.pch"; sourceTree = "<group>"; };
+		936F152F18B0798A008F92FC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		936F153018B0798A008F92FC /* .rvmrc */ = {isa = PBXFileReference; lastKnownFileType = text; path = .rvmrc; sourceTree = "<group>"; };
+		936F153118B0798A008F92FC /* app.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = app.rb; sourceTree = "<group>"; };
+		936F153218B0798A008F92FC /* config.ru */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.ru; sourceTree = "<group>"; };
+		936F153318B0798A008F92FC /* config.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.yml; sourceTree = "<group>"; };
+		936F153418B0798A008F92FC /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		936F153518B0798A008F92FC /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
+		936F153718B0798A008F92FC /* form.erb */ = {isa = PBXFileReference; lastKnownFileType = text; path = form.erb; sourceTree = "<group>"; };
+		936F153818B0798A008F92FC /* SCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
+		936F153918B0798A008F92FC /* SCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
+		936F153A18B0798A008F92FC /* SCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = "<group>"; };
+		936F153B18B0798A008F92FC /* SCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = "<group>"; };
+		936F153E18B0798A008F92FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		936F153F18B0798A008F92FC /* SampleCheckoutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleCheckoutTests-Info.plist"; sourceTree = "<group>"; };
+		936F154018B0798A008F92FC /* SampleCheckoutTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleCheckoutTests.h; sourceTree = "<group>"; };
+		936F154118B0798A008F92FC /* SampleCheckoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleCheckoutTests.m; sourceTree = "<group>"; };
+		936F154218B0798A008F92FC /* Braintree.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Braintree.podspec; sourceTree = "<group>"; };
+		936F154318B0798A008F92FC /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		936F154418B0798A008F92FC /* ci.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci.sh; sourceTree = "<group>"; };
+		936F154518B0798A008F92FC /* LICENSES */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSES; sourceTree = "<group>"; };
+		936F154618B0798A008F92FC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		936F154818B0798A008F92FC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		936F154918B0798A008F92FC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		936F154A18B0798A008F92FC /* VenmoTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VenmoTouch.framework; sourceTree = "<group>"; };
+		936F154B18B0798A008F92FC /* VenmoTouchResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VenmoTouchResources.bundle; sourceTree = "<group>"; };
 		DD164D9D18AF4F03006D7BEF /* masLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "masLogo@2x.png"; path = "Assets/Images/masLogo@2x.png"; sourceTree = "<group>"; };
 		DD164DA018AFF6B8006D7BEF /* STPCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPCard.h; sourceTree = "<group>"; };
 		DD164DA118AFF6B8006D7BEF /* STPCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPCard.m; sourceTree = "<group>"; };
@@ -430,8 +429,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936F156118B079C3008F92FC /* VenmoTouch.framework in Frameworks */,
 				84BC323F18B06852005E3E01 /* CoreText.framework in Frameworks */,
-				84BC324018B0688E005E3E01 /* VenmoTouch.framework in Frameworks */,
 				84BC323D18B0684A005E3E01 /* CoreTelephony.framework in Frameworks */,
 				84BC323B18B06843005E3E01 /* AdSupport.framework in Frameworks */,
 				DDED558C18AF0E9800E6E843 /* QuartzCore.framework in Frameworks */,
@@ -484,230 +483,6 @@
 			name = MASSignUpViewController;
 			sourceTree = "<group>";
 		};
-		84BC318C18B067E8005E3E01 /* braintree_ios */ = {
-			isa = PBXGroup;
-			children = (
-				84BC318D18B067E8005E3E01 /* .gitignore */,
-				84BC318E18B067E8005E3E01 /* braintree */,
-				84BC320918B067E9005E3E01 /* Braintree.podspec */,
-				84BC320A18B067E9005E3E01 /* CHANGELOG.md */,
-				84BC320B18B067E9005E3E01 /* ci.sh */,
-				84BC320C18B067E9005E3E01 /* LICENSES */,
-				84BC320D18B067E9005E3E01 /* README.md */,
-				84BC320E18B067E9005E3E01 /* venmo-touch */,
-			);
-			path = braintree_ios;
-			sourceTree = "<group>";
-		};
-		84BC318E18B067E8005E3E01 /* braintree */ = {
-			isa = PBXGroup;
-			children = (
-				84BC318F18B067E8005E3E01 /* braintree_ios.xcodeproj */,
-				84BC319218B067E9005E3E01 /* BraintreeResources */,
-				84BC31A918B067E9005E3E01 /* BraintreeResources.bundle */,
-				84BC31AA18B067E9005E3E01 /* BTEncryption */,
-				84BC31BC18B067E9005E3E01 /* BTEncryptionTests */,
-				84BC31CF18B067E9005E3E01 /* BTPayment */,
-				84BC31E018B067E9005E3E01 /* BTPaymentTests */,
-				84BC31E618B067E9005E3E01 /* LICENSE */,
-				84BC31E718B067E9005E3E01 /* SampleCheckout */,
-				84BC320318B067E9005E3E01 /* SampleCheckoutTests */,
-			);
-			path = braintree;
-			sourceTree = "<group>";
-		};
-		84BC319018B067E8005E3E01 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				84BC321B18B067E9005E3E01 /* libBTEncryption.a */,
-				84BC321D18B067E9005E3E01 /* BTEncryptionTests.octest */,
-				84BC321F18B067E9005E3E01 /* libBTPayment.a */,
-				84BC322118B067E9005E3E01 /* BTPaymentTests.octest */,
-				84BC322318B067E9005E3E01 /* SampleCheckout.app */,
-				84BC322518B067E9005E3E01 /* SampleCheckoutTests.octest */,
-				84BC322718B067E9005E3E01 /* BraintreeResources.bundle */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		84BC319218B067E9005E3E01 /* BraintreeResources */ = {
-			isa = PBXGroup;
-			children = (
-				84BC319318B067E9005E3E01 /* BraintreeResources-Info.plist */,
-				84BC319418B067E9005E3E01 /* BraintreeResources-Prefix.pch */,
-				84BC319518B067E9005E3E01 /* BTAmex.png */,
-				84BC319618B067E9005E3E01 /* BTAmex@2x.png */,
-				84BC319718B067E9005E3E01 /* BTAmexCVV.png */,
-				84BC319818B067E9005E3E01 /* BTAmexCVV@2x.png */,
-				84BC319918B067E9005E3E01 /* BTCVV.png */,
-				84BC319A18B067E9005E3E01 /* BTCVV@2x.png */,
-				84BC319B18B067E9005E3E01 /* BTDinersClub.png */,
-				84BC319C18B067E9005E3E01 /* BTDinersClub@2x.png */,
-				84BC319D18B067E9005E3E01 /* BTDiscover.png */,
-				84BC319E18B067E9005E3E01 /* BTDiscover@2x.png */,
-				84BC319F18B067E9005E3E01 /* BTGenericCard.png */,
-				84BC31A018B067E9005E3E01 /* BTGenericCard@2X.png */,
-				84BC31A118B067E9005E3E01 /* BTJCB.png */,
-				84BC31A218B067E9005E3E01 /* BTJCB@2x.png */,
-				84BC31A318B067E9005E3E01 /* BTMastercard.png */,
-				84BC31A418B067E9005E3E01 /* BTMastercard@2x.png */,
-				84BC31A518B067E9005E3E01 /* BTVisa.png */,
-				84BC31A618B067E9005E3E01 /* BTVisa@2x.png */,
-				84BC31A718B067E9005E3E01 /* InfoPlist.strings */,
-			);
-			path = BraintreeResources;
-			sourceTree = "<group>";
-		};
-		84BC31AA18B067E9005E3E01 /* BTEncryption */ = {
-			isa = PBXGroup;
-			children = (
-				84BC31AB18B067E9005E3E01 /* BTAES.h */,
-				84BC31AC18B067E9005E3E01 /* BTAES.m */,
-				84BC31AD18B067E9005E3E01 /* BTEncryption-Prefix.pch */,
-				84BC31AE18B067E9005E3E01 /* BTEncryption.h */,
-				84BC31AF18B067E9005E3E01 /* BTEncryption.m */,
-				84BC31B018B067E9005E3E01 /* BTEncyption-Prefix.pch */,
-				84BC31B118B067E9005E3E01 /* BTHmac.h */,
-				84BC31B218B067E9005E3E01 /* BTHmac.m */,
-				84BC31B318B067E9005E3E01 /* BTRandom.h */,
-				84BC31B418B067E9005E3E01 /* BTRandom.m */,
-				84BC31B518B067E9005E3E01 /* BTRSA.h */,
-				84BC31B618B067E9005E3E01 /* BTRSA.m */,
-				84BC31B718B067E9005E3E01 /* BTSecKeyWrapper.h */,
-				84BC31B818B067E9005E3E01 /* BTSecKeyWrapper.m */,
-				84BC31B918B067E9005E3E01 /* NSData+Base64.h */,
-				84BC31BA18B067E9005E3E01 /* NSData+Base64.m */,
-				84BC31BB18B067E9005E3E01 /* README.md */,
-			);
-			path = BTEncryption;
-			sourceTree = "<group>";
-		};
-		84BC31BC18B067E9005E3E01 /* BTEncryptionTests */ = {
-			isa = PBXGroup;
-			children = (
-				84BC31BD18B067E9005E3E01 /* BTAESTest.h */,
-				84BC31BE18B067E9005E3E01 /* BTAESTest.m */,
-				84BC31BF18B067E9005E3E01 /* BTDecrypt.h */,
-				84BC31C018B067E9005E3E01 /* BTDecrypt.m */,
-				84BC31C118B067E9005E3E01 /* BTEncryptionTest.h */,
-				84BC31C218B067E9005E3E01 /* BTEncryptionTest.m */,
-				84BC31C318B067E9005E3E01 /* BTEncryptionTests-Info.plist */,
-				84BC31C418B067E9005E3E01 /* BTHmacTest.h */,
-				84BC31C518B067E9005E3E01 /* BTHmacTest.m */,
-				84BC31C618B067E9005E3E01 /* BTRandomTest.h */,
-				84BC31C718B067E9005E3E01 /* BTRandomTest.m */,
-				84BC31C818B067E9005E3E01 /* BTRSAKeysTest.h */,
-				84BC31C918B067E9005E3E01 /* BTRSAKeysTest.m */,
-				84BC31CA18B067E9005E3E01 /* BTRSATest.h */,
-				84BC31CB18B067E9005E3E01 /* BTRSATest.m */,
-				84BC31CC18B067E9005E3E01 /* InfoPlist.strings */,
-				84BC31CD18B067E9005E3E01 /* NSDataBase64Test.h */,
-				84BC31CE18B067E9005E3E01 /* NSDataBase64Test.m */,
-			);
-			path = BTEncryptionTests;
-			sourceTree = "<group>";
-		};
-		84BC31CF18B067E9005E3E01 /* BTPayment */ = {
-			isa = PBXGroup;
-			children = (
-				84BC31D018B067E9005E3E01 /* BTDefines.h */,
-				84BC31D118B067E9005E3E01 /* BTPayment-Prefix.pch */,
-				84BC31D218B067E9005E3E01 /* BTPaymentActivityOverlayView.h */,
-				84BC31D318B067E9005E3E01 /* BTPaymentActivityOverlayView.m */,
-				84BC31D418B067E9005E3E01 /* BTPaymentCardType.h */,
-				84BC31D518B067E9005E3E01 /* BTPaymentCardType.m */,
-				84BC31D618B067E9005E3E01 /* BTPaymentCardUtils.h */,
-				84BC31D718B067E9005E3E01 /* BTPaymentCardUtils.m */,
-				84BC31D818B067E9005E3E01 /* BTPaymentFormTextField.h */,
-				84BC31D918B067E9005E3E01 /* BTPaymentFormTextField.m */,
-				84BC31DA18B067E9005E3E01 /* BTPaymentFormView.h */,
-				84BC31DB18B067E9005E3E01 /* BTPaymentFormView.m */,
-				84BC31DC18B067E9005E3E01 /* BTPaymentSectionHeaderView.h */,
-				84BC31DD18B067E9005E3E01 /* BTPaymentSectionHeaderView.m */,
-				84BC31DE18B067E9005E3E01 /* BTPaymentViewController.h */,
-				84BC31DF18B067E9005E3E01 /* BTPaymentViewController.m */,
-			);
-			path = BTPayment;
-			sourceTree = "<group>";
-		};
-		84BC31E018B067E9005E3E01 /* BTPaymentTests */ = {
-			isa = PBXGroup;
-			children = (
-				84BC31E118B067E9005E3E01 /* BTPaymentTests-Info.plist */,
-				84BC31E218B067E9005E3E01 /* BTPaymentTests.h */,
-				84BC31E318B067E9005E3E01 /* BTPaymentTests.m */,
-				84BC31E418B067E9005E3E01 /* InfoPlist.strings */,
-			);
-			path = BTPaymentTests;
-			sourceTree = "<group>";
-		};
-		84BC31E718B067E9005E3E01 /* SampleCheckout */ = {
-			isa = PBXGroup;
-			children = (
-				84BC31E818B067E9005E3E01 /* Default-568h@2x.png */,
-				84BC31E918B067E9005E3E01 /* Default.png */,
-				84BC31EA18B067E9005E3E01 /* Default@2x.png */,
-				84BC31EB18B067E9005E3E01 /* InfoPlist.strings */,
-				84BC31ED18B067E9005E3E01 /* SCViewController_iPad.xib */,
-				84BC31EF18B067E9005E3E01 /* SCViewController_iPhone.xib */,
-				84BC31F118B067E9005E3E01 /* main.m */,
-				84BC31F218B067E9005E3E01 /* README.md */,
-				84BC31F318B067E9005E3E01 /* SampleCheckout-Info.plist */,
-				84BC31F418B067E9005E3E01 /* SampleCheckout-Prefix.pch */,
-				84BC31F518B067E9005E3E01 /* SampleMerchantServer */,
-				84BC31FF18B067E9005E3E01 /* SCAppDelegate.h */,
-				84BC320018B067E9005E3E01 /* SCAppDelegate.m */,
-				84BC320118B067E9005E3E01 /* SCViewController.h */,
-				84BC320218B067E9005E3E01 /* SCViewController.m */,
-			);
-			path = SampleCheckout;
-			sourceTree = "<group>";
-		};
-		84BC31F518B067E9005E3E01 /* SampleMerchantServer */ = {
-			isa = PBXGroup;
-			children = (
-				84BC31F618B067E9005E3E01 /* .gitignore */,
-				84BC31F718B067E9005E3E01 /* .rvmrc */,
-				84BC31F818B067E9005E3E01 /* app.rb */,
-				84BC31F918B067E9005E3E01 /* config.ru */,
-				84BC31FA18B067E9005E3E01 /* config.yml */,
-				84BC31FB18B067E9005E3E01 /* Gemfile */,
-				84BC31FC18B067E9005E3E01 /* Gemfile.lock */,
-				84BC31FD18B067E9005E3E01 /* views */,
-			);
-			path = SampleMerchantServer;
-			sourceTree = "<group>";
-		};
-		84BC31FD18B067E9005E3E01 /* views */ = {
-			isa = PBXGroup;
-			children = (
-				84BC31FE18B067E9005E3E01 /* form.erb */,
-			);
-			path = views;
-			sourceTree = "<group>";
-		};
-		84BC320318B067E9005E3E01 /* SampleCheckoutTests */ = {
-			isa = PBXGroup;
-			children = (
-				84BC320418B067E9005E3E01 /* InfoPlist.strings */,
-				84BC320618B067E9005E3E01 /* SampleCheckoutTests-Info.plist */,
-				84BC320718B067E9005E3E01 /* SampleCheckoutTests.h */,
-				84BC320818B067E9005E3E01 /* SampleCheckoutTests.m */,
-			);
-			path = SampleCheckoutTests;
-			sourceTree = "<group>";
-		};
-		84BC320E18B067E9005E3E01 /* venmo-touch */ = {
-			isa = PBXGroup;
-			children = (
-				84BC320F18B067E9005E3E01 /* LICENSE */,
-				84BC321018B067E9005E3E01 /* README.md */,
-				84BC321118B067E9005E3E01 /* VenmoTouch.framework */,
-				84BC321218B067E9005E3E01 /* VenmoTouchResources.bundle */,
-			);
-			path = "venmo-touch";
-			sourceTree = "<group>";
-		};
 		93400F4918AFE659008530A2 /* MASMenuViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -739,6 +514,231 @@
 				93400F5318AFF946008530A2 /* MASAddPostViewController.xib */,
 			);
 			name = MASAddPostViewController;
+			sourceTree = "<group>";
+		};
+		936F14C518B0798A008F92FC /* braintree_ios */ = {
+			isa = PBXGroup;
+			children = (
+				936F14C618B0798A008F92FC /* .gitignore */,
+				936F14C718B0798A008F92FC /* braintree */,
+				936F154218B0798A008F92FC /* Braintree.podspec */,
+				936F154318B0798A008F92FC /* CHANGELOG.md */,
+				936F154418B0798A008F92FC /* ci.sh */,
+				936F154518B0798A008F92FC /* LICENSES */,
+				936F154618B0798A008F92FC /* README.md */,
+				936F154718B0798A008F92FC /* venmo-touch */,
+			);
+			name = braintree_ios;
+			path = ../../braintree_ios;
+			sourceTree = "<group>";
+		};
+		936F14C718B0798A008F92FC /* braintree */ = {
+			isa = PBXGroup;
+			children = (
+				936F14C818B0798A008F92FC /* braintree_ios.xcodeproj */,
+				936F14CB18B0798A008F92FC /* BraintreeResources */,
+				936F14E218B0798A008F92FC /* BraintreeResources.bundle */,
+				936F14E318B0798A008F92FC /* BTEncryption */,
+				936F14F518B0798A008F92FC /* BTEncryptionTests */,
+				936F150818B0798A008F92FC /* BTPayment */,
+				936F151918B0798A008F92FC /* BTPaymentTests */,
+				936F151F18B0798A008F92FC /* LICENSE */,
+				936F152018B0798A008F92FC /* SampleCheckout */,
+				936F153C18B0798A008F92FC /* SampleCheckoutTests */,
+			);
+			path = braintree;
+			sourceTree = "<group>";
+		};
+		936F14C918B0798A008F92FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				936F155418B0798A008F92FC /* libBTEncryption.a */,
+				936F155618B0798A008F92FC /* BTEncryptionTests.octest */,
+				936F155818B0798A008F92FC /* libBTPayment.a */,
+				936F155A18B0798A008F92FC /* BTPaymentTests.octest */,
+				936F155C18B0798A008F92FC /* SampleCheckout.app */,
+				936F155E18B0798A008F92FC /* SampleCheckoutTests.octest */,
+				936F156018B0798A008F92FC /* BraintreeResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		936F14CB18B0798A008F92FC /* BraintreeResources */ = {
+			isa = PBXGroup;
+			children = (
+				936F14CC18B0798A008F92FC /* BraintreeResources-Info.plist */,
+				936F14CD18B0798A008F92FC /* BraintreeResources-Prefix.pch */,
+				936F14CE18B0798A008F92FC /* BTAmex.png */,
+				936F14CF18B0798A008F92FC /* BTAmex@2x.png */,
+				936F14D018B0798A008F92FC /* BTAmexCVV.png */,
+				936F14D118B0798A008F92FC /* BTAmexCVV@2x.png */,
+				936F14D218B0798A008F92FC /* BTCVV.png */,
+				936F14D318B0798A008F92FC /* BTCVV@2x.png */,
+				936F14D418B0798A008F92FC /* BTDinersClub.png */,
+				936F14D518B0798A008F92FC /* BTDinersClub@2x.png */,
+				936F14D618B0798A008F92FC /* BTDiscover.png */,
+				936F14D718B0798A008F92FC /* BTDiscover@2x.png */,
+				936F14D818B0798A008F92FC /* BTGenericCard.png */,
+				936F14D918B0798A008F92FC /* BTGenericCard@2X.png */,
+				936F14DA18B0798A008F92FC /* BTJCB.png */,
+				936F14DB18B0798A008F92FC /* BTJCB@2x.png */,
+				936F14DC18B0798A008F92FC /* BTMastercard.png */,
+				936F14DD18B0798A008F92FC /* BTMastercard@2x.png */,
+				936F14DE18B0798A008F92FC /* BTVisa.png */,
+				936F14DF18B0798A008F92FC /* BTVisa@2x.png */,
+				936F14E018B0798A008F92FC /* InfoPlist.strings */,
+			);
+			path = BraintreeResources;
+			sourceTree = "<group>";
+		};
+		936F14E318B0798A008F92FC /* BTEncryption */ = {
+			isa = PBXGroup;
+			children = (
+				936F14E418B0798A008F92FC /* BTAES.h */,
+				936F14E518B0798A008F92FC /* BTAES.m */,
+				936F14E618B0798A008F92FC /* BTEncryption-Prefix.pch */,
+				936F14E718B0798A008F92FC /* BTEncryption.h */,
+				936F14E818B0798A008F92FC /* BTEncryption.m */,
+				936F14E918B0798A008F92FC /* BTEncyption-Prefix.pch */,
+				936F14EA18B0798A008F92FC /* BTHmac.h */,
+				936F14EB18B0798A008F92FC /* BTHmac.m */,
+				936F14EC18B0798A008F92FC /* BTRandom.h */,
+				936F14ED18B0798A008F92FC /* BTRandom.m */,
+				936F14EE18B0798A008F92FC /* BTRSA.h */,
+				936F14EF18B0798A008F92FC /* BTRSA.m */,
+				936F14F018B0798A008F92FC /* BTSecKeyWrapper.h */,
+				936F14F118B0798A008F92FC /* BTSecKeyWrapper.m */,
+				936F14F218B0798A008F92FC /* NSData+Base64.h */,
+				936F14F318B0798A008F92FC /* NSData+Base64.m */,
+				936F14F418B0798A008F92FC /* README.md */,
+			);
+			path = BTEncryption;
+			sourceTree = "<group>";
+		};
+		936F14F518B0798A008F92FC /* BTEncryptionTests */ = {
+			isa = PBXGroup;
+			children = (
+				936F14F618B0798A008F92FC /* BTAESTest.h */,
+				936F14F718B0798A008F92FC /* BTAESTest.m */,
+				936F14F818B0798A008F92FC /* BTDecrypt.h */,
+				936F14F918B0798A008F92FC /* BTDecrypt.m */,
+				936F14FA18B0798A008F92FC /* BTEncryptionTest.h */,
+				936F14FB18B0798A008F92FC /* BTEncryptionTest.m */,
+				936F14FC18B0798A008F92FC /* BTEncryptionTests-Info.plist */,
+				936F14FD18B0798A008F92FC /* BTHmacTest.h */,
+				936F14FE18B0798A008F92FC /* BTHmacTest.m */,
+				936F14FF18B0798A008F92FC /* BTRandomTest.h */,
+				936F150018B0798A008F92FC /* BTRandomTest.m */,
+				936F150118B0798A008F92FC /* BTRSAKeysTest.h */,
+				936F150218B0798A008F92FC /* BTRSAKeysTest.m */,
+				936F150318B0798A008F92FC /* BTRSATest.h */,
+				936F150418B0798A008F92FC /* BTRSATest.m */,
+				936F150518B0798A008F92FC /* InfoPlist.strings */,
+				936F150618B0798A008F92FC /* NSDataBase64Test.h */,
+				936F150718B0798A008F92FC /* NSDataBase64Test.m */,
+			);
+			path = BTEncryptionTests;
+			sourceTree = "<group>";
+		};
+		936F150818B0798A008F92FC /* BTPayment */ = {
+			isa = PBXGroup;
+			children = (
+				936F150918B0798A008F92FC /* BTDefines.h */,
+				936F150A18B0798A008F92FC /* BTPayment-Prefix.pch */,
+				936F150B18B0798A008F92FC /* BTPaymentActivityOverlayView.h */,
+				936F150C18B0798A008F92FC /* BTPaymentActivityOverlayView.m */,
+				936F150D18B0798A008F92FC /* BTPaymentCardType.h */,
+				936F150E18B0798A008F92FC /* BTPaymentCardType.m */,
+				936F150F18B0798A008F92FC /* BTPaymentCardUtils.h */,
+				936F151018B0798A008F92FC /* BTPaymentCardUtils.m */,
+				936F151118B0798A008F92FC /* BTPaymentFormTextField.h */,
+				936F151218B0798A008F92FC /* BTPaymentFormTextField.m */,
+				936F151318B0798A008F92FC /* BTPaymentFormView.h */,
+				936F151418B0798A008F92FC /* BTPaymentFormView.m */,
+				936F151518B0798A008F92FC /* BTPaymentSectionHeaderView.h */,
+				936F151618B0798A008F92FC /* BTPaymentSectionHeaderView.m */,
+				936F151718B0798A008F92FC /* BTPaymentViewController.h */,
+				936F151818B0798A008F92FC /* BTPaymentViewController.m */,
+			);
+			path = BTPayment;
+			sourceTree = "<group>";
+		};
+		936F151918B0798A008F92FC /* BTPaymentTests */ = {
+			isa = PBXGroup;
+			children = (
+				936F151A18B0798A008F92FC /* BTPaymentTests-Info.plist */,
+				936F151B18B0798A008F92FC /* BTPaymentTests.h */,
+				936F151C18B0798A008F92FC /* BTPaymentTests.m */,
+				936F151D18B0798A008F92FC /* InfoPlist.strings */,
+			);
+			path = BTPaymentTests;
+			sourceTree = "<group>";
+		};
+		936F152018B0798A008F92FC /* SampleCheckout */ = {
+			isa = PBXGroup;
+			children = (
+				936F152118B0798A008F92FC /* Default-568h@2x.png */,
+				936F152218B0798A008F92FC /* Default.png */,
+				936F152318B0798A008F92FC /* Default@2x.png */,
+				936F152418B0798A008F92FC /* InfoPlist.strings */,
+				936F152618B0798A008F92FC /* SCViewController_iPad.xib */,
+				936F152818B0798A008F92FC /* SCViewController_iPhone.xib */,
+				936F152A18B0798A008F92FC /* main.m */,
+				936F152B18B0798A008F92FC /* README.md */,
+				936F152C18B0798A008F92FC /* SampleCheckout-Info.plist */,
+				936F152D18B0798A008F92FC /* SampleCheckout-Prefix.pch */,
+				936F152E18B0798A008F92FC /* SampleMerchantServer */,
+				936F153818B0798A008F92FC /* SCAppDelegate.h */,
+				936F153918B0798A008F92FC /* SCAppDelegate.m */,
+				936F153A18B0798A008F92FC /* SCViewController.h */,
+				936F153B18B0798A008F92FC /* SCViewController.m */,
+			);
+			path = SampleCheckout;
+			sourceTree = "<group>";
+		};
+		936F152E18B0798A008F92FC /* SampleMerchantServer */ = {
+			isa = PBXGroup;
+			children = (
+				936F152F18B0798A008F92FC /* .gitignore */,
+				936F153018B0798A008F92FC /* .rvmrc */,
+				936F153118B0798A008F92FC /* app.rb */,
+				936F153218B0798A008F92FC /* config.ru */,
+				936F153318B0798A008F92FC /* config.yml */,
+				936F153418B0798A008F92FC /* Gemfile */,
+				936F153518B0798A008F92FC /* Gemfile.lock */,
+				936F153618B0798A008F92FC /* views */,
+			);
+			path = SampleMerchantServer;
+			sourceTree = "<group>";
+		};
+		936F153618B0798A008F92FC /* views */ = {
+			isa = PBXGroup;
+			children = (
+				936F153718B0798A008F92FC /* form.erb */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		936F153C18B0798A008F92FC /* SampleCheckoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				936F153D18B0798A008F92FC /* InfoPlist.strings */,
+				936F153F18B0798A008F92FC /* SampleCheckoutTests-Info.plist */,
+				936F154018B0798A008F92FC /* SampleCheckoutTests.h */,
+				936F154118B0798A008F92FC /* SampleCheckoutTests.m */,
+			);
+			path = SampleCheckoutTests;
+			sourceTree = "<group>";
+		};
+		936F154718B0798A008F92FC /* venmo-touch */ = {
+			isa = PBXGroup;
+			children = (
+				936F154818B0798A008F92FC /* LICENSE */,
+				936F154918B0798A008F92FC /* README.md */,
+				936F154A18B0798A008F92FC /* VenmoTouch.framework */,
+				936F154B18B0798A008F92FC /* VenmoTouchResources.bundle */,
+			);
+			path = "venmo-touch";
 			sourceTree = "<group>";
 		};
 		DD164D9F18AFF6B8006D7BEF /* Stripe */ = {
@@ -853,13 +853,13 @@
 		DDED553D18AEF2A200E6E843 = {
 			isa = PBXGroup;
 			children = (
+				936F14C518B0798A008F92FC /* braintree_ios */,
 				DD164E3E18B01F72006D7BEF /* RESideMenu */,
 				DD164D9F18AFF6B8006D7BEF /* Stripe */,
 				DDED554F18AEF2A300E6E843 /* ClickStand */,
 				DDED556818AEF2A300E6E843 /* ClickStandTests */,
 				DDED554818AEF2A300E6E843 /* Frameworks */,
 				DDED554718AEF2A300E6E843 /* Products */,
-				84BC318C18B067E8005E3E01 /* braintree_ios */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1118,8 +1118,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 84BC319018B067E8005E3E01 /* Products */;
-					ProjectRef = 84BC318F18B067E8005E3E01 /* braintree_ios.xcodeproj */;
+					ProductGroup = 936F14C918B0798A008F92FC /* Products */;
+					ProjectRef = 936F14C818B0798A008F92FC /* braintree_ios.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1131,53 +1131,53 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		84BC321B18B067E9005E3E01 /* libBTEncryption.a */ = {
+		936F155418B0798A008F92FC /* libBTEncryption.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libBTEncryption.a;
-			remoteRef = 84BC321A18B067E9005E3E01 /* PBXContainerItemProxy */;
+			remoteRef = 936F155318B0798A008F92FC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		84BC321D18B067E9005E3E01 /* BTEncryptionTests.octest */ = {
+		936F155618B0798A008F92FC /* BTEncryptionTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = BTEncryptionTests.octest;
-			remoteRef = 84BC321C18B067E9005E3E01 /* PBXContainerItemProxy */;
+			remoteRef = 936F155518B0798A008F92FC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		84BC321F18B067E9005E3E01 /* libBTPayment.a */ = {
+		936F155818B0798A008F92FC /* libBTPayment.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libBTPayment.a;
-			remoteRef = 84BC321E18B067E9005E3E01 /* PBXContainerItemProxy */;
+			remoteRef = 936F155718B0798A008F92FC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		84BC322118B067E9005E3E01 /* BTPaymentTests.octest */ = {
+		936F155A18B0798A008F92FC /* BTPaymentTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = BTPaymentTests.octest;
-			remoteRef = 84BC322018B067E9005E3E01 /* PBXContainerItemProxy */;
+			remoteRef = 936F155918B0798A008F92FC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		84BC322318B067E9005E3E01 /* SampleCheckout.app */ = {
+		936F155C18B0798A008F92FC /* SampleCheckout.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = SampleCheckout.app;
-			remoteRef = 84BC322218B067E9005E3E01 /* PBXContainerItemProxy */;
+			remoteRef = 936F155B18B0798A008F92FC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		84BC322518B067E9005E3E01 /* SampleCheckoutTests.octest */ = {
+		936F155E18B0798A008F92FC /* SampleCheckoutTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = SampleCheckoutTests.octest;
-			remoteRef = 84BC322418B067E9005E3E01 /* PBXContainerItemProxy */;
+			remoteRef = 936F155D18B0798A008F92FC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		84BC322718B067E9005E3E01 /* BraintreeResources.bundle */ = {
+		936F156018B0798A008F92FC /* BraintreeResources.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = BraintreeResources.bundle;
-			remoteRef = 84BC322618B067E9005E3E01 /* PBXContainerItemProxy */;
+			remoteRef = 936F155F18B0798A008F92FC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1187,8 +1187,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84BC323918B0682C005E3E01 /* BraintreeResources.bundle in Resources */,
-				84BC323818B06825005E3E01 /* VenmoTouchResources.bundle in Resources */,
+				936F157218B07A3A008F92FC /* VenmoTouchResources.bundle in Resources */,
+				936F157118B07A2F008F92FC /* BraintreeResources.bundle in Resources */,
 				DD164E1118AFF6B8006D7BEF /* cvc@2x.png in Resources */,
 				DD164E1C18AFF6B8006D7BEF /* visa.png in Resources */,
 				DD164E6E18B025D2006D7BEF /* settings@2x.png in Resources */,
@@ -1251,22 +1251,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84BC322818B06810005E3E01 /* BTDefines.h in Sources */,
-				84BC322918B06810005E3E01 /* BTPayment-Prefix.pch in Sources */,
-				84BC322A18B06810005E3E01 /* BTPaymentActivityOverlayView.h in Sources */,
-				84BC322B18B06810005E3E01 /* BTPaymentActivityOverlayView.m in Sources */,
-				84BC322C18B06810005E3E01 /* BTPaymentCardType.h in Sources */,
-				84BC322D18B06810005E3E01 /* BTPaymentCardType.m in Sources */,
-				84BC322E18B06810005E3E01 /* BTPaymentCardUtils.h in Sources */,
-				84BC322F18B06810005E3E01 /* BTPaymentCardUtils.m in Sources */,
-				84BC323018B06810005E3E01 /* BTPaymentFormTextField.h in Sources */,
-				84BC323118B06810005E3E01 /* BTPaymentFormTextField.m in Sources */,
-				84BC323218B06810005E3E01 /* BTPaymentFormView.h in Sources */,
-				84BC323318B06810005E3E01 /* BTPaymentFormView.m in Sources */,
-				84BC323418B06810005E3E01 /* BTPaymentSectionHeaderView.h in Sources */,
-				84BC323518B06810005E3E01 /* BTPaymentSectionHeaderView.m in Sources */,
-				84BC323618B06810005E3E01 /* BTPaymentViewController.h in Sources */,
-				84BC323718B06810005E3E01 /* BTPaymentViewController.m in Sources */,
+				936F156218B07A1A008F92FC /* BTPayment-Prefix.pch in Sources */,
+				936F156318B07A1A008F92FC /* BTPaymentActivityOverlayView.h in Sources */,
+				936F156418B07A1A008F92FC /* BTPaymentActivityOverlayView.m in Sources */,
+				936F156518B07A1A008F92FC /* BTPaymentCardType.h in Sources */,
+				936F156618B07A1A008F92FC /* BTPaymentCardType.m in Sources */,
+				936F156718B07A1A008F92FC /* BTPaymentCardUtils.h in Sources */,
+				936F156818B07A1A008F92FC /* BTPaymentCardUtils.m in Sources */,
+				936F156918B07A1A008F92FC /* BTPaymentFormTextField.h in Sources */,
+				936F156A18B07A1A008F92FC /* BTPaymentFormTextField.m in Sources */,
+				936F156B18B07A1A008F92FC /* BTPaymentFormView.h in Sources */,
+				936F156C18B07A1A008F92FC /* BTPaymentFormView.m in Sources */,
+				936F156D18B07A1A008F92FC /* BTPaymentSectionHeaderView.h in Sources */,
+				936F156E18B07A1A008F92FC /* BTPaymentSectionHeaderView.m in Sources */,
+				936F156F18B07A1A008F92FC /* BTPaymentViewController.h in Sources */,
+				936F157018B07A1A008F92FC /* BTPaymentViewController.m in Sources */,
 				DD164E4618B01F72006D7BEF /* RESideMenu.m in Sources */,
 				DD164DFF18AFF6B8006D7BEF /* STPView.m in Sources */,
 				DD164E0818AFF6B8006D7BEF /* PKCardNumber.m in Sources */,
@@ -1317,50 +1316,50 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		84BC31A718B067E9005E3E01 /* InfoPlist.strings */ = {
+		936F14E018B0798A008F92FC /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				84BC31A818B067E9005E3E01 /* en */,
+				936F14E118B0798A008F92FC /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		84BC31E418B067E9005E3E01 /* InfoPlist.strings */ = {
+		936F151D18B0798A008F92FC /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				84BC31E518B067E9005E3E01 /* en */,
+				936F151E18B0798A008F92FC /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		84BC31EB18B067E9005E3E01 /* InfoPlist.strings */ = {
+		936F152418B0798A008F92FC /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				84BC31EC18B067E9005E3E01 /* en */,
+				936F152518B0798A008F92FC /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		84BC31ED18B067E9005E3E01 /* SCViewController_iPad.xib */ = {
+		936F152618B0798A008F92FC /* SCViewController_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				84BC31EE18B067E9005E3E01 /* en */,
+				936F152718B0798A008F92FC /* en */,
 			);
 			name = SCViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
-		84BC31EF18B067E9005E3E01 /* SCViewController_iPhone.xib */ = {
+		936F152818B0798A008F92FC /* SCViewController_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				84BC31F018B067E9005E3E01 /* en */,
+				936F152918B0798A008F92FC /* en */,
 			);
 			name = SCViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
-		84BC320418B067E9005E3E01 /* InfoPlist.strings */ = {
+		936F153D18B0798A008F92FC /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				84BC320518B067E9005E3E01 /* en */,
+				936F153E18B0798A008F92FC /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1468,6 +1467,7 @@
 					/Users/admin/PennApps/clickstand/iOS/ClickStand,
 					/Users/ninalu/clickstand/iOS/ClickStand,
 					"/Users/admin/PennApps/clickstand/iOS/ClickStand/braintree_ios/venmo-touch",
+					"/Users/matthewebeweber/Documents/clickstand/braintree_ios/venmo-touch",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClickStand/ClickStand-Prefix.pch";
@@ -1489,6 +1489,7 @@
 					/Users/admin/PennApps/clickstand/iOS/ClickStand,
 					/Users/ninalu/clickstand/iOS/ClickStand,
 					"/Users/admin/PennApps/clickstand/iOS/ClickStand/braintree_ios/venmo-touch",
+					"/Users/matthewebeweber/Documents/clickstand/braintree_ios/venmo-touch",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClickStand/ClickStand-Prefix.pch";
