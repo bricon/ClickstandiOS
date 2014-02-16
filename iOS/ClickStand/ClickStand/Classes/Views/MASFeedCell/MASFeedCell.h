@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *stands;
 @property (weak, nonatomic) IBOutlet UILabel *dollars;
 @property (weak, nonatomic) IBOutlet UITextView *description;
+@property (weak, nonatomic) IBOutlet UILabel *title;
 
 @end

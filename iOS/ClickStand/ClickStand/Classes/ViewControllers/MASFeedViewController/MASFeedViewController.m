@@ -94,7 +94,7 @@
 -(void)getFeedDataFromParse{
     //get all posts
     PFQuery *query = [PFQuery queryWithClassName:@"Post"];
-    [query setLimit:1000];
+    [query setLimit:25];
     
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
@@ -102,6 +102,8 @@
             NSLog(@"Successfully retrieved %lu posts.", (unsigned long)objects.count);
             self.feedData = objects;
             NSLog(@"self.feedData : %@," , self.feedData);
+            
+            [self.tableView reloadData];
             
         } else {
             // Log details of the failure
@@ -114,16 +116,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (self.feedData.count ==0){
+    if (self.feedData.count > 0){
         NSLog(@"yo nothing is populated");
         return 1;
     }
-    return self.feedData.count;
+    return 0;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 5;
+    return self.feedData.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -133,13 +135,16 @@
     
     MASFeedCell *cell = (MASFeedCell *)[tableView dequeueReusableCellWithIdentifier:feedcell];
     
+    NSInteger index = indexPath.section;
+    
     if (cell == nil) {
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"MASFeedCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
         
-        //add parse data into cell
-        //commented out because no posts have been made
-        //NSDictionary * post = self.feedData[indexPath.row];
+        cell.description.text = self.feedData[index][@"description"];
+        cell.title.text = self.feedData[index][@"title"];
+        cell.stands.text = [NSString stringWithFormat:@"%@ stands", self.feedData[index][@"num_stands"]];
+        cell.dollars.text = [NSString stringWithFormat:@"$%@ raised", self.feedData[index][@"money_raised"]];
         
         UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetectedMainImage:)];
         singleTap.numberOfTapsRequired = 1;
