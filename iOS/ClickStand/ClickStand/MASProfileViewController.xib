@@ -6,9 +6,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MASProfileViewController">
             <connections>
-                <outlet property="basicInfo" destination="YT0-8o-nBf" id="xkB-CP-efT"/>
+                <outlet property="basicInfo" destination="Rio-M0-2o4" id="PAb-kn-zul"/>
                 <outlet property="description" destination="AbH-M5-1t4" id="5qd-ch-Vhv"/>
-                <outlet property="name" destination="O13-oG-bF2" id="Y4m-WI-ta6"/>
+                <outlet property="name" destination="74l-ce-5zS" id="av8-nF-4Me"/>
                 <outlet property="profileImage" destination="rd7-wp-stu" id="Z59-3u-JCk"/>
                 <outlet property="scrollView" destination="vws-OQ-Wt0" id="e5D-Iz-uZd"/>
                 <outlet property="view" destination="1" id="3"/>
@@ -27,19 +27,6 @@
                             <rect key="frame" x="58" y="122" width="204" height="188"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </imageView>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bri Connelly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O13-oG-bF2">
-                            <rect key="frame" x="58" y="318" width="204" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="location blah blah blah" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YT0-8o-nBf">
-                            <rect key="frame" x="58" y="347" width="204" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbH-M5-1t4">
                             <rect key="frame" x="40" y="381" width="240" height="107"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -48,6 +35,18 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Austin" placeholder="Location" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rio-M0-2o4">
+                            <rect key="frame" x="58" y="347" width="204" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bri Connelly" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="74l-ce-5zS">
+                            <rect key="frame" x="58" y="318" width="204" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
                     </subviews>
                 </scrollView>
             </subviews>

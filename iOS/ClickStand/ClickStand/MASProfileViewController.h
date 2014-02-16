@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MASProfileViewController : UIViewController
+@interface MASProfileViewController : UIViewController <UITextFieldDelegate,UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIImageView *profileImage;
-@property (weak, nonatomic) IBOutlet UILabel *name;
-@property (weak, nonatomic) IBOutlet UILabel *basicInfo;
+@property (weak, nonatomic) IBOutlet UITextField *name;
 @property (weak, nonatomic) IBOutlet UITextView *description;
+@property (weak, nonatomic) IBOutlet UITextField *basicInfo;
 
 @end
