@@ -237,6 +237,9 @@ didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
 
 //venmo helper method
 - (void) savePaymentInfoToServer:(NSDictionary *)paymentInfo {
+    NSLog(@"Calling SavePaymentInfoToServer");
+    
+    
     NSURL *url = [NSURL URLWithString: @"http://localhost:5000/card"];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
     
@@ -247,7 +250,12 @@ didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
     [paymentInfo setValue:customerId forKey:@"customer_id"];
     
     //implement this "postDataFromDictionary" thing
-    //request.HTTPBody = [self postDataFromDictionary:paymentInfo];
+    NSData *items = [self postDataFromDictionary:paymentInfo];
+    
+    // Wasn't working with the body, so we put that shit in the headers
+    for (id key in paymentInfo.allKeys) {
+        [request addValue:paymentInfo[key] forHTTPHeaderField:key];
+    }
     request.HTTPMethod = @"POST";
     
     [NSURLConnection sendAsynchronousRequest:request
@@ -257,8 +265,8 @@ didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
          NSError *err = nil;
          NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:body
                                                                             options:kNilOptions error:&err];
-         NSLog(@"saveCardToServer: paymentInfo: %@ response: %@, error: %@",
-               paymentInfo, responseDictionary, requestError);
+         //NSLog(@"saveCardToServer: paymentInfo: %@ response: %@, error: %@",
+         //      paymentInfo, responseDictionary, requestError);
          
          if ([[responseDictionary valueForKey:@"success"] isEqualToNumber:@1]) { // Success!
              // Don't forget to call the cleanup method,
@@ -272,14 +280,65 @@ didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
                                    cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
              }];
              
-         } /*else {
+         } else {
              // Card did not save correctly, so show server error using `showErrorWithTitle:message:`
              [self.paymentViewController
               showErrorWithTitle:@"Error saving your card"
               //implement this
               message:[self messageStringFromResponse:responseDictionary]];
-         }*/
+         }
      }];
+}
+
+
+
+// Construct URL encoded POST data from a dictionary
+- (NSData *)postDataFromDictionary:(NSDictionary *)params {
+    NSMutableString *data = [NSMutableString string];
+    
+    for (NSString *key in params) {
+        NSString *value = [params objectForKey:key];
+        if (value == nil) {
+            continue;
+        }
+        if ([value isKindOfClass:[NSString class]]) {
+            value = [self URLEncodedStringFromString:value];
+        }
+        
+        [data appendFormat:@"%@=%@&", [self URLEncodedStringFromString:key], value];
+    }
+    
+    return [data dataUsingEncoding:NSUTF8StringEncoding];
+}
+
+// This, from CSKit, is free for use:
+// https://github.com/codenauts/CNSKit/blob/master/Classes/Categories/NSString%2BCNSStringAdditions.m
+// NSString *encoded = (NSString *) CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)string, NULL, CFSTR(":/?#[]@!$&’()*+,;='"), kCFStringEncodingUTF8);
+
+- (NSString *) URLEncodedStringFromString: (NSString *)string {
+    NSMutableString * output = [NSMutableString string];
+    const unsigned char * source = (const unsigned char *)[string UTF8String];
+    size_t sourceLen = strlen((const char *)source);
+    for (int i = 0; i < sourceLen; ++i) {
+        const unsigned char thisChar = source[i];
+        if (thisChar == ' '){
+            [output appendString:@"+"];
+        } else if (thisChar == '.' || thisChar == '-' || thisChar == '_' || thisChar == '~' ||
+                   (thisChar >= 'a' && thisChar <= 'z') ||
+                   (thisChar >= 'A' && thisChar <= 'Z') ||
+                   (thisChar >= '0' && thisChar <= '9')) {
+            [output appendFormat:@"%c", thisChar];
+        } else {
+            [output appendFormat:@"%%%02X", thisChar];
+        }
+    }
+    return output;
+}
+
+// Some boiler plate networking code below.
+
+- (NSString *) messageStringFromResponse:(NSDictionary *)responseDictionary {
+    return [responseDictionary valueForKey:@"message"];
 }
 
 @end
